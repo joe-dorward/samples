@@ -1,0 +1,234 @@
+<div class="jive-html-text-widget">
+
+<style type="text/css">
+#j-cust-head.clearfix { display: none; } /* blue strip */
+#j-globalNav-bg { display: none; } /* gray strip */
+
+.j-js-follow-controls { display: none !important; } /* follow button */
+
+/* HEADER */
+header { border: solid 1px skyblue; }
+.j-page-header .j-place-header-overlay { background: white; }
+
+/* IMAGE */
+.j-page-header .j-placeHdImg { box-shadow: none; border: none; background: none; }
+
+/* NAVIGATION MENU */
+.j-placeNav .j-place-main-nav-more, .j-placeLinks li > a { color: skyblue; } /* menu items */
+.j-placeActions li#jive-place-link-manage-tab a { color: red; } /* 'manage' label */
+
+/* BREADCRUMBS */
+#jive-breadcrumb { position: absolute; top: 135px; color: gray; }
+#jive-breadcrumb a { color: #0067c5; }
+.j-layout.j-contained.j-rc4.clearfix { position: relative; top: 25px; } /* gray border around page-content */
+
+/* --------------- --------------- --------------- --------------- --------------- */
+table { width: 98.5%; background: #0067c5; font-size: 8pt; margin: 20px 0 10px 10px; }
+
+th { position: relative; width: 14%; font-weight: bold; color: white; text-align: center; padding: 10px 0; vertical-align: middle; }
+
+.arrow-right { position: absolute;
+  top: -13px;
+  right: -10px;
+  width: 0;
+  height: 0; 
+
+  border: solid 31px #0067c5;
+  border-top-color: white;
+  border-right-color: white;
+  border-bottom-color: white;
+  border-right-width: 2px;
+}
+
+/* --------------- --------------- --------------- --------------- --------------- */
+.tab-wrapper,
+.sub-tab-wrapper { height: 25px; font-size: 9pt; }
+.sub-tab-wrapper { margin: 10px 0 0 0; }
+
+.tab,
+.sub-tab {
+  position: relative;
+  z-index: 1;
+  float: left;
+  margin-left: 10px;
+  padding: 4px 15px 4px 15px; /* padding accommodates width of text */
+  border: 1px solid lightgrey;
+  background: whitesmoke;
+
+  -moz-border-radius-topleft: 7px 7px;
+  border-top-left-radius: 7px 7px;
+  -moz-border-radius-topright: 7px 7px;
+  border-top-right-radius: 7px 7px;
+}
+
+.tab:hover { cursor: pointer; }
+
+.sub-tab:hover { cursor: pointer; } 
+
+/* TAB BODY */
+.tab-body,
+
+.sub-tab-body {
+  display: none;
+  position: relative;
+  z-index: 0;
+  left: 0px;
+  top: -1px;
+  min-height: 130px;
+  width: 99.8%;
+  border: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+
+.sub-tab-body { left: 10px; width: 98.5%; } 
+
+.tab-body p { margin: 4px 0px 4px 10px; }
+
+.tab-body ul { margin: 4px 10px 0px 14px; } 
+
+.sub-tab-body p { margin: 8px 0px 8px 10px; } 
+
+#first-tab { background: white; border-bottom: 1px solid white; }
+
+#first-tab-body { display: block; } 
+
+#first-sub-tab { background: white; border-bottom: 1px solid white; }
+
+#first-sub-tab-body { display: block; } 
+
+.button a { color: white; text-decoration: none; } 
+
+.tab-body img { float: right; margin: 10px; height: 122px; }
+
+.tab-body-text { border: solid 1px skyblue; min-height: 120px; margin: 10px 130px 10px 10px; }
+
+</style>
+
+<script type="text/javascript">
+function on_sub_tab_click(tab){ //alert(tab) 
+
+  // hide all tab-bodies
+  document.getElementById('first-sub-tab-body').style.display = 'none'
+  document.getElementById('second-sub-tab-body').style.display = 'none'
+  document.getElementById('third-sub-tab-body').style.display = 'none'
+  document.getElementById('fourth-sub-tab-body').style.display = 'none'
+  document.getElementById('fifth-sub-tab-body').style.display = 'none'
+  document.getElementById('sixth-sub-tab-body').style.display = 'none' 
+
+  // 'de-activate' all tabs
+  document.getElementById('first-sub-tab').style.background = 'whitesmoke'
+  document.getElementById('first-sub-tab').style.borderBottom = '1px solid lightgrey'
+  document.getElementById('second-sub-tab').style.background = 'whitesmoke'
+  document.getElementById('second-sub-tab').style.borderBottom = '1px solid lightgrey'
+  document.getElementById('third-sub-tab').style.background = 'whitesmoke'
+  document.getElementById('third-sub-tab').style.borderBottom = '1px solid lightgrey'
+  document.getElementById('fourth-sub-tab').style.background = 'whitesmoke'
+  document.getElementById('fourth-sub-tab').style.borderBottom = '1px solid lightgrey'
+  document.getElementById('fifth-sub-tab').style.background = 'whitesmoke'
+  document.getElementById('fifth-sub-tab').style.borderBottom = '1px solid lightgrey'
+  document.getElementById('sixth-sub-tab').style.background = 'whitesmoke'
+  document.getElementById('sixth-sub-tab').style.borderBottom = '1px solid lightgrey'
+ 
+  // show clicked tab-body
+  document.getElementById(tab + '-body').style.display = 'block' 
+
+  // 'activate' clicked tab
+  document.getElementById(tab).style.background = 'white'
+  document.getElementById(tab).style.borderBottom = '1px solid white'
+}
+</script>
+
+<div class="tab-wrapper">
+  <div class="tab" id="first-tab" onmouseup="on_tab_click('first-tab')">Enterprise Transformation &amp; Operations</div>
+</div>
+
+<div class="tab-body" id="first-tab-body">
+  <img width=120px src="#"/> 
+
+<div class="tab-body-text">
+  <p style="margin: 10px;">As part of the Enterprise Transformation &amp; Operations, the manager of the <strong>Global Practices</strong> is ...</p>
+</div>
+
+<p style="margin: 10px;">The <strong>Global Practices</strong> are :</p>
+
+<!-- =============== -->
+
+<!-- GLOBAL PRACTICES =-->
+<div class="sub-tab-wrapper">
+  <div class="sub-tab" id="first-sub-tab" onmouseup="on_sub_tab_click('first-sub-tab')">Global Installation</div>
+  <div class="sub-tab" id="second-sub-tab" onmouseup="on_sub_tab_click('second-sub-tab')">Global Residency</div>
+  <div class="sub-tab" id="third-sub-tab" onmouseup="on_sub_tab_click('third-sub-tab')">Global Data Protection</div>
+  <div class="sub-tab" id="fourth-sub-tab" onmouseup="on_sub_tab_click('fourth-sub-tab')">Global Data Manageability</div>
+  <div class="sub-tab" id="fifth-sub-tab" onmouseup="on_sub_tab_click('fifth-sub-tab')">Global Services Delivery Center</div>
+  <div class="sub-tab" id="sixth-sub-tab" onmouseup="on_sub_tab_click('sixth-sub-tab')">Global Project Management Office</div>
+</div>
+<!-- end 'sub-tab-wrapper' -->
+
+<!-- first sub-tab -->
+
+<div class="sub-tab-body" id="first-sub-tab-body">
+  <img src="#"/>
+  <div class="tab-body-text">
+    <p>The manager of the Global Installation Practice is ...</p>
+  </div>
+</div>
+
+<!-- second sub-tab -->
+
+<div class="sub-tab-body" id="second-sub-tab-body">
+  <img src="#"/> 
+  <div class="tab-body-text">
+    <p>The manager of the Global Residency Practice is ...</p>
+  </div>
+</div>
+
+<!-- third sub-tab -->
+
+<div class="sub-tab-body" id="third-sub-tab-body">
+  <img src="#"/>
+  <div class="tab-body-text">
+    <p>The manager of the Global Data Protection Practice is ...</p>
+  </div>
+</div>
+
+<!-- fourth sub-tab -->
+
+<div class="sub-tab-body" id="fourth-sub-tab-body">
+  <img src="#"/>
+  <div class="tab-body-text">
+    <p>The manager of the Global Data Manageability Practice is ...</p>
+  </div>
+</div>
+
+<!-- fifth sub-tab -->
+
+<div class="sub-tab-body" id="fifth-sub-tab-body">
+  <img src="#"/>
+  <div class="tab-body-text">
+    <p>The manager of the Global Services Delivery Center Practice is ...</p>
+  </div>
+</div>
+
+<!-- sixth sub-tab -->
+
+<div class="sub-tab-body" id="sixth-sub-tab-body">
+  <img src="#"/>
+  <div class="tab-body-text">
+    <p>The manager of the Global Program Management Office Practice is ...</p>
+  </div>
+
+  <p>The phases of the Global Program Management Office Process are :</p>
+
+  <table>
+    <tr>
+      <th>Concept &amp; Justification<div class="arrow-right"></div></th>
+      <th>Requirements &amp; Definition<div class="arrow-right"></div></th>
+      <th>Planning &amp; Initiation<div class="arrow-right"></div></th>
+      <th>Implementation<div class="arrow-right"></div></th><th>Migration &amp; Operations<div class="arrow-right"></div></th>
+      <th>Closeout</th>
+    </tr>
+  </table>
+</div>
+
+</div> <!-- end 'first-tab-body' -->
+</div>
