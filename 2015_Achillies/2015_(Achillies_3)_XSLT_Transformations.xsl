@@ -20,8 +20,7 @@
   <link rel="stylesheet" type="text/css" href="artifacts/for-instance.css" />
 
   <link rel="stylesheet" type="text/css" href="artifacts/tables.css" />
-  
-  <!--<link rel="stylesheet" type="text/css" href="artifacts/design-mode.css" />-->
+
 <script>
   function on_mouse_over(term){
   // handles mouse over a term
