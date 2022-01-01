@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/html-interface.xsl"?>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-Bus Object Introspection 1.0//EN" "http://standards.freedesktop.org/dbus/1.0/introspect.dtd">
+<node xmlns:yv="http://refdata.youview.com/schemas/dbus-extensions-v1.0">
+<schemalist>
+  <schema id="com.youview.httpcache" path="/httpcache/">
+   
+    <key type="b" name="enabled"> 
+      <default>0</default> 
+      <description>(Ref : SPECWIP-2834) The boolean representing whether the HTTP cache should be used for the application referenced by *appid*.
+      If this key is absent, then the caching will be based on the key platform.localapplicationlibrary.httpcache.enabled 
+      The httpcache node is present in anticipation of future keys such as httpcache.size and httpcache.expirydate which might vary on a per application basis 
+      This key appears below the dynamic *appid* node (for example) platform.localapplicationlibrary.installedapplication.*appid*.httpcache.enabled</description> 
+      <yv:status>green-in use</yv:status>
+      <yv:specification>1121-S Application Discovery and Installation</yv:specification>
+    </key> 
+  </schema>
+  <schema id="com.youview.oem" path="/oem/"> 
+    <child schema="com.youview.oem.activatedsoftware" name="activatedsoftware" />
+    <child schema="com.youview.oem.config" name="config" />
+    <child schema="com.youview.oem.device" name="device" />
+    <child schema="com.youview.oem.model" name="model" />
+    <child schema="com.youview.oem.software" name="software" />
+    <child schema="com.youview.oem.softwaremanagement" name="softwaremanagement" />
+    <child schema="com.youview.oem.uimanagement" name="uimanagement" />
+
+    <key type="s" name="model"> 
+      <default>''</default> 
+      <description>The device model </description> 
+      <yv:status>red-in use</yv:status>
+      <yv:specification>1123-S</yv:specification>
+    </key> 
+    <key type="s" name="name"> 
+      <default>''</default> 
+      <description>The free-format textual name of the Device Manufacturer</description> 
+      <yv:status>green-in use</yv:status>
+      <yv:specification>1123-S</yv:specification>
+    </key> 
+    <key type="s" name="oui"> 
+      <default>''</default> 
+      <description>A six-chracter string [0-9, a-z] - OUI in lowercase hex16 encoding without dashes</description> 
+      <yv:status>green-in use</yv:status>
+      <yv:specification>1103-S</yv:specification>
+    </key> 
+  </schema>
+  <schema id="com.youview.oem.activatedsoftware" path="/oem/activatedsoftware/"> 
+    <child schema="com.youview.oem.activatedsoftware.coredevicesoftware" name="coredevicesoftware" />
+    <child schema="com.youview.oem.activatedsoftware.ispconfiguration" name="ispconfiguration" />
+    <child schema="com.youview.oem.activatedsoftware.manufacturerconfiguration" name="manufacturerconfiguration" />
+    <child schema="com.youview.oem.activatedsoftware.platformconfiguration" name="platformconfiguration" />
+    <child schema="com.youview.oem.activatedsoftware.platformsoftware" name="platformsoftware" />
+
+    <key type="s" name="lastupdated"> 
+      <default>''</default> 
+      <description>Replaced by : platform.softwaremanagement.lastupdated</description> 
+      <yv:status>grey-deprecated</yv:status>
+      <yv:specification>0000-S</yv:specification>
+    </key> 
+  </schema>
+  <schema id="com.youview.oem.activatedsoftware.coredevicesoftware" path="/oem/activatedsoftware/coredevicesoftware/"> 
+
+    <key type="s" name="platformapiversion"> 
+      <default>''</default> 
+      <description>The ...</description> 
+      <yv:status>amber-in use</yv:status>
+      <yv:specification>1105-S</yv:specification>
+    </key> 
+    <key type="s" name="version"> 
+      <default>''</default> 
+      <description>The ...</description> 
+      <yv:status>amber-in use</yv:status>
+      <yv:specification>1105-S</yv:specification>
+    </key> 
+  </schema>
