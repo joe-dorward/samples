@@ -15,5 +15,50 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
     DOCS["/docs"]
     click DOCS "." _blank
     
-    
+FLUTTER["/flutter"]
+      click FLUTTER "./flutter" _blank
+      GSW_F["getting_started_with_flutter.md"] 
+      F_IM["installing_flutter_macos.md"]
+      F_DEMO["run_flutter_demo_macos.md"]
+      style GSW_F fill:cornsilk,color:dodgerblue
+      style F_IM fill:cornsilk,color:dodgerblue
+      style F_DEMO fill:cornsilk,color:dodgerblue
+
+    MACOS["/macos"]
+      click MACOS "./macos" _blank
+
+    NODE_JS["/node_js"]
+      click NODE_JS "./node_js" _blank
+      NODE_JS_I["installing_node_js.md"]
+      style NODE_JS_I fill:cornsilk,color:dodgerblue
+
+    NVM["/nvm"]
+      click NVM "./nvm" _blank
+      NVM_I["installing_nvm.md"]
+      style NVM_I fill:cornsilk,color:dodgerblue
+
+    REACT_NATIVE["/react_native"]
+      click REACT_NATIVE "./react_native" _blank
+      GSW_RN["getting_started_with_react_native.md"]
+      GSW_RN_IM["installing_react_native_macos.md"]
+      style GSW_RN fill:cornsilk,color:dodgerblue
+      style GSW_RN_IM fill:cornsilk,color:dodgerblue
+
+    VS_CODE["/vs_code"]
+      click VS_CODE "./vs_code" _blank
+    GSW_VS_CODE["getting_started_with_vs_code.md"]
+    style GSW_VS_CODE fill:cornsilk,color:dodgerblue
+
+    XCODE["/xcode"]
+      click XCODE "./xcode" _blank
+      XCODE_I["installing_xcode.md"]
+      style XCODE_I fill:cornsilk,color:dodgerblue
+
+    YARN["/yarn"]
+      click YARN "./yarn" _blank
+      YARN_I["installing_yarn.md"]
+      style YARN_I fill:cornsilk,color:dodgerblue   
+      
+      
+      
  ```
