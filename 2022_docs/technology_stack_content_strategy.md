@@ -16,7 +16,7 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
     click DOCS "." _blank
     
 FLUTTER["/flutter"]
-      click FLUTTER "./flutter" _blank
+      click FLUTTER "/flutter" _blank
       GSW_F["getting_started_with_flutter.md"] 
       F_IM["installing_flutter_macos.md"]
       F_DEMO["run_flutter_demo_macos.md"]
