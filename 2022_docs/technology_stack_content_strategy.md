@@ -8,3 +8,12 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
 * ``/2022_docs/flutter/installing_flutter_macos.md``
 
 <hr/>
+
+```mermaid
+  flowchart LR
+
+    DOCS["/docs"]
+    click DOCS "." _blank
+    
+    
+ ```
