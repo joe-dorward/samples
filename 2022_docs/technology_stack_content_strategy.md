@@ -59,6 +59,26 @@ FLUTTER["/flutter"]
       YARN_I["installing_yarn.md"]
       style YARN_I fill:cornsilk,color:dodgerblue   
       
-      
-      
+    %% CONNECTIONS
+    
+    DOCS-- add<br/>sub-folder -->FLUTTER
+      FLUTTER-- add<br/>'getting started' -->GSW_F
+      FLUTTER-- add<br/>'installing' -->F_IM %% install macos
+      FLUTTER-- add<br/>'run demo' -->F_DEMO
+
+    DOCS-- add<br/>sub-folder -->MACOS
+
+    DOCS-- add<br/>sub-folder -->NODE_JS-- add<br/>'installing' -->NODE_JS_I
+    DOCS-- add<br/>sub-folder -->NVM-- add<br/>'installing' -->NVM_I
+
+    DOCS-- add<br/>sub-folder -->REACT_NATIVE
+      REACT_NATIVE-- add<br/>'getting started' -->GSW_RN
+      REACT_NATIVE-- add<br/>'installing' -->GSW_RN_IM
+
+    DOCS-- add<br/>sub-folder -->VS_CODE
+      VS_CODE-- add<br/>'getting started' -->GSW_VS_CODE
+
+
+    DOCS-- add<br/>sub-folder -->XCODE-- add<br/>'installing' -->XCODE_I
+    DOCS-- add<br/>sub-folder -->YARN-- add<br/>'installing' -->YARN_I
  ```
