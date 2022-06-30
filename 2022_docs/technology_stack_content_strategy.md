@@ -19,7 +19,7 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
       click FLUTTER "/flutter" _blank
       GSW_F["getting_started_with_flutter.md"] 
       F_IM["installing_flutter_macos.md"]
-      F_DEMO["run_flutter_demo_macos.md"]
+      %%F_DEMO["run_flutter_demo_macos.md"]
       style GSW_F fill:cornsilk,color:dodgerblue
       style F_IM fill:cornsilk,color:dodgerblue
       style F_DEMO fill:cornsilk,color:dodgerblue
@@ -64,7 +64,7 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
     DOCS-- add<br/>sub-folder -->FLUTTER
       FLUTTER-- add<br/>'getting started' -->GSW_F
       FLUTTER-- add<br/>'installing' -->F_IM %% install macos
-      FLUTTER-- add<br/>'run demo' -->F_DEMO
+      %%FLUTTER-- add<br/>'run demo' -->F_DEMO
 
     DOCS-- add<br/>sub-folder -->MACOS
 
@@ -77,7 +77,6 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
 
     DOCS-- add<br/>sub-folder -->VS_CODE
       VS_CODE-- add<br/>'getting started' -->GSW_VS_CODE
-
 
     DOCS-- add<br/>sub-folder -->XCODE-- add<br/>'installing' -->XCODE_I
     DOCS-- add<br/>sub-folder -->YARN-- add<br/>'installing' -->YARN_I
