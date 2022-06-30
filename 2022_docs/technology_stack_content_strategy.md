@@ -29,7 +29,7 @@ FLUTTER["/flutter"]
 
 %%https://github.com/joe-dorward/samples/tree/main/2022_docs/node_js
     NODE_JS["/node_js"]
-      click NODE_JS "2022_docs/node_js" _blank
+      click NODE_JS "https://github.com/joe-dorward/samples/tree/main/2022_docs/node_js" _blank
       NODE_JS_I["installing_node_js.md"]
       style NODE_JS_I fill:cornsilk,color:dodgerblue
 
