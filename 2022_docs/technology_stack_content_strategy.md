@@ -15,7 +15,7 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
     DOCS["/docs"]
     click DOCS "." _blank
     
-FLUTTER["/flutter"]
+    FLUTTER["/flutter"]
       click FLUTTER "/flutter" _blank
       GSW_F["getting_started_with_flutter.md"] 
       F_IM["installing_flutter_macos.md"]
@@ -27,9 +27,8 @@ FLUTTER["/flutter"]
     MACOS["/macos"]
       click MACOS "./macos" _blank
 
-%%https://github.com/joe-dorward/samples/tree/main/2022_docs/node_js
     NODE_JS["/node_js"]
-      click NODE_JS "https://github.com/joe-dorward/samples/tree/main/2022_docs/node_js" _blank
+      click NODE_JS "/joe-dorward/samples/tree/main/2022_docs/node_js" _blank
       NODE_JS_I["installing_node_js.md"]
       style NODE_JS_I fill:cornsilk,color:dodgerblue
 
