@@ -22,7 +22,7 @@ This structure lets you infer the path to any ``.md`` file - for example - the p
       %%F_DEMO["run_flutter_demo_macos.md"]
       style GSW_F fill:cornsilk,color:dodgerblue
       style F_IM fill:cornsilk,color:dodgerblue
-      style F_DEMO fill:cornsilk,color:dodgerblue
+      %%style F_DEMO fill:cornsilk,color:dodgerblue
 
     MACOS["/macos"]
       click MACOS "./macos" _blank
