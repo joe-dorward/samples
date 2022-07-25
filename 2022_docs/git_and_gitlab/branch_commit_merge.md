@@ -15,6 +15,8 @@ Within a repository:
 2. Make changes
 3. Click the **Commit changes** button
 
+<img width="800" src="../illustrations/gitlab_create_merge_request.png" />
+
 ### Create merge request
 1. Click the **Create merge request** button
 2. Click the **Create merge request** button
