@@ -11,6 +11,11 @@ Within a repository:
 4. Click the **Create branch** button - the branch is crerated
 
 ### Make changes
+1. Click the **Edit** button
+2. Make changes
+3. Click the **Commit changes** button
 
 ### Create merge request
-
+1. Click the **Create merge request** button
+2. Click the **Create merge request** button
+3. Click the **Merge** button - done
