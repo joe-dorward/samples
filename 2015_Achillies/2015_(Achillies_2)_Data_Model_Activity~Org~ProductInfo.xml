@@ -1,0 +1,37 @@
+  <!-- Activity~Org~ProductInfo =========== =========== =========== =========== =========== -->
+  <entity>
+    <bucket>Answer</bucket>
+    <name>Activity~Org~ProductInfo</name>
+    <long>Activity / Organisation / Product Information</long>
+    <description><![CDATA[
+      <p><strong>Activity / Organisation / Product Information</strong> is ... </p>
+    ]]></description>
+    <entity-relationship-diagram></entity-relationship-diagram>
+
+    <!-- FIELDS -->
+    <field out="true" entity-name="GBOActivityType" txnyd="true">
+      <name>ActTyp</name>
+      <long><![CDATA[<span class="term" 
+        onmouseover="on_mouse_over('GBO Activity Type')" 
+        onmouseout="on_mouse_out('GBO Activity Type')">Activity Type</span>]]></long>
+      <type>string</type>
+      <description><![CDATA[ <p> TxnyD.GBOActivityType.1.1 </p> ]]></description>
+    </field>
+    <field>
+      <name>ProcTyp</name>
+      <long>Process Type</long>
+      <type>string</type>
+      <description><![CDATA[ <p>1 </p> ]]></description>
+    </field>
+    <field out="true" entity-name="GBOActivityProcess" txnyd="true">
+      <name>ProcName</name>
+      <long><![CDATA[<span class="term" 
+        onmouseover="on_mouse_over('GBO Activity Process')" 
+        onmouseout="on_mouse_out('GBO Activity Process')">Process Name</span>]]></long>
+      <type>string</type>
+      <description><![CDATA[ <p> TxnyD.GBOActivityProcess.3.1 </p> ]]></description>
+    </field>
+
+    <!-- AND SO ON -->
+
+  </entity>
