@@ -1,0 +1,9 @@
+NetApp needed a technical writer with developer skills to help with the development of the User Interfaces of web-applications using ASP.NET / VB.NET, HTML, CSS, JavaScript – and – of working on Knowledge Bases using Content Management Systems.  
+
+[ONE] My first task (working with a developer who focussed on the back-end) was the User Interface development of the proprietary web-application ConfigBuilder while adding ‘hover help’ text to each of the application controls in the User Interface – this included the creation of resource files to manage the text and stylesheets to manage the look-and-feel.  
+
+[TWO] My second task was to create the structure and User Interfaces for two Knowledge Bases and resource ‘website’ libraries (on the JIVE CMS) – the (1st) for users of their proprietary PULSE web-application and the (2nd) for users of their Global Practices project – a company wide drive towards globally consistent service delivery.  
+
+[THREE] My third task was to replicate the Installation Workbook (a dynamic Excel Spreadsheet used by Field Engineers to record installation configurations) – as a web-application User Interface add-on for ConfigBuilder.  
+
+[FOUR] My fourth task was to research and develop RackBuilder – a drag-and-drop User Interface web-application add-on for ConfigBuilder that would read an 'XML Sales Order' (a component list) and draw a rack layout based on positional information in the XML. The User Interface would then allow drag-and-drop repositioning – and ‘on save’ – would update the 'XML Sales Order' that would then be used to create a Visio version of the rack layout. 
