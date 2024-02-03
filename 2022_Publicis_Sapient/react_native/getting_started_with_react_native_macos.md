@@ -12,7 +12,7 @@ These instructions presume that you have:
 
 ## Objectives
 By the end of this process you will have:
-* Create the React Native 'AwesomeProject' demonstration application
+* Created the React Native 'AwesomeProject' demonstration application
 * Run the React Native 'AwesomeProject' demonstration application
 * Confirmed the version of React Native that you are using
 
