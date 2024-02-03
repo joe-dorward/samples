@@ -1,4 +1,4 @@
-<a href="https://en.wikipedia.org/wiki/React_Native" target="_blank">**React Native**</a><img src="../illustrations/external_link.png" /> is an open source framework for building natively-compiled, multi-platform mobile-applications from a single codebase.
+<a href="https://en.wikipedia.org/wiki/React_Native" target="_blank">**React Native**</a><img src="../illustrations/external_link.png" /> is an open source framework for building natively-compiled, multi-platform, mobile-applications from a single codebase.
 
 ## Pre-requisites
 These instructions presume that you have:
