@@ -10,4 +10,4 @@
 2. Once downloaded - right-click the installer, and select **Run as administrator**
 3. On the **Optional** Features page - ensure that the **pip** checkbox is checked
 
-![Optional Features](/install-python-optional-features.png)
+![Optional Features](install-python-optional-features.png)
