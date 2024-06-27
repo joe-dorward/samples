@@ -6,9 +6,9 @@
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # authentication.py is a stand-alone application
 # paste your `client_id` and `client_secret` values below and it's
-# ready to run - when it runs:
-# * it will report success with a `200` status-code
-# * return an Authentication Token
+# ready to run - when it runs it will return:
+# * a `200` status-code
+# * an Authentication Token
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # PRIVATE HARD-CODED VALUES
 client_id = "<your-own-unique-client-id-value>"
