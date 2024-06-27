@@ -4,7 +4,7 @@
 
 ```python:getting_results.py
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-# getting_results_by_function.py is a stand-alone application
+# getting_results.py is a stand-alone application
 # paste a 'unique Company identifier', and 
 # a 'unique Extraction identifier' below, and it's
 # ready to run - when it runs it will:
