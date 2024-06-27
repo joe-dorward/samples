@@ -5,9 +5,10 @@
 ```python:company_creation.py
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # company_creation.py is a stand-alone application
-# paste the Authentication Token you got from 'authentication.py' below, and it's ready
-# to run - when it runs:
-# * it will report success with a `200` status-code
+# paste your Authentication Token below, and it's
+# ready to run - when it runs it will return:
+# * a `200` status-code
+# * a 'unique Company identifier'
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # PRIVATE HARD-CODED VALUES
 my_authentication_token = "<my-own-authentication-token-value>"
