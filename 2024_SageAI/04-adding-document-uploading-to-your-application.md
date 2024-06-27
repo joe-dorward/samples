@@ -7,9 +7,11 @@
 ```python:document_uploading.py
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # document_uploading.py is a stand-alone application
-# paste the 'unique customer identifier' you got from 'company_create.py' below, and it's
+# paste the 'unique Company identifier' below, and it's
 # ready to run - when it runs:
 # * it will report success with a `200` status-code
+# * return a 'unique File identifier'
+# * return a 'unique Extraction identifier'
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # PRIVATE HARD-CODED VALUES
 my_authentication_token = "<my-own-authentication-token-value>"
