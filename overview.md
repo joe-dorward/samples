@@ -26,5 +26,6 @@ I_LOVE-.-COMPLEXITY
 I_LOVE-.-LEARNING
 I_LOVE-.-EXPLAINING
 
-I_LOVE-.creating.-CONTENT-."that helps".-DO_KNOW_UNDERSTAND
+I_LOVE-.creating.-CONTENT-."that helps
+people".-DO_KNOW_UNDERSTAND
 ```
