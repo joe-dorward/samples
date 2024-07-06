@@ -8,7 +8,7 @@ PLATFORM_API("Platform / API level")
 COMPLEXITY("Complexity")
 CREATING("Creating")
 CONTENT("Content")
-DEVELOPERS("DEVELOPERS")
+DEVELOPERS("Developers")
 EXPLAINING("Explaining")
 LEARNING("Learning")
 
