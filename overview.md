@@ -11,9 +11,13 @@ PLATFORM_API("Platform / API level")
 COMPLEXITY("Complexity")
 CREATING("Creating")
 CONTENT("Content")
+CONTENT_COMPONENTS("Content Components")
+CONTENT_REUSE("Content Reuse")
+
 DEVELOPERS("Developers")
 EXPLAINING("Explaining")
 LEARNING("Learning")
+SELF_SERVICE("Self-Service")
 
 DO_KNOW_UNDERSTAND["`To *do*, *know*,
 or *understand*`"]
