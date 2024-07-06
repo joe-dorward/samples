@@ -1,8 +1,9 @@
 ```mermaid
   %%{init: { "theme":"forest"} }%%
-  classDef Compact font-family:verdana, font-size:7.5pt, text-align:left;
+
 
 flowchart LR
+  classDef Compact font-family:verdana, font-size:7.5pt, text-align:left;
 I_LOVE["I Love"]:::Compact
 
 PLATFORM_API("Platform / API level")
