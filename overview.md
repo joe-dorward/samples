@@ -1,5 +1,5 @@
-
 ```mermaid
+  %%{init: { "theme":"forest"} }%%
 flowchart LR
 I_LOVE["I Love"]
 
