@@ -11,6 +11,8 @@ I_LOVE["I Love"]:::Start
 
 PLATFORM_API("Platform / API level")
 
+CODE_EXAMPLES("Code Examples")
+
 COMPLEXITY("Complexity")
 CREATING("Creating")
 CONTENT("Content")
@@ -19,6 +21,9 @@ CONTENT_REUSE("Content Reuse")
 
 DEVELOPERS("Developers")
 EXPLAINING("Explaining")
+
+FEEDBACK("Feedback")
+
 LEARNING("Learning")
 SELF_SERVICE("Self-Service")
 
@@ -38,4 +43,7 @@ I_LOVE-.-EXPLAINING
 
 I_LOVE-.creating.-CONTENT-."that helps
 people".-DO_KNOW_UNDERSTAND
+
+I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me write better.-CODE_EXAMPLES
+
 ```
