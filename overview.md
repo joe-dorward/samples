@@ -5,13 +5,14 @@ flowchart LR
   classDef Variables fill:white, stroke:white, font-family:courier new, font-size:10pt;
   classDef Object fill:white, stroke:white, font-family:verdana, font-size:9pt;
 
-  classDef Start fill:pink, stroke:red, font-family:verdana, font-size:9pt;
+  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
 
 I_LOVE["I Love"]:::Start
 
 PLATFORM_API("Platform / API level")
 
 CODE_EXAMPLES("Code Examples")
+BETTER_CODE_EXAMPLES("Better Code Examples")
 
 COMPLEXITY("Complexity")
 CREATING("Creating")
@@ -44,6 +45,7 @@ I_LOVE-.-EXPLAINING
 I_LOVE-.creating.-CONTENT-."that helps
 people".-DO_KNOW_UNDERSTAND
 
-I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me write better.-CODE_EXAMPLES
+I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me
+  create.-BETTER_CODE_EXAMPLES
 
 ```
