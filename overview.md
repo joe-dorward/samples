@@ -12,9 +12,7 @@ flowchart LR
 
 I_LOVE["I Love"]:::Start
 
-
-
-CODE_EXAMPLES("Code Examples")
+CODE("Code")
 BETTER_CODE_EXAMPLES("Better Code Examples")
 
 
@@ -42,6 +40,14 @@ THAT_HELPS_PEOPLE("that helps
 
 class CREATING,WRITING,THAT_HELPS_PEOPLE Verb;
 
+
+
+%% NOTES ==========
+classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8.5pt; text-align:left;
+
+UNDERSTAND_DOMAIN["It helps me understand the domain better"]
+
+class UNDERSTAND_DOMAIN Note;
 %% CONNECTING ==========
 
 I_LOVE-.-CREATING-.-CONTENT-.-THAT_HELPS_PEOPLE-.-DO_KNOW_UNDERSTAND
