@@ -1,10 +1,13 @@
 ```mermaid
-  %%{init: { "theme":"forest"} }%%
-
-
+%%{init: { "theme":"forest"} }%%
 flowchart LR
   classDef Compact font-family:verdana, font-size:7.5pt, text-align:left;
-I_LOVE["I Love"]:::Compact
+  classDef Variables fill:white, stroke:white, font-family:courier new, font-size:10pt;
+  classDef Object fill:white, stroke:white, font-family:verdana, font-size:9pt;
+
+  classDef Start fill:pink, stroke:red, font-family:verdana, font-size:9pt;
+
+I_LOVE["I Love"]:::Start
 
 PLATFORM_API("Platform / API level")
 
@@ -19,8 +22,7 @@ EXPLAINING("Explaining")
 LEARNING("Learning")
 SELF_SERVICE("Self-Service")
 
-DO_KNOW_UNDERSTAND["`To *do*, *know*,
-or *understand*`"]
+DO_KNOW_UNDERSTAND["`*do, know, or understand*`"]
 style DO_KNOW_UNDERSTAND text-align:left
 
 WRITING_CODE("Writing Code")
