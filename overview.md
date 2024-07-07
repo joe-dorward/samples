@@ -33,36 +33,48 @@ style DO_KNOW_UNDERSTAND text-align:left
 %% DOING ==========
 
 CREATING("creating")
+GETTING("getting")
+FROM("from")
 WRITING("writing")
 
 THAT_HELPS_PEOPLE("that helps
   people")
 
-class CREATING,WRITING,THAT_HELPS_PEOPLE Verb;
+class CREATING,GETTING,FROM,WRITING,THAT_HELPS_PEOPLE Verb;
 
 
 
 %% NOTES ==========
-classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8.5pt; text-align:left;
+classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left;
 
-UNDERSTAND_DOMAIN["It helps me understand the domain better"]
+UNDERSTAND_DOMAIN["it helps me understand
+  the domain better"]
 
-class UNDERSTAND_DOMAIN Note;
+HELPS_ME_WRITE[it helps me write]
+
+
+class UNDERSTAND_DOMAIN,HELPS_ME_WRITE Note;
 %% CONNECTING ==========
 
 I_LOVE-.-CREATING-.-CONTENT-.-THAT_HELPS_PEOPLE-.-DO_KNOW_UNDERSTAND
 
-I_LOVE-.-WRITING-.-CODE_EXAMPLES
+I_LOVE-.-WRITING-.-CODE-.-UNDERSTAND_DOMAIN
+
+I_LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE-.-BETTER_CODE_EXAMPLES
 
 
-
-I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me
-  create.-BETTER_CODE_EXAMPLES
 
 ```
 
 ```mermaid
 flowchart
+
+I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me
+  create.-BETTER_CODE_EXAMPLES
+
+
+
+
 PLATFORM_API("Platform / API level")
 COMPLEXITY("Complexity")
 CONTENT_COMPONENTS("Content Components")
