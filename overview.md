@@ -9,22 +9,12 @@ flowchart LR
 
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt;
 
-
 I_LOVE["I Love"]:::Start
-
 CODE("Code")
 BETTER_CODE_EXAMPLES("Better Code Examples")
-
-
-
 CONTENT("Content")
-
-
 DEVELOPERS("Developers")
-
-
 FEEDBACK("Feedback")
-
 
 DO_KNOW_UNDERSTAND["`*do, know, or understand*`"]
 style DO_KNOW_UNDERSTAND text-align:left
@@ -68,11 +58,6 @@ I_LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE-.-BETTER_CODE_E
 
 ```mermaid
 flowchart
-
-I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me
-  create.-BETTER_CODE_EXAMPLES
-
-
 
 
 PLATFORM_API("Platform / API level")
