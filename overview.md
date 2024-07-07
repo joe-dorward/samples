@@ -7,6 +7,9 @@ flowchart LR
 
   classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
 
+  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt;
+
+
 I_LOVE["I Love"]:::Start
 
 PLATFORM_API("Platform / API level")
@@ -15,7 +18,7 @@ CODE_EXAMPLES("Code Examples")
 BETTER_CODE_EXAMPLES("Better Code Examples")
 
 COMPLEXITY("Complexity")
-CREATING("Creating")
+
 CONTENT("Content")
 CONTENT_COMPONENTS("Content Components")
 CONTENT_REUSE("Content Reuse")
@@ -33,19 +36,33 @@ style DO_KNOW_UNDERSTAND text-align:left
 
 WRITING_CODE("Writing Code")
 
-%% CONNECTIONS
 
-I_LOVE-."working
-at the".-PLATFORM_API
 
-I_LOVE-.-COMPLEXITY
-I_LOVE-.-LEARNING
-I_LOVE-.-EXPLAINING
+%% DOING ==========
 
-I_LOVE-.creating.-CONTENT-."that helps
-people".-DO_KNOW_UNDERSTAND
+CREATING("creating")
+WRITING("writing")
+
+THAT_HELPS_PEOPLE("that helps
+  people")
+
+class CREATING,WRITING,THAT_HELPS_PEOPLE Verb;
+
+%% CONNECTING ==========
+
+I_LOVE-.-CREATING-.-CONTENT-.-THAT_HELPS_PEOPLE-.-DO_KNOW_UNDERSTAND
+
+I_LOVE-.-WRITING-.-CODE_EXAMPLES
+
+
 
 I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me
   create.-BETTER_CODE_EXAMPLES
 
 ```
+
+
+%%I_LOVE-."working at the".-PLATFORM_API
+%%I_LOVE-.-COMPLEXITY
+%%I_LOVE-.-LEARNING
+%%I_LOVE-.-EXPLAINING
