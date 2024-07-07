@@ -12,16 +12,15 @@ flowchart LR
 
 I_LOVE["I Love"]:::Start
 
-PLATFORM_API("Platform / API level")
+
 
 CODE_EXAMPLES("Code Examples")
 BETTER_CODE_EXAMPLES("Better Code Examples")
 
-COMPLEXITY("Complexity")
+
 
 CONTENT("Content")
-CONTENT_COMPONENTS("Content Components")
-CONTENT_REUSE("Content Reuse")
+
 
 DEVELOPERS("Developers")
 EXPLAINING("Explaining")
@@ -61,8 +60,15 @@ I_LOVE-.getting.-FEEDBACK-.from.-DEVELOPERS-.that helps me
 
 ```
 
+```mermaid
+flowchart
+PLATFORM_API("Platform / API level")
+COMPLEXITY("Complexity")
+CONTENT_COMPONENTS("Content Components")
+CONTENT_REUSE("Content Reuse")
 
 %%I_LOVE-."working at the".-PLATFORM_API
 %%I_LOVE-.-COMPLEXITY
 %%I_LOVE-.-LEARNING
 %%I_LOVE-.-EXPLAINING
+```
