@@ -23,18 +23,13 @@ CONTENT("Content")
 
 
 DEVELOPERS("Developers")
-EXPLAINING("Explaining")
+
 
 FEEDBACK("Feedback")
 
-LEARNING("Learning")
-SELF_SERVICE("Self-Service")
 
 DO_KNOW_UNDERSTAND["`*do, know, or understand*`"]
 style DO_KNOW_UNDERSTAND text-align:left
-
-WRITING_CODE("Writing Code")
-
 
 
 %% DOING ==========
@@ -66,6 +61,10 @@ PLATFORM_API("Platform / API level")
 COMPLEXITY("Complexity")
 CONTENT_COMPONENTS("Content Components")
 CONTENT_REUSE("Content Reuse")
+
+LEARNING("Learning")
+SELF_SERVICE("Self-Service")
+EXPLAINING("Explaining")
 
 %%I_LOVE-."working at the".-PLATFORM_API
 %%I_LOVE-.-COMPLEXITY
