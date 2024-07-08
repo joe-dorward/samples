@@ -1,6 +1,46 @@
 ```mermaid
 %%{init: { "theme":"forest"} }%%
 flowchart TD
+  classDef Start fill:cornsilk, stroke:red, font-family:verdana;
+  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana;
+
+  SELF_SERVICE("Self-service")
+  COMPONENTISED("Componentised")
+  REUSABLE("Reusable")
+
+  CONTENT_1("Content")
+
+  SHOULD_BE_1("should be")
+  THAT_1("that")
+
+  I_BELIEVE(("I Believe")):::Start
+
+  class SHOULD_BE_1,THAT_1 Verb;
+
+  SELF_SERVICE-.-SHOULD_BE_1-.-CONTENT_1-.-THAT_1-.-I_BELIEVE
+  COMPONENTISED-.-SHOULD_BE_1
+  REUSABLE-.-SHOULD_BE_1
+
+  %% ----------
+  BAD_THING("'Bad Thing'")
+  IS_A_1("is a")
+  CONTENT_2("Content")
+  MARKED_DOWN("marked down")
+
+  GOOD_THING("'Good Thing'")
+  IS_A_2("is a")
+  CONTENT_3("Content")
+  MARKED_UP("marked up")
+
+  BAD_THING-.-IS_A_1-.-CONTENT_2-.-MARKED_DOWN-.-THAT_1
+  GOOD_THING-.-IS_A_2-.-CONTENT_3-.-MARKED_UP-.-THAT_1
+
+  class MARKED_DOWN,IS_A_1,MARKED_UP,IS_A_2 Verb;
+```
+
+```mermaid
+%%{init: { "theme":"forest"} }%%
+flowchart TD
   classDef Compact font-family:verdana, font-size:7.5pt, text-align:left;
   classDef Variables fill:white, stroke:white, font-family:courier new, font-size:10pt;
   classDef Object fill:white, stroke:white, font-family:verdana, font-size:9pt;
