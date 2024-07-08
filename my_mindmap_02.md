@@ -38,12 +38,11 @@ flowchart TD
 
   class MARKED_DOWN,IS_A_1,MARKED_UP,IS_A_2 Verb;
 
-  %% ==========
+  %% ========== ========== ========== ========== ==========
   I_LOVE(("I Love")):::Start
 
   I_BELIEVE-.-I_LOVE
-
-  %% ---------- ---------- ---------- ---------- ----------
+  %%  ========== ========== ========== ========== ==========
   WORKING_AT_THE("working at the")
   PLATFORM_LEVEL("Platform Level")
   API_LEVEL("API Level")
