@@ -91,9 +91,9 @@ flowchart TD
   DITA_XML("DITA XML")
   IT_FACILITATES("it facilitates")
   CONTENT_COMPONENTISATION("Content<br/>Componentisation")
-  CONTENT_REUSE("Content Component Reuse")
+  CONTENT_REUSE("Content Reuse")
 
-  class WORKING_WITH,FACILITATES Verb;
+  class WORKING_WITH,IT_FACILITATES Verb;
 
   I_LOVE-.-WORKING_WITH-.-DITA_XML-.-
   IT_FACILITATES-.-CONTENT_COMPONENTISATION
