@@ -23,8 +23,7 @@ PEOPLE("People")
 PLATFORM_LEVEL("Platform Level")
 API_LEVEL("API Level")
 
-DO_KNOW_UNDERSTAND["`*do, know, or understand*`"]
-style DO_KNOW_UNDERSTAND text-align:left
+
 
 COMPLEX_DOMAINS("Complex Domains")
 %% DOING ==========
@@ -48,12 +47,13 @@ class CREATING,ENCOURAGES,EXPLAINING,GETTING,FROM,LEARNING,WORKING_AT_THE,WORKIN
 %% NOTES ==========
 classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left;
 
-UNDERSTAND["it helps me understand"]
+DO_KNOW_UNDERSTAND["do, know, or understand"]
+HELPS_ME_UNDERSTAND["it helps me understand"]
 
 HELPS_ME_WRITE[it helps me write]
 
 
-class UNDERSTAND,HELPS_ME_WRITE Note;
+class DO_KNOW_UNDERSTAND,HELPS_ME_UNDERSTAND,HELPS_ME_WRITE Note;
 %% CONNECTING ==========
 
 EXPLAINING-.-I_LOVE
@@ -71,7 +71,7 @@ PLATFORM_LEVEL-.-WORKING_AT_THE-.-I_LOVE
 
 I_LOVE-.-CREATING-.-CONTENT-.-THAT_HELPS-.-PEOPLE-.-DO_KNOW_UNDERSTAND
 
-I_LOVE-.-WRITING-.-CODE-.-UNDERSTAND-.-COMPLEX_DOMAINS
+I_LOVE-.-WRITING-.-CODE-.-HELPS_ME_UNDERSTAND-.-COMPLEX_DOMAINS
 
 I_LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE-.-BETTER_CODE_EXAMPLES
 
@@ -86,7 +86,6 @@ flowchart
 
 
 CONTENT_COMPONENTS("Content Components")
-CONTENT_REUSE("Content Reuse")
 
 SELF_SERVICE("Self-Service")
 
