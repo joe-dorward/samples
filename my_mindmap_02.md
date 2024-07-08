@@ -50,10 +50,11 @@ flowchart TD
   LOVE_KNOWING_NUTS_AND_BOLTS("I love knowing where<br/>all the nuts and bolts<br/>go")
 
   class WORKING_AT_THE Verb;
+  class LOVE_KNOWING_NUTS_AND_BOLTS Note;
 
   I_LOVE-.-
-  WORKING_AT_THE-.-PLATFORM_LEVEL
-  WORKING_AT_THE-.-API_LEVEL
+  WORKING_AT_THE-.-PLATFORM_LEVEL-.-LOVE_KNOWING_NUTS_AND_BOLTS
+  WORKING_AT_THE-.-API_LEVEL-.-LOVE_KNOWING_NUTS_AND_BOLTS
   %% ---------- ---------- ---------- ---------- ----------
   CREATING("creating")
   CONTENT_4("Content")
