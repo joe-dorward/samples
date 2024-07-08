@@ -69,7 +69,7 @@ flowchart TD
   FROM("from")
   DEVELOPERS("Developers")
   HELPS_ME_WRITE_BETTER[it helps me write better]
-  CODE_EXAMPLES("Code Examples
+  CODE_EXAMPLES("Code Examples")
 
   class GETTING,FROM Verb;
   class HELPS_ME_WRITE_BETTER Note;
