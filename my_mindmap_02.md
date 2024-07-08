@@ -37,7 +37,6 @@ flowchart TD
   GOOD_THING-.-IS_A_2-.-CONTENT_3-.-MARKED_UP-.-THAT_1
 
   class MARKED_DOWN,IS_A_1,MARKED_UP,IS_A_2 Verb;
-
   %% ========== ========== ========== ========== ==========
   I_LOVE(("I Love")):::Start
 
@@ -87,6 +86,18 @@ flowchart TD
   class HELPS_ME_WRITE_BETTER Note;
 
   I_LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE_BETTER-.-CODE_EXAMPLES
+  %% ---------- ---------- ---------- ---------- ----------
+  WORKING_WITH("working with")
+  DITA_XML("DITA XML")
+  IT_FACILITATES("it facilitates")
+  CONTENT_COMPONENTISATION("Content<br/>Componentisation")
+  CONTENT_REUSE("Content Component Reuse")
+
+  class WORKING_WITH,FACILITATES Verb;
+
+  I_LOVE-.-WORKING_WITH-.-DITA_XML-.-
+  IT_FACILITATES-.-CONTENT_COMPONENTISATION
+  IT_FACILITATES-.-CONTENT_REUSE
 ```
 
 ```mermaid
