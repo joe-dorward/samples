@@ -47,7 +47,7 @@ flowchart TD
   WORKING_AT_THE("working at the")
   PLATFORM_LEVEL("Platform Level")
   API_LEVEL("API Level")
-  LOVE_KNOWING_NUTS_AND_BOLTS("I love knowing where<br/>all the nuts and bolts<br/>go")
+  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where<br/>the nuts and bolts go"]
 
   class WORKING_AT_THE Verb;
   class LOVE_KNOWING_NUTS_AND_BOLTS Note;
