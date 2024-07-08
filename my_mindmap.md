@@ -1,6 +1,6 @@
 ```mermaid
 %%{init: { "theme":"forest"} }%%
-flowchart LR
+flowchart TD
   classDef Compact font-family:verdana, font-size:7.5pt, text-align:left;
   classDef Variables fill:white, stroke:white, font-family:courier new, font-size:10pt;
   classDef Object fill:white, stroke:white, font-family:verdana, font-size:9pt;
