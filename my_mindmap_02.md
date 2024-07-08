@@ -1,8 +1,8 @@
 ```mermaid
 %%{init: { "theme":"forest"} }%%
 flowchart TD
-  classDef Start fill:cornsilk, stroke:red, font-family:verdana;
-  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana;
+  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
+  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left;
 
   SELF_SERVICE("Self-service")
