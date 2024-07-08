@@ -102,14 +102,18 @@ SHOULD_BE-.-COMPONENTISED
 SHOULD_BE-.-REUSABLE
 
 %% ---------- ---------- ---------- ---------- ----------
-MARKED_DOWN("Marked Down")
-MARKED_UP("Marked Up")
+MARKED_DOWN("marked down")
+CONTENT_3("Content")
+IS_1("is")
+MARKED_UP("marked up")
+CONTENT_4("Content")
+IS_2("is")
 
 THAT-.-
 MARKED_DOWN-.-CONTENT_3-.-IS_LOW_RESOLUTION
 THAT-.-
 MARKED_UP-.-CONTENT_4-.-IS_HIGH_RESOLUTION
 
-class MARKED_DOWN,MARKED_UP Verb;
+class MARKED_DOWN,IS_1,MARKED_UP,IS_2 Verb;
 ```
 
