@@ -5,7 +5,7 @@ flowchart LR
   classDef Variables fill:white, stroke:white, font-family:courier new, font-size:10pt;
   classDef Object fill:white, stroke:white, font-family:verdana, font-size:9pt;
 
-  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
+  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9.5pt;
 
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt;
 
@@ -16,6 +16,9 @@ CONTENT("Content")
 DEVELOPERS("Developers")
 FEEDBACK("Feedback")
 
+PLATFORM_LEVEL("Platform Level")
+API_LEVEL("API Level")
+
 DO_KNOW_UNDERSTAND["`*do, know, or understand*`"]
 style DO_KNOW_UNDERSTAND text-align:left
 
@@ -23,14 +26,18 @@ COMPLEX_DOMAINS("Complex Domains")
 %% DOING ==========
 
 CREATING("creating")
+EXPLAINING("explaining")
 GETTING("getting")
 FROM("from")
+LEARNING("learning")
+WORKING_AT_THE("working at the")
+WORKING_WITH("working with")
 WRITING("writing")
 
 THAT_HELPS_PEOPLE("that helps
   people")
 
-class CREATING,GETTING,FROM,WRITING,THAT_HELPS_PEOPLE Verb;
+class CREATING,EXPLAINING,GETTING,FROM,LEARNING,WORKING_AT_THE,WORKING_WITH,WRITING,THAT_HELPS_PEOPLE Verb;
 
 
 
@@ -44,6 +51,13 @@ HELPS_ME_WRITE[it helps me write]
 
 class UNDERSTAND,HELPS_ME_WRITE Note;
 %% CONNECTING ==========
+
+EXPLAINING-.-I_LOVE
+LEARNING-.-I_LOVE
+WORKING_WITH-.-I_LOVE
+
+API_LEVEL-.-WORKING_AT_THE
+PLATFORM_LEVEL-.-WORKING_AT_THE-.-I_LOVE
 
 I_LOVE-.-CREATING-.-CONTENT-.-THAT_HELPS_PEOPLE-.-DO_KNOW_UNDERSTAND
 
@@ -59,17 +73,16 @@ I_LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE-.-BETTER_CODE_E
 flowchart
 
 
-PLATFORM_API("Platform / API level")
+
 
 CONTENT_COMPONENTS("Content Components")
 CONTENT_REUSE("Content Reuse")
 
-LEARNING("Learning")
 SELF_SERVICE("Self-Service")
-EXPLAINING("Explaining")
+
 
 %%I_LOVE-."working at the".-PLATFORM_API
 %%I_LOVE-.-COMPLEXITY
-%%I_LOVE-.-LEARNING
+
 %%I_LOVE-.-EXPLAINING
 ```
