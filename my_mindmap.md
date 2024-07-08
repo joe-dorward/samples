@@ -97,15 +97,3 @@ I_BELIEVE-.-THAT-.-CONTENT_2-.-SHOULD_BE-.-SELF_SERVICE
 CONTENT_2-.-SHOULD_BE_2-.-COMPONENTISED
 ```
 
-```mermaid
-flowchart
-
-
-
-
-
-%%I_LOVE-."working at the".-PLATFORM_API
-%%I_LOVE-.-COMPLEXITY
-
-%%I_LOVE-.-EXPLAINING
-```
