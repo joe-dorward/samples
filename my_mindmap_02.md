@@ -63,6 +63,18 @@ flowchart TD
   class HELPS_ME_UNDERSTAND Note;
 
   I_LOVE-.-WRITING-.-WORKING_CODE-.-HELPS_ME_UNDERSTAND-.-COMPLEX_DOMAINS
+  %% ---------- ---------- ---------- ---------- ----------
+  GETTING("getting")
+  FEEDBACK("Feedback")
+  FROM("from")
+  DEVELOPERS("Developers")
+  HELPS_ME_WRITE_BETTER[it helps me write better]
+  CODE_EXAMPLES("Code Examples
+
+  class GETTING,FROM Verb;
+  class HELPS_ME_WRITE_BETTER Note;
+
+  I_LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE_BETTER-.-CODE_EXAMPLES
 ```
 
 ```mermaid
