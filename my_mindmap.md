@@ -5,11 +5,12 @@ flowchart LR
   classDef Variables fill:white, stroke:white, font-family:courier new, font-size:10pt;
   classDef Object fill:white, stroke:white, font-family:verdana, font-size:9pt;
 
-  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9.5pt;
+  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:10pt;
 
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt;
 
-I_LOVE["I Love"]:::Start
+I_LOVE(("I Love")):::Start
+I_BELIEVE(("I Believe")):::Start
 
 CODE("Code")
 DITA_XML("DITA XML")
