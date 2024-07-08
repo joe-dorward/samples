@@ -55,14 +55,14 @@ flowchart TD
   I_LOVE-.-CREATING-.-CONTENT_4-.-THAT_HELPS-.-PEOPLE-.-DO_KNOW_UNDERSTAND
   %% ---------- ---------- ---------- ---------- ----------
   WRITING("writing")
-  CODE("Code")
+  WORKING_CODE("Working Code")
   HELPS_ME_UNDERSTAND["it helps me understand"]
   COMPLEX_DOMAINS("Complex Domains")
 
   class WRITING Verb;
   class HELPS_ME_UNDERSTAND Note;
 
-  I_LOVE-.-WRITING-.-CODE-.-HELPS_ME_UNDERSTAND-.-COMPLEX_DOMAINS
+  I_LOVE-.-WRITING-.-WORKING_CODE-.-HELPS_ME_UNDERSTAND-.-COMPLEX_DOMAINS
 ```
 
 ```mermaid
