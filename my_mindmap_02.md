@@ -3,6 +3,7 @@
 flowchart TD
   classDef Start fill:cornsilk, stroke:red, font-family:verdana;
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left;
 
   SELF_SERVICE("Self-service")
   COMPONENTISED("Componentised")
@@ -36,6 +37,22 @@ flowchart TD
   GOOD_THING-.-IS_A_2-.-CONTENT_3-.-MARKED_UP-.-THAT_1
 
   class MARKED_DOWN,IS_A_1,MARKED_UP,IS_A_2 Verb;
+
+  %% ==========
+  I_LOVE(("I Love")):::Start
+
+  I_BELIEVE-.-I_LOVE
+  %% ---------- ---------- ---------- ---------- ----------
+  CREATING("creating")
+  CONTENT_4("Content")
+  THAT_HELPS("that helps")
+  PEOPLE("People")
+  DO_KNOW_UNDERSTAND["do, know, or understand"]
+
+  class CREATING,THAT_HELPS Verb;
+  class DO_KNOW_UNDERSTAND Note;
+
+  I_LOVE-.-CREATING-.-CONTENT_4-.-THAT_HELPS-.-PEOPLE-.-DO_KNOW_UNDERSTAND
 ```
 
 ```mermaid
