@@ -3,7 +3,7 @@
 flowchart TD
   classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt, padding:0px 4px;
-  classDef Adverb fill:pink, color:blue, stroke:dodgerblue, font-family:verdana, font-size:9.5pt, font-style:italic, padding:0px 4px;
+  classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-size:10pt, font-style:italic, padding:0px 4px;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left, padding:0px 4px;
 
   SINGLE_PROJECTS("Single Projects")
