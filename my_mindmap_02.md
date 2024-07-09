@@ -7,6 +7,10 @@ flowchart TD
   classDef Adjective fill:ivory, color:firebrick, stroke:firebrick, font-family:verdana, font-size:10pt, padding:0px 4px;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:10pt, text-align:left, padding:0px 4px;
 
+  %% ========== ========== ========== ========== ==========
+
+
+
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
   COMPLEX_PROJECTS("Complex Projects")
@@ -15,15 +19,16 @@ flowchart TD
   TO_WORK_ON("to work on")
   FOR_LONGER("for longer")
   TO_GET("to get")
-  INVOLVED("involved")
+  %%INVOLVED("involved")
   IN_A("in a")
 
   MORE("more")
-  MORE_DEEPLY("more deeply")
+  %%MORE_DEEPLY("more deeply")
+  MORE_DEEPLY_INVOLVED("more deeply<br/>involved")
 
-  class TO_WORK_ON,TO_GET Verb;
-  class MORE,MORE_DEEPLY,IN_A Adverb;
-  class INVOLVED Adjective;
+  class TO_WORK_ON,TO_GET,IN_A Verb;
+  class MORE,MORE_DEEPLY_INVOLVED Adverb;
+  class FOR_LONGER,INVOLVED Adjective;
 
   %%WORK_ON("work on")
   %%MORE_TIME("More Time")
@@ -41,9 +46,9 @@ flowchart TD
   LARGER_PROJECTS-.-TO_WORK_ON
   COMPLEX_PROJECTS-.-MORE-.-TO_WORK_ON
 
-  DOMAIN-.-IN_A-.-INVOLVED-.-MORE_DEEPLY-.-TO_GET-.-THE_NEED
+  DOMAIN-.-IN_A-.-MORE_DEEPLY_INVOLVED-.-TO_GET-.-THE_NEED
 
-  I_FEEL-.-I_BELIEVE
+  %%I_FEEL-.-I_BELIEVE
   %% ----------
 
   SELF_SERVICE("Self-service")
@@ -74,6 +79,8 @@ flowchart TD
   CONTENT_3("Content")
   MARKED_UP("marked up")
 
+  class GOOD_THING,BAD_THING Adjective;
+
   BAD_THING-.-IS_A_1-.-CONTENT_2-.-MARKED_DOWN-.-THAT_1
   GOOD_THING-.-IS_A_2-.-CONTENT_3-.-MARKED_UP-.-THAT_1
 
@@ -86,7 +93,7 @@ flowchart TD
   WORKING_AT_THE("working at the")
   PLATFORM_LEVEL("Platform Level")
   API_LEVEL("API Level")
-  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where the nuts and bolts go"]
+  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where the nuts and bolts go,<br/>&ensp;and what's connected to what"]
 
   class WORKING_AT_THE Verb;
   class LOVE_KNOWING_NUTS_AND_BOLTS Note;
@@ -147,8 +154,32 @@ flowchart TD
   %%TRANSITION("Transition")
 
   %%ID_LIKE_TO-.-TRANSITION
-  %%  ========== ========== ========== ========== ==========
-  I_BELIEVE-.-I_LOVE
 
+
+  %%  ========== ========== ========== ========== ==========
+  IM_NOT_INTERESTED_IN(("I'm Not<br/>Interested<br/>In")):::Start
+
+  WORKING_IN("working in")
+  class WORKING_IN Verb;
+
+  SOCIAL_MEDIA("'Social Media'")
+  VIDEO_COMPUTER_GAMES("Video / Computer Games")
+  GAMBLING_BETTING("Gambling / Betting")
+
+  IM_NOT_INTERESTED_IN-.-
+  WORKING_IN-.-SOCIAL_MEDIA
+  WORKING_IN-.-VIDEO_COMPUTER_GAMES
+  WORKING_IN-.-GAMBLING_BETTING
+  %%  ========== ========== ========== ========== ==========
+  I_AM_INTERESTED_IN(("I Am<br/>Interested<br/>In")):::Start
+
+  %%  ========== ========== ========== ========== ==========
+  START(("START")):::Start
+
+  I_FEEL-.-START
+  I_BELIEVE-.-START
+  %%I_AM_INTERESTED_IN-.-START
+  START-.-I_LOVE
+  START-.-IM_NOT_INTERESTED_IN
 ```
 
