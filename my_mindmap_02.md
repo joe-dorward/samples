@@ -5,17 +5,34 @@ flowchart TD
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt, padding:0px 4px;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left, padding:0px 4px;
 
+  SINGLE_PROJECTS("Single Projects")
+  LARGER_PROJECTS("Larger Projects")
+  COMPLEX_PROJECTS("Complex Projects")
 
-  LONGER_TERM_ROLES("Longer-term Roles")
-  TO_1("To")
-  TRANSITION("Transition")
-  TO_2("To")
+  TO_WORK_ON("to work on")
+  FOR_LONGER("for longer")
+
+  class TO_WORK_ON,FOR_LONGER Verb;
+
+
+
+  WORK_ON("work on")
+  MORE_TIME("More Time")
+  %%WORKING_ON("working on")
+
+  %%TO_SPEND_1("to spend")
+
+
+  %%LONGER_TERM_ROLES("Longer-term Roles")
+
   THE_NEED("The Need")
   I_FEEL(("I Feel")):::Start
 
-  class TO_1,TO_2 Verb;
+  class TO_1,TO_2,WORK_ON,WORKING_ON,TO_SPEND_1,TO_WORK_ON Verb;
 
-  LONGER_TERM_ROLES-.-TO_1-.-TRANSITION-.-TO_2-.-THE_NEED-.-
+  FOR_LONGER-.-SINGLE_PROJECTS-.-TO_WORK_ON-.-THE_NEED-.-I_FEEL
+
+  %%A_SINGLE_PROJECT-.-WORKING_ON-.-MORE_TIME-.-TO_SPEND_1-.-THE_NEED-.-
   I_FEEL-.-I_BELIEVE
   %% ----------
 
