@@ -1,11 +1,11 @@
 ```mermaid
 %%{init: { "theme":"forest" } }%%
 flowchart TD
-  classDef Start fill:cornsilk, color:crimson, stroke:crimson, font-family:verdana, font-size:9pt;
-  classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, font-size:9pt, padding:0px 4px;
+  classDef Start fill:cornsilk, color:crimson, stroke:crimson, font-family:verdana, font-size:12pt, padding:6px;
+  classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, font-size:10pt, padding:0px 4px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-size:10pt, font-style:italic, padding:0px 4px;
-  classDef Adjective fill:ivory, color:firebrick, stroke:firebrick, font-family:verdana, font-size:11pt, padding:0px 4px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:9pt, text-align:left, padding:0px 4px;
+  classDef Adjective fill:ivory, color:firebrick, stroke:firebrick, font-family:verdana, font-size:10pt, padding:0px 4px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:10pt, text-align:left, padding:0px 4px;
 
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
