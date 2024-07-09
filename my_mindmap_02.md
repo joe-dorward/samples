@@ -8,9 +8,15 @@ flowchart TD
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:10pt, text-align:left, padding:0px 4px;
 
   %% ========== ========== ========== ========== ==========
+  I_AM(("I Am")):::Start
+  INTERESTED_IN("Interested In")
+  INCLINED_TOWARDS("Inclined Towards")
 
+  class INTERESTED_IN,INCLINED_TOWARDS Adjective;
 
-
+  INTERESTED_IN-.-I_AM
+  INCLINED_TOWARDS-.-I_AM
+  %% ========== ========== ========== ========== ==========
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
   COMPLEX_PROJECTS("Complex Projects")
@@ -171,14 +177,16 @@ flowchart TD
   WORKING_IN-.-VIDEO_COMPUTER_GAMES
   WORKING_IN-.-GAMBLING_BETTING
   %%  ========== ========== ========== ========== ==========
-  I_AM_INTERESTED_IN(("I Am<br/>Interested<br/>In")):::Start
+  %%I_AM(("I Am")):::Start
 
   %%  ========== ========== ========== ========== ==========
   START(("START")):::Start
 
+  I_AM-.-START
+
   I_FEEL-.-START
   I_BELIEVE-.-START
-  %%I_AM_INTERESTED_IN-.-START
+
   START-.-I_LOVE
   START-.-IM_NOT_INTERESTED_IN
 ```
