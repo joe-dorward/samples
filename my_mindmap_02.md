@@ -1,25 +1,29 @@
 ```mermaid
 %%{init: { "theme":"forest" } }%%
 flowchart TD
-  classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
-  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt, padding:0px 4px;
+  classDef Start fill:cornsilk, color:crimson, stroke:crimson, font-family:verdana, font-size:9pt;
+  classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, font-size:9pt, padding:0px 4px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-size:10pt, font-style:italic, padding:0px 4px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left, padding:0px 4px;
+  classDef Adjective fill:ivory, color:firebrick, stroke:firebrick, font-family:verdana, font-size:11pt, padding:0px 4px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:9pt, text-align:left, padding:0px 4px;
 
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
   COMPLEX_PROJECTS("Complex Projects")
+  DOMAIN("Domain")
 
   TO_WORK_ON("to work on")
   FOR_LONGER("for longer")
   TO_GET("to get")
   INVOLVED("involved")
+  IN_A("in a")
 
   MORE("more")
   MORE_DEEPLY("more deeply")
 
   class TO_WORK_ON,TO_GET Verb;
-  class MORE,MORE_DEEPLY Adverb;
+  class MORE,MORE_DEEPLY,IN_A Adverb;
+  class INVOLVED Adjective;
 
   %%WORK_ON("work on")
   %%MORE_TIME("More Time")
@@ -32,15 +36,13 @@ flowchart TD
   THE_NEED("The Need")
   I_FEEL(("I Feel")):::Start
 
-  %%class TO_1,TO_2,WORK_ON,WORKING_ON,TO_SPEND_1,TO_WORK_ON Verb;
 
   FOR_LONGER-.-SINGLE_PROJECTS-.-TO_WORK_ON-.-THE_NEED-.-I_FEEL
   LARGER_PROJECTS-.-TO_WORK_ON
   COMPLEX_PROJECTS-.-MORE-.-TO_WORK_ON
 
-  INVOLVED-.-MORE_DEEPLY-.-TO_GET-.-THE_NEED
+  DOMAIN-.-IN_A-.-INVOLVED-.-MORE_DEEPLY-.-TO_GET-.-THE_NEED
 
-  %%A_SINGLE_PROJECT-.-WORKING_ON-.-MORE_TIME-.-TO_SPEND_1-.-THE_NEED-.-
   I_FEEL-.-I_BELIEVE
   %% ----------
 
@@ -84,7 +86,7 @@ flowchart TD
   WORKING_AT_THE("working at the")
   PLATFORM_LEVEL("Platform Level")
   API_LEVEL("API Level")
-  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where<br/>the nuts and bolts go"]
+  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where the nuts and bolts go"]
 
   class WORKING_AT_THE Verb;
   class LOVE_KNOWING_NUTS_AND_BOLTS Note;
