@@ -1,9 +1,23 @@
 ```mermaid
-%%{init: { "theme":"forest"} }%%
+%%{init: { "theme":"forest" } }%%
 flowchart TD
   classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
-  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left;
+  classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt, padding:0px 4px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left, padding:0px 4px;
+
+
+  LONGER_TERM_ROLES("Longer-term Roles")
+  TO_1("To")
+  TRANSITION("Transition")
+  TO_2("To")
+  THE_NEED("The Need")
+  I_FEEL(("I Feel")):::Start
+
+  class TO_1,TO_2 Verb;
+
+  LONGER_TERM_ROLES-.-TO_1-.-TRANSITION-.-TO_2-.-THE_NEED-.-
+  I_FEEL-.-I_BELIEVE
+  %% ----------
 
   SELF_SERVICE("Self-service")
   COMPONENTISED("Componentised")
@@ -103,7 +117,11 @@ flowchart TD
   OPEN_API_SPECIFICATION("OpenAPI<br/>Specification")
   %%  ========== ========== ========== ========== ==========
   %%ID_LIKE_TO(("I'd Like To")):::Start
+  %%TRANSITION("Transition")
+
+  %%ID_LIKE_TO-.-TRANSITION
   %%  ========== ========== ========== ========== ==========
   I_BELIEVE-.-I_LOVE
+
 ```
 
