@@ -3,6 +3,7 @@
 flowchart TD
   classDef Start fill:cornsilk, stroke:red, font-family:verdana, font-size:9pt;
   classDef Verb fill:aliceblue, color:red, stroke:dodgerblue, font-family:verdana, font-size:9pt, padding:0px 4px;
+  classDef Adverb fill:pink, color:blue, stroke:dodgerblue, font-family:verdana, font-size:9.5pt, font-style:italic, padding:0px 4px;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:8pt, text-align:left, padding:0px 4px;
 
   SINGLE_PROJECTS("Single Projects")
@@ -11,26 +12,33 @@ flowchart TD
 
   TO_WORK_ON("to work on")
   FOR_LONGER("for longer")
+  TO_GET("to get")
+  INVOLVED("involved")
 
-  class TO_WORK_ON,FOR_LONGER Verb;
+  MORE("more")
+  MORE_DEEPLY("more deeply")
 
+  class TO_WORK_ON,TO_GET Verb;
+  class MORE,MORE_DEEPLY Adverb;
 
-
-  WORK_ON("work on")
-  MORE_TIME("More Time")
+  %%WORK_ON("work on")
+  %%MORE_TIME("More Time")
   %%WORKING_ON("working on")
 
   %%TO_SPEND_1("to spend")
-
 
   %%LONGER_TERM_ROLES("Longer-term Roles")
 
   THE_NEED("The Need")
   I_FEEL(("I Feel")):::Start
 
-  class TO_1,TO_2,WORK_ON,WORKING_ON,TO_SPEND_1,TO_WORK_ON Verb;
+  %%class TO_1,TO_2,WORK_ON,WORKING_ON,TO_SPEND_1,TO_WORK_ON Verb;
 
   FOR_LONGER-.-SINGLE_PROJECTS-.-TO_WORK_ON-.-THE_NEED-.-I_FEEL
+  LARGER_PROJECTS-.-TO_WORK_ON
+  COMPLEX_PROJECTS-.-MORE-.-TO_WORK_ON
+
+  INVOLVED-.-MORE_DEEPLY-.-TO_GET-.-THE_NEED
 
   %%A_SINGLE_PROJECT-.-WORKING_ON-.-MORE_TIME-.-TO_SPEND_1-.-THE_NEED-.-
   I_FEEL-.-I_BELIEVE
