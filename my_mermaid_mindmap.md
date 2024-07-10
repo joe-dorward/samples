@@ -10,8 +10,17 @@ flowchart TD
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, padding:0px 4px;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, padding:0px 4px;
   %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding:0px 18px 0px 6px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, width:260px, padding-left:9px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding-left:9px, padding-right:9px;
 
+  SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
+  CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works")
+  COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
+
+  class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE Note;
+
+  SELF_SERVICE_NOTE-.-SELF_SERVICE
+  CATEGORISATION_NOTE-.-CATEGORISATION
+  COMPONENTISED_NOTE-.-COMPONENTISED
   %% ========== ========== ========== ========== ==========
   I_AM(("I Am")):::Start
   I_AM-.-START
@@ -93,10 +102,6 @@ flowchart TD
 
   SELF_SERVICE-.-SHOULD_BE_1-.-CONTENT_1-.-THAT_1-.-I_BELIEVE
 
-  COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
-  class COMPONENTISED_NOTE Note;
-
-  COMPONENTISED_NOTE-.-
   COMPONENTISED-.-SHOULD_BE_1
   REUSABLE-.-SHOULD_BE_1
 
