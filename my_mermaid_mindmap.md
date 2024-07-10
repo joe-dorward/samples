@@ -9,7 +9,8 @@ flowchart TD
   classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:0px 4px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, padding:0px 4px;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, padding:0px 4px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding:0px 4px;
+  %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding:0px 18px 0px 6px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, width:260px, padding-left:9px;
 
   %% ========== ========== ========== ========== ==========
   I_AM(("I Am")):::Start
@@ -23,19 +24,19 @@ flowchart TD
   THAT_LEVERAGE("that leverage")
   CATEGORISATION("Categorisation")
   TAGGING("Tagging")
+  CREATING_2("creating")
 
   class INTERESTED_IN,HIGHLY_AVAILABLE,HIGHLY_FINDABLE,HIGHLY_COLABORATIVE Adjective;
-  class THAT_LEVERAGE Verb;
+  class CREATING_2,THAT_LEVERAGE Verb;
 
 
   CATEGORISATION-.-THAT_LEVERAGE
   TAGGING-.-THAT_LEVERAGE
 
-  THAT_LEVERAGE-.-CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-INTERESTED_IN
-  %%CONTENT_SYSTEMS-.-HIGHLY_FINDABLE-.-INTERESTED_IN
-  CONTENT_SYSTEMS-.-HIGHLY_COLABORATIVE-.-INTERESTED_IN
+  THAT_LEVERAGE-.-CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-CREATING_2
+  CONTENT_SYSTEMS-.-HIGHLY_COLABORATIVE-.-CREATING_2
 
-  INTERESTED_IN-.-I_AM
+  CREATING_2-.-INTERESTED_IN-.-I_AM
   %% ========== ========== ========== ========== ==========
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
@@ -91,16 +92,21 @@ flowchart TD
   class SHOULD_BE_1,THAT_1 Verb;
 
   SELF_SERVICE-.-SHOULD_BE_1-.-CONTENT_1-.-THAT_1-.-I_BELIEVE
+
+  COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
+  class COMPONENTISED_NOTE Note;
+
+  COMPONENTISED_NOTE-.-
   COMPONENTISED-.-SHOULD_BE_1
   REUSABLE-.-SHOULD_BE_1
 
   %% ---------- ---------- ---------- ---------- ----------
-  BAD_THING("'Bad Thing'")
+  BAD_THING("'bad thing'")
   IS_A_1("is a")
   CONTENT_2("Content")
   MARKED_DOWN("marked down")
 
-  GOOD_THING("'Good Thing'")
+  GOOD_THING("'good thing'")
   IS_A_2("is a")
   CONTENT_3("Content")
   MARKED_UP("marked up")
@@ -119,7 +125,7 @@ flowchart TD
   WORKING_AT_THE("working at the")
   PLATFORM_LEVEL("Platform Level")
   API_LEVEL("API Level")
-  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where the nuts and bolts go,<br/>&ensp;and what's connected to what"]
+  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
 
   class WORKING_AT_THE Verb;
   class LOVE_KNOWING_NUTS_AND_BOLTS Note;
@@ -141,7 +147,7 @@ flowchart TD
   %% ---------- ---------- ---------- ---------- ----------
   WRITING("writing")
   WORKING_CODE("Working Code")
-  HELPS_ME_UNDERSTAND["it helps me understand"]
+  HELPS_ME_UNDERSTAND["it helps me to understand"]
   COMPLEX_DOMAINS("Complex Domains")
 
   class WRITING Verb;
@@ -153,7 +159,7 @@ flowchart TD
   FEEDBACK("Feedback")
   FROM("from")
   DEVELOPERS("Developers")
-  HELPS_ME_WRITE_BETTER[it helps me write better]
+  HELPS_ME_WRITE_BETTER[it helps me develop better]
   CODE_EXAMPLES("Code Examples")
 
   class GETTING,FROM Verb;
