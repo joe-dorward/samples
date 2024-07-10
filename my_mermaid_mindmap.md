@@ -15,12 +15,23 @@ flowchart TD
   SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
   CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works")
   COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
+  PLATFORM_LEVEL_NOTE["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
+  MARKED_DOWN_CONTENT_NOTE["Marked-down content is the<br/>&ensp;technical writing equivalent of<br/>&ensp;creating computer-code without<br/>&ensp;objects, methods, or functions"]
+  MARKED_UP_CONTENT_NOTE["Marked-up content 'should be', by<br/>&ensp;definition, structured in the sense<br/>&ensp;of the Document Object Model - in<br/>&ensp;that it 'should be' a hierarchy of<br/>&ensp;elements"]
 
-  class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE Note;
+  class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE Note;
 
   SELF_SERVICE_NOTE-.-SELF_SERVICE
   CATEGORISATION_NOTE-.-CATEGORISATION
   COMPONENTISED_NOTE-.-COMPONENTISED
+
+
+  PLATFORM_LEVEL-.-PLATFORM_LEVEL_NOTE
+  API_LEVEL-.-PLATFORM_LEVEL_NOTE
+  %%MARKED_UP_CONTENT-.-MARKED_UP_CONTENT_NOTE
+
+  MARKED_DOWN_CONTENT_NOTE-.-BAD_THING
+  MARKED_UP_CONTENT_NOTE-.-GOOD_THING
   %% ========== ========== ========== ========== ==========
   I_AM(("I Am")):::Start
   I_AM-.-START
@@ -108,18 +119,18 @@ flowchart TD
   %% ---------- ---------- ---------- ---------- ----------
   BAD_THING("'bad thing'")
   IS_A_1("is a")
-  CONTENT_2("Content")
+  MARKED_DOWN_CONTENT("Content")
   MARKED_DOWN("marked down")
 
   GOOD_THING("'good thing'")
   IS_A_2("is a")
-  CONTENT_3("Content")
+  MARKED_UP_CONTENT("Content")
   MARKED_UP("marked up")
 
   class GOOD_THING,BAD_THING Adjective;
 
-  BAD_THING-.-IS_A_1-.-CONTENT_2-.-MARKED_DOWN-.-THAT_1
-  GOOD_THING-.-IS_A_2-.-CONTENT_3-.-MARKED_UP-.-THAT_1
+  BAD_THING-.-IS_A_1-.-MARKED_DOWN_CONTENT-.-MARKED_DOWN-.-THAT_1
+  GOOD_THING-.-IS_A_2-.-MARKED_UP_CONTENT-.-MARKED_UP-.-THAT_1
 
   class MARKED_DOWN,IS_A_1,MARKED_UP,IS_A_2 Verb;
   %% ========== ========== ========== ========== ==========
@@ -130,14 +141,12 @@ flowchart TD
   WORKING_AT_THE("working at the")
   PLATFORM_LEVEL("Platform Level")
   API_LEVEL("API Level")
-  LOVE_KNOWING_NUTS_AND_BOLTS["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
 
   class WORKING_AT_THE Verb;
-  class LOVE_KNOWING_NUTS_AND_BOLTS Note;
 
   I_LOVE-.-
-  WORKING_AT_THE-.-PLATFORM_LEVEL-.-LOVE_KNOWING_NUTS_AND_BOLTS
-  WORKING_AT_THE-.-API_LEVEL-.-LOVE_KNOWING_NUTS_AND_BOLTS
+  WORKING_AT_THE-.-PLATFORM_LEVEL
+  WORKING_AT_THE-.-API_LEVEL
   %% ---------- ---------- ---------- ---------- ----------
   CREATING("creating")
   CONTENT_4("Content")
