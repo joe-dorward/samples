@@ -3,6 +3,9 @@
 flowchart TD
   classDef Start fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:14pt, padding:10px;
 
+  %%classDef Noun fill:honeydew, color:darkgreen, stroke:darkgreen, font-family:verdana, height:50px, line-height:16pt, font-size:14pt, padding:0px 0px 20px 50px;
+  %%classDef Noun font-family:verdana, height:36px, line-height:14pt, padding:8px;
+
   classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:0px 4px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, padding:0px 4px;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, padding:0px 4px;
