@@ -1,21 +1,33 @@
 ```mermaid
 %%{init: { "theme":"forest" } }%%
 flowchart TD
-  classDef Start fill:cornsilk, color:crimson, stroke:crimson, font-family:verdana, font-size:12pt, padding:6px;
-  classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, font-size:10pt, padding:0px 4px;
-  classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-size:10pt, font-style:italic, padding:0px 4px;
-  classDef Adjective fill:ivory, color:firebrick, stroke:firebrick, font-family:verdana, font-size:10pt, padding:0px 4px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, font-size:10pt, text-align:left, padding:0px 4px;
+  classDef Start fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:14pt, padding:10px;
+
+  classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:0px 4px;
+  classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, padding:0px 4px;
+  classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, padding:0px 4px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding:0px 4px;
 
   %% ========== ========== ========== ========== ==========
   I_AM(("I Am")):::Start
-  INTERESTED_IN("Interested In")
-  INCLINED_TOWARDS("Inclined Towards")
+  I_AM-.-START
 
-  class INTERESTED_IN,INCLINED_TOWARDS Adjective;
+  INTERESTED_IN("interested in")
+  HIGHLY_AVAILABLE("highly-available")
+  HIGHLY_FINDABLE("highly-findable")
+  HIGHLY_COLABORATIVE("highly-collaborative")
+  CONTENT_SYSTEMS("Content Systems")
+  THAT_LEVERAGE("that leverage")
+  CATEGORISATION("Categorisation")
+  TAGGING("Tagging")
+
+  class INTERESTED_IN,HIGHLY_AVAILABLE,HIGHLY_FINDABLE,HIGHLY_COLABORATIVE Adjective;
+
+  CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-INTERESTED_IN
+  %%CONTENT_SYSTEMS-.-HIGHLY_FINDABLE-.-INTERESTED_IN
+  CONTENT_SYSTEMS-.-HIGHLY_COLABORATIVE-.-INTERESTED_IN
 
   INTERESTED_IN-.-I_AM
-  INCLINED_TOWARDS-.-I_AM
   %% ========== ========== ========== ========== ==========
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
@@ -146,12 +158,16 @@ flowchart TD
   IT_FACILITATES("it facilitates")
   CONTENT_COMPONENTISATION("Content<br/>Componentisation")
   CONTENT_REUSE("Content Reuse")
+  MACHINE_READING("Machine Reading")
+  MACHINE_WRITING("Machine Writing")
 
   class WORKING_WITH,IT_FACILITATES Verb;
 
   I_LOVE-.-WORKING_WITH-.-DITA_XML-.-
   IT_FACILITATES-.-CONTENT_COMPONENTISATION
   IT_FACILITATES-.-CONTENT_REUSE
+  IT_FACILITATES-.-MACHINE_READING
+  IT_FACILITATES-.-MACHINE_WRITING
 
   WORKING_WITH-.-
   OPEN_API_SPECIFICATION("OpenAPI<br/>Specification")
@@ -163,7 +179,7 @@ flowchart TD
 
 
   %%  ========== ========== ========== ========== ==========
-  IM_NOT(("I Am<br/>&nbsp;Not")):::Start
+  IM_NOT(("I Am Not")):::Start
 
   INTERESTED_IN_2("interested in")
   WORKING_IN("working in")
@@ -179,11 +195,14 @@ flowchart TD
   WORKING_IN-.-VIDEO_COMPUTER_GAMES
   WORKING_IN-.-GAMBLING_BETTING
 
+  %% ========== ========== ========== ========== ==========
+  I_AM(("I Am")):::Start
+  INTERESTED_IN("interested in")
 
   %%  ========== ========== ========== ========== ==========
   START(("START")):::Start
 
-  I_AM-.-START
+  %%I_AM-.-START
 
   I_FEEL-.-START
   I_BELIEVE-.-START
