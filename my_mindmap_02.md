@@ -163,19 +163,25 @@ flowchart TD
 
 
   %%  ========== ========== ========== ========== ==========
-  IM_NOT_INTERESTED_IN(("I'm Not<br/>Interested<br/>In")):::Start
+  IM_NOT(("I Am<br/>Not")):::Start
 
+  A_1("a")
+  INTERESTED_IN_2("interested in")
   WORKING_IN("working in")
+
   class WORKING_IN Verb;
 
   SOCIAL_MEDIA("'Social Media'")
   VIDEO_COMPUTER_GAMES("Video / Computer Games")
   GAMBLING_BETTING("Gambling / Betting")
 
-  IM_NOT_INTERESTED_IN-.-
+  IM_NOT-.-A_1-.-COPYWRITER
+
+  IM_NOT-.-INTERESTED_IN_2-.-
   WORKING_IN-.-SOCIAL_MEDIA
   WORKING_IN-.-VIDEO_COMPUTER_GAMES
   WORKING_IN-.-GAMBLING_BETTING
+  WORKING_IN-.-SEARCH_ENGINE_OPTIMISATION
   %%  ========== ========== ========== ========== ==========
   %%I_AM(("I Am")):::Start
 
@@ -188,6 +194,6 @@ flowchart TD
   I_BELIEVE-.-START
 
   START-.-I_LOVE
-  START-.-IM_NOT_INTERESTED_IN
+  START-.-IM_NOT
 ```
 
