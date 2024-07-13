@@ -16,22 +16,27 @@ flowchart TD
   CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works")
   COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
   PLATFORM_LEVEL_NOTE["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
+
   MARKED_DOWN_CONTENT_NOTE["Marked-down content is the<br/>&ensp;technical writing equivalent of<br/>&ensp;creating computer-code without<br/>&ensp;objects, methods, or functions"]
   MARKED_UP_CONTENT_NOTE["Marked-up content 'should be', by<br/>&ensp;definition, structured in the sense<br/>&ensp;of the Document Object Model - in<br/>&ensp;that it 'should be' a hierarchy of<br/>&ensp;elements"]
 
-  class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE Note;
+  HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that<br/>&ensp;the content <i>must be</i> online, that<br/>&ensp;it's easy to access, and that sought<br/>&ensp;after content is easy to find"]
+  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp; epectation that some users of the content (not on the initial content creation team) will (for example) correct errors without further permission"]
+
+  class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE,HIGHLY_AVAILABLE_NOTE,HIGHLY_COLABORATIVE_NOTE Note;
 
   SELF_SERVICE_NOTE-.-SELF_SERVICE
   CATEGORISATION_NOTE-.-CATEGORISATION
   COMPONENTISED_NOTE-.-COMPONENTISED
 
-
   PLATFORM_LEVEL-.-PLATFORM_LEVEL_NOTE
   API_LEVEL-.-PLATFORM_LEVEL_NOTE
-  %%MARKED_UP_CONTENT-.-MARKED_UP_CONTENT_NOTE
 
   MARKED_DOWN_CONTENT_NOTE-.-BAD_THING
   MARKED_UP_CONTENT_NOTE-.-GOOD_THING
+
+  HIGHLY_AVAILABLE-.-HIGHLY_AVAILABLE_NOTE
+  HIGHLY_COLABORATIVE-.-HIGHLY_COLABORATIVE_NOTE
   %% ========== ========== ========== ========== ==========
   I_AM(("I Am")):::Start
   I_AM-.-START
