@@ -21,7 +21,7 @@ flowchart TD
   MARKED_UP_CONTENT_NOTE["Marked-up content 'should be', by<br/>&ensp;definition, structured in the sense<br/>&ensp;of the Document Object Model - in<br/>&ensp;that it 'should be' a hierarchy of<br/>&ensp;elements"]
 
   HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that<br/>&ensp;the content <i>must be</i> online, that<br/>&ensp;it's easy to access, and that sought<br/>&ensp;after content is easy to find"]
-  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp; epectation that some users of the content (not on the initial content creation team) will (for example) correct errors without further permission"]
+  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp;epectation that some users of the<br/>&ensp;content (not on the initial content<br/>&ensp;creation team) will make changes<br/>&ensp;without further permission"]
 
   class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE,HIGHLY_AVAILABLE_NOTE,HIGHLY_COLABORATIVE_NOTE Note;
 
