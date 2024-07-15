@@ -160,11 +160,44 @@ flowchart TD
   TRANSFORMING_THEM_WITH-.-PYTHON
   TRANSFORMING_THEM_WITH-.-XSLT
 
-
-
-
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   LOVE(("Love")):::Start
-
   I-.-LOVE
+
+  PLATFORM_LEVEL_NOTE["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
+
+  WORKING_AT_THE("working at the")
+  PLATFORM_LEVEL("Platform Level")
+  API_LEVEL("API Level")
+
+  class WORKING_AT_THE Verb;
+  class PLATFORM_LEVEL_NOTE Note;
+
+  LOVE-.-
+  WORKING_AT_THE-.-PLATFORM_LEVEL-.-PLATFORM_LEVEL_NOTE
+  WORKING_AT_THE-.-API_LEVEL-.-PLATFORM_LEVEL_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  DO_KNOW_UNDERSTAND_NOTE["do, know, or understand"]
+
+  CREATING("creating")
+  CONTENT_4("Content")
+  THAT_HELPS("that helps")
+  PEOPLE("People")
+
+  class CREATING,THAT_HELPS Verb;
+  class DO_KNOW_UNDERSTAND_NOTE Note;
+
+  LOVE-.-CREATING-.-CONTENT_4-.-THAT_HELPS-.-PEOPLE-.-DO_KNOW_UNDERSTAND_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  HELPS_ME_UNDERSTAND_NOTE["it helps me to understand"]
+
+  WRITING("writing")
+  WORKING_CODE("Working Code")
+  COMPLEX_DOMAINS("Complex Domains")
+
+  class WRITING Verb;
+  class HELPS_ME_UNDERSTAND_NOTE Note;
+
+  LOVE-.-WRITING-.-WORKING_CODE-.-HELPS_ME_UNDERSTAND_NOTE-.-COMPLEX_DOMAINS
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 ```
