@@ -24,7 +24,6 @@ flowchart TD
   %%HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp;epectation that some users of the<br/>&ensp;content (not on the initial content<br/>&ensp;creation team) will make changes<br/>&ensp;without further permission"]
   HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an epectation<br/>&ensp;that some users of the content (not on the<br/>&ensp;initial content creation team) will make<br/>&ensp;changes without further permission"]
 
-
   class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE,HIGHLY_AVAILABLE_NOTE,HIGHLY_COLABORATIVE_NOTE Note;
 
   SELF_SERVICE_NOTE-.-SELF_SERVICE
@@ -48,14 +47,14 @@ flowchart TD
   CONTENT_SYSTEMS("Content Systems")
   THAT_LEVERAGE("that leverage")
   CATEGORISATION("Categorisation")
-  TAGGING("Tagging")
+  %%TAGGING("Tagging")
   CREATING_2("creating")
 
   class INTERESTED_IN,HIGHLY_AVAILABLE,HIGHLY_FINDABLE,HIGHLY_COLABORATIVE Adjective;
   class CREATING_2,THAT_LEVERAGE Verb;
 
   CATEGORISATION-.-THAT_LEVERAGE
-  TAGGING-.-THAT_LEVERAGE
+  %%TAGGING-.-THAT_LEVERAGE
 
   %%THAT_LEVERAGE-.-
   %%CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-CREATING_2
