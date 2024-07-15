@@ -98,9 +98,30 @@ flowchart TD
   class SHOULD_BE_1,THAT_1 Verb;
 
   SELF_SERVICE_NOTE-.-SELF_SERVICE-.-SHOULD_BE_1
+  COMPONENTISED_NOTE-.-COMPONENTISED-.-SHOULD_BE_1
+  REUSABLE-.-SHOULD_BE_1
 
-  SHOULD_BE_1-.-
-  CONTENT_1-.-
-  THAT_1-.-
-  BELIEVE-.-I
+  SHOULD_BE_1-.-CONTENT_1-.-THAT_1
+
+  %% ---------- ---------- ---------- ---------- ----------
+  BAD_THING("'bad thing'")
+  IS_A_1("is a")
+  MARKED_DOWN_CONTENT("Content")
+  MARKED_DOWN("marked down")
+
+  GOOD_THING("'good thing'")
+  IS_A_2("is a")
+  MARKED_UP_CONTENT("Content")
+  MARKED_UP("marked up")
+
+  class GOOD_THING,BAD_THING Adjective;
+  class MARKED_DOWN,IS_A_1,MARKED_UP,IS_A_2 Verb;
+
+  MARKED_DOWN_CONTENT_NOTE-.-BAD_THING-.-IS_A_1-.-MARKED_DOWN_CONTENT-.-MARKED_DOWN-.-THAT_1
+  MARKED_UP_CONTENT_NOTE-.-GOOD_THING-.-IS_A_2-.-MARKED_UP_CONTENT-.-MARKED_UP-.-THAT_1
+  %% ---------- ---------- ---------- ---------- ----------
+
+
+
+  THAT_1-.-BELIEVE-.-I
 ```
