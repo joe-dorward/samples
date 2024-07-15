@@ -7,9 +7,9 @@ flowchart TD
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:18pt;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
 
-  %% ========== ========== ========== ========== ==========
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   I(("I")):::Start
-  %% ========== ========== ========== ========== ==========
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   AM(("Am")):::Start
 
   CATEGORISATION_NOTE["Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It is<br/>&ensp;about structure and findability"]
@@ -46,7 +46,7 @@ flowchart TD
   INTERESTED_IN-.-
   AM-.-
   I
-  %% ========== ========== ========== ========== ==========
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   FEEL(("Feel")):::Start
 
   DOMAIN("Domain")
@@ -78,7 +78,7 @@ flowchart TD
 
   THE_NEED-.-
   FEEL-.-I
-  %% ========== ========== ========== ========== ==========
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   BELIEVE(("Believe")):::Start
 
   SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
@@ -103,7 +103,7 @@ flowchart TD
 
   SHOULD_BE_1-.-CONTENT_1-.-THAT_1
 
-  %% ---------- ---------- ---------- ---------- ----------
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   BAD_THING("'bad thing'")
   IS_A_1("is a")
   MARKED_DOWN_CONTENT("Content")
@@ -119,9 +119,52 @@ flowchart TD
 
   MARKED_DOWN_CONTENT_NOTE-.-BAD_THING-.-IS_A_1-.-MARKED_DOWN_CONTENT-.-MARKED_DOWN-.-THAT_1
   MARKED_UP_CONTENT_NOTE-.-GOOD_THING-.-IS_A_2-.-MARKED_UP_CONTENT-.-MARKED_UP-.-THAT_1
-  %% ---------- ---------- ---------- ---------- ----------
-
-
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   THAT_1-.-BELIEVE-.-I
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  CAN(("Can")):::Start
+
+  HAND_CODE("hand code")
+
+  WEB_PAGES("Web Pages")
+  USING_1("using")
+  HTML("HTML")
+  CSS("CSS")
+  JAVASCRIPT("JavaScript")
+
+  DATA_MODELS("Data Models")
+  USING_2("using")
+  XML("XML")
+  TRANSFORMING_THEM_WITH("transforming<br/>them with")
+  PYTHON("Python")
+  XSLT("XSLT")
+
+  class HAND_CODE,USING_1,USING_2,TRANSFORMING_THEM_WITH Verb;
+
+  I-.-
+  CAN-.-
+  HAND_CODE-.-
+  WEB_PAGES-.-
+  USING_1
+
+  USING_1-.-HTML
+  USING_1-.-CSS
+  USING_1-.-JAVASCRIPT
+
+  HAND_CODE-.-
+  DATA_MODELS-.-
+  USING_2-.-
+  XML-.-
+  TRANSFORMING_THEM_WITH
+
+  TRANSFORMING_THEM_WITH-.-PYTHON
+  TRANSFORMING_THEM_WITH-.-XSLT
+
+
+
+
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  LOVE(("Love")):::Start
+
+  I-.-LOVE
 ```
