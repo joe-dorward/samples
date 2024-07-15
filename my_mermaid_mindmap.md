@@ -9,20 +9,18 @@ flowchart TD
   classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:0px 4px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, padding:0px 4px;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, padding:0px 4px;
-  %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding:0px 18px 0px 6px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding-left:9px, padding-right:9px, margin:-2px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding-left:9px, padding-right:9px, margin:10px 50px 10px -2px;
 
   SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
-  CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It's about structure and findability")
+  CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It is<br/>&ensp;about structure and findability")
   COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
   PLATFORM_LEVEL_NOTE["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
 
   MARKED_DOWN_CONTENT_NOTE["Marked-down content is the<br/>&ensp;technical writing equivalent of<br/>&ensp;creating computer-code without<br/>&ensp;objects, methods, or functions"]
   MARKED_UP_CONTENT_NOTE["Marked-up content 'should be', by<br/>&ensp;definition, structured in the sense<br/>&ensp;of the Document Object Model - in<br/>&ensp;that it 'should be' a hierarchy of<br/>&ensp;elements"]
 
-  HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that<br/>&ensp;the content <i>must be</i> online, that<br/>&ensp;it's easy to access, and that sought<br/>&ensp;after content is easy to find"]
-  %%HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp;epectation that some users of the<br/>&ensp;content (not on the initial content<br/>&ensp;creation team) will make changes<br/>&ensp;without further permission"]
-  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an epectation<br/>&ensp;that some users of the content (not on the<br/>&ensp;initial content creation team) will make<br/>&ensp;changes without further permission"]
+     HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that the content<br/>&ensp;<i>must be</i> online, that it's easy to access, and<br/>&ensp;that sought after content is easy to find"]  
+  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an epectation that some<br/>&ensp;users of the content (not on the initial content creation<br/>&ensp;team) will make changes without further permission"]
 
   class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE,HIGHLY_AVAILABLE_NOTE,HIGHLY_COLABORATIVE_NOTE Note;
 
