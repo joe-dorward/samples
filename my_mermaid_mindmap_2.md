@@ -97,5 +97,10 @@ flowchart TD
 
   class SHOULD_BE_1,THAT_1 Verb;
 
+  SELF_SERVICE_NOTE-.-SELF_SERVICE-.-SHOULD_BE_1
+
+  SHOULD_BE_1-.-
+  CONTENT_1-.-
+  THAT_1-.-
   BELIEVE-.-I
 ```
