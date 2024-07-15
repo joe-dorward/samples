@@ -21,7 +21,9 @@ flowchart TD
   MARKED_UP_CONTENT_NOTE["Marked-up content 'should be', by<br/>&ensp;definition, structured in the sense<br/>&ensp;of the Document Object Model - in<br/>&ensp;that it 'should be' a hierarchy of<br/>&ensp;elements"]
 
   HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that<br/>&ensp;the content <i>must be</i> online, that<br/>&ensp;it's easy to access, and that sought<br/>&ensp;after content is easy to find"]
-  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp;epectation that some users of the<br/>&ensp;content (not on the initial content<br/>&ensp;creation team) will make changes<br/>&ensp;without further permission"]
+  %%HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp;epectation that some users of the<br/>&ensp;content (not on the initial content<br/>&ensp;creation team) will make changes<br/>&ensp;without further permission"]
+  HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an epectation<br/>&ensp;that some users of the content (not on the<br/>&ensp;initial content creation team) will make<br/>&ensp;changes without further permission"]
+
 
   class SELF_SERVICE_NOTE,CATEGORISATION_NOTE,COMPONENTISED_NOTE,PLATFORM_LEVEL_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE,HIGHLY_AVAILABLE_NOTE,HIGHLY_COLABORATIVE_NOTE Note;
 
@@ -35,8 +37,6 @@ flowchart TD
   MARKED_DOWN_CONTENT_NOTE-.-BAD_THING
   MARKED_UP_CONTENT_NOTE-.-GOOD_THING
 
-  HIGHLY_AVAILABLE-.-HIGHLY_AVAILABLE_NOTE
-  HIGHLY_COLABORATIVE-.-HIGHLY_COLABORATIVE_NOTE
   %% ========== ========== ========== ========== ==========
   I_AM(("I Am")):::Start
   I_AM-.-START
@@ -54,12 +54,20 @@ flowchart TD
   class INTERESTED_IN,HIGHLY_AVAILABLE,HIGHLY_FINDABLE,HIGHLY_COLABORATIVE Adjective;
   class CREATING_2,THAT_LEVERAGE Verb;
 
-
   CATEGORISATION-.-THAT_LEVERAGE
   TAGGING-.-THAT_LEVERAGE
 
-  THAT_LEVERAGE-.-CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-CREATING_2
+  %%THAT_LEVERAGE-.-
+  %%CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-CREATING_2
+  %%HIGHLY_AVAILABLE_NOTE-.-HIGHLY_AVAILABLE
+
+  THAT_LEVERAGE-.-CONTENT_SYSTEMS
+
+  HIGHLY_AVAILABLE_NOTE-.-HIGHLY_AVAILABLE
+  CONTENT_SYSTEMS-.-HIGHLY_AVAILABLE-.-CREATING_2
+
   CONTENT_SYSTEMS-.-HIGHLY_COLABORATIVE-.-CREATING_2
+  HIGHLY_COLABORATIVE_NOTE-.-HIGHLY_COLABORATIVE
 
   CREATING_2-.-INTERESTED_IN-.-I_AM
   %% ========== ========== ========== ========== ==========
