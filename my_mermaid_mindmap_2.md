@@ -10,7 +10,8 @@ flowchart TD
 
   %% ========== ========== ========== ========== ==========
   I(("I")):::Start
-  AM(("AM")):::Start
+  %% ========== ========== ========== ========== ==========
+  AM(("Am")):::Start
 
   CATEGORISATION_NOTE["Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It is<br/>&ensp;about structure and findability"]
   HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that the<br/>&ensp;content<i>must be</i> online, that it's easy<br/>&ensp;to access, and that sought after<br/>&ensp;content is easy to find"]  
@@ -45,5 +46,38 @@ flowchart TD
   CREATING_1-.-
   INTERESTED_IN-.-
   AM-.-
+  I
+  %% ========== ========== ========== ========== ==========
+  FEEL(("Feel")):::Start
+
+  DOMAIN("Domain")
+  FOR_LONGER("for longer")
+  COMPLEX_PROJECTS("Complex Projects")
+  IN_A("in a")
+
+  SINGLE_PROJECTS("Single Projects")
+  LARGER_PROJECTS("Larger Projects")
+  MORE("more")
+  MORE_DEEPLY_INVOLVED("more deeply<br/>involved")
+
+  TO_WORK_ON("to work on")
+  FOR_LONGER("for longer")
+  TO_WORK_ON("to work on")
+  TO_GET("to get")
+  THE_NEED("The Need")
+
+  class TO_WORK_ON,TO_GET,IN_A Verb;
+  class MORE,MORE_DEEPLY_INVOLVED Adverb;
+  class FOR_LONGER,INVOLVED Adjective;
+
+  FOR_LONGER-.-SINGLE_PROJECTS-.-TO_WORK_ON
+  LARGER_PROJECTS-.-TO_WORK_ON
+  COMPLEX_PROJECTS-.-MORE-.-TO_WORK_ON
+
+  TO_WORK_ON-.-THE_NEED
+  DOMAIN-.-IN_A-.-MORE_DEEPLY_INVOLVED-.-TO_GET-.-THE_NEED
+
+  THE_NEED-.-
+  FEEL-.-
   I
 ```
