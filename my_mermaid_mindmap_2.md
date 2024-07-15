@@ -200,4 +200,36 @@ flowchart TD
 
   LOVE-.-WRITING-.-WORKING_CODE-.-HELPS_ME_UNDERSTAND_NOTE-.-COMPLEX_DOMAINS
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  HELPS_ME_WRITE_BETTER_NOTE[it helps me develop better]
+
+  GETTING("getting")
+  FEEDBACK("Feedback")
+  FROM("from")
+  DEVELOPERS("Developers")
+
+  CODE_EXAMPLES("Code Examples")
+
+  class GETTING,FROM Verb;
+  class HELPS_ME_WRITE_BETTER_NOTE Note;
+
+  LOVE-.-GETTING-.-FEEDBACK-.-FROM-.-DEVELOPERS-.-HELPS_ME_WRITE_BETTER_NOTE-.-CODE_EXAMPLES
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  WORKING_WITH("working with")
+  DITA_XML("DITA XML")
+  IT_FACILITATES("it facilitates")
+  CONTENT_COMPONENTISATION("Content<br/>Componentisation")
+  CONTENT_REUSE("Content Reuse")
+  MACHINE_READING("Machine Reading")
+  MACHINE_WRITING("Machine Writing")
+
+  class WORKING_WITH,IT_FACILITATES Verb;
+
+  LOVE-.-WORKING_WITH-.-DITA_XML-.-IT_FACILITATES
+
+  IT_FACILITATES-.-CONTENT_COMPONENTISATION
+  IT_FACILITATES-.-CONTENT_REUSE
+  IT_FACILITATES-.-MACHINE_READING
+  IT_FACILITATES-.-MACHINE_WRITING
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+
 ```
