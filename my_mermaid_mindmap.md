@@ -10,7 +10,7 @@ flowchart TD
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, padding:0px 4px;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, padding:0px 4px;
   %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding:0px 18px 0px 6px;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding-left:9px, padding-right:9px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding-left:9px, padding-right:9px, margin:-2px;
 
   SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
   CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works")
@@ -70,6 +70,9 @@ flowchart TD
   HIGHLY_COLABORATIVE_NOTE-.-HIGHLY_COLABORATIVE
 
   CREATING_2-.-INTERESTED_IN-.-I_AM
+
+  %%HIGHLY_AVAILABLE-.-HIGHLY_AVAILABLE_NOTE
+  %%HIGHLY_COLABORATIVE-.-HIGHLY_COLABORATIVE_NOTE
   %% ========== ========== ========== ========== ==========
   SINGLE_PROJECTS("Single Projects")
   LARGER_PROJECTS("Larger Projects")
