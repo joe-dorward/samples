@@ -7,7 +7,6 @@ flowchart TD
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:18pt;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
 
-
   %% ========== ========== ========== ========== ==========
   I(("I")):::Start
   %% ========== ========== ========== ========== ==========
@@ -78,6 +77,25 @@ flowchart TD
   DOMAIN-.-IN_A-.-MORE_DEEPLY_INVOLVED-.-TO_GET-.-THE_NEED
 
   THE_NEED-.-
-  FEEL-.-
-  I
+  FEEL-.-I
+  %% ========== ========== ========== ========== ==========
+  BELIEVE(("Believe")):::Start
+
+  SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
+  COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
+  MARKED_DOWN_CONTENT_NOTE["<b>Marked-down</b> content is the<br/>&ensp;technical writing equivalent of<br/>&ensp;creating computer-code without<br/>&ensp;objects, methods, or functions"]
+  MARKED_UP_CONTENT_NOTE["<b>Marked-up</b> content 'should be', by<br/>&ensp;definition, structured in the sense<br/>&ensp;of the Document Object Model - in<br/>&ensp;that it 'should be' that it 'should be'<br/>&ensp;a hierarchy of elements"]
+
+  class SELF_SERVICE_NOTE,COMPONENTISED_NOTE,MARKED_DOWN_CONTENT_NOTE,MARKED_UP_CONTENT_NOTE Note;
+
+  SELF_SERVICE("Self-service")
+  COMPONENTISED("Componentised")
+  REUSABLE("Reusable")
+  SHOULD_BE_1("should be")
+  CONTENT_1("Content")
+  THAT_1("that")
+
+  class SHOULD_BE_1,THAT_1 Verb;
+
+  BELIEVE-.-I
 ```
