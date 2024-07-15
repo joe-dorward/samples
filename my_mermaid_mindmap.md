@@ -13,7 +13,7 @@ flowchart TD
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, padding-left:9px, padding-right:9px, margin:-2px;
 
   SELF_SERVICE_NOTE("If people can't find what they<br/>&ensp;need by themselves, then the<br/>&ensp;content is not fit-for-purpose")
-  CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works")
+  CATEGORISATION_NOTE("Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It's about structure and findability")
   COMPONENTISED_NOTE("To the paragraph, sentence,<br/>&ensp;word level - to facillitate<br/>&ensp;single-sourcing, and reuse")
   PLATFORM_LEVEL_NOTE["I love knowing where the<br/>&ensp;nuts and bolts go, and<br/>&ensp;what's connected to what"]
 
