@@ -125,7 +125,6 @@ flowchart TD
   CAN(("Can")):::Start
 
   HAND_CODE("hand code")
-
   WEB_PAGES("Web Pages")
   USING_1("using")
   HTML("HTML")
@@ -139,10 +138,13 @@ flowchart TD
   PYTHON("Python")
   XSLT("XSLT")
 
+
+
   class HAND_CODE,USING_1,USING_2,TRANSFORMING_THEM_WITH Verb;
 
   I-.-
   CAN-.-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   HAND_CODE-.-
   WEB_PAGES-.-
   USING_1
@@ -150,7 +152,7 @@ flowchart TD
   USING_1-.-HTML
   USING_1-.-CSS
   USING_1-.-JAVASCRIPT
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   HAND_CODE-.-
   DATA_MODELS-.-
   USING_2-.-
@@ -159,6 +161,58 @@ flowchart TD
 
   TRANSFORMING_THEM_WITH-.-PYTHON
   TRANSFORMING_THEM_WITH-.-XSLT
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  WORK_WITH_1("work with")
+  SQL("SQL")
+  NONSQL("NonSQL")
+  DATABASES("Databases")
+
+  class WORK_WITH_1 Verb;
+
+  CAN-.-WORK_WITH_1
+  WORK_WITH_1-.-SQL-.-DATABASES
+  WORK_WITH_1-.-NONSQL-.-DATABASES
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  FILES_NOTE["That is, from any Microsoft file-format to any other Microsoft file-format, or any XML file format - including DITA XML"]
+
+  USE_1("use")
+  VBA("Visual Basic for<br/>Applications")
+  TO_1("to")
+  TRANSFORM_1("transform")
+  MICROSOFT_1("Microsoft")
+
+  DOCX_1("Word")
+  EXCEL_1("Excel")
+  POWERPOINT_1("PowerPoint")
+  XML_1("XML")
+  FILES_1("Files")
+  IN_TO_1("in to")
+
+  DOCX_2("Word")
+  EXCEL_2("Excel")
+  POWERPOINT_2("PowerPoint")
+  XML_2("XML")
+  FILES_2("Files")
+
+  class USE_1,TO_1,TRANSFORM_1 Verb;
+  class TO_1 Adverb;
+
+  CAN-.-USE_1-.-VBA-.-TO_1-.-TRANSFORM_1
+
+  TRANSFORM_1-.-MICROSOFT_1
+  TRANSFORM_1-.-XML_1
+
+  MICROSOFT_1-.-DOCX_1-.-FILES_1
+  MICROSOFT_1-.-EXCEL_1-.-FILES_1
+  MICROSOFT_1-.-POWERPOINT_1-.-FILES_1
+
+  XML_1-.-FILES_1
+  FILES_1-.-IN_TO_1
+
+  IN_TO_1-.-DOCX_2-.-FILES_2
+  IN_TO_1-.-EXCEL_2-.-FILES_2
+  IN_TO_1-.-POWERPOINT_2-.-FILES_2
+  IN_TO_1-.-XML_2-.-FILES_2
 
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   LOVE(("Love")):::Start
@@ -232,4 +286,20 @@ flowchart TD
   IT_FACILITATES-.-MACHINE_WRITING
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  WONT(("Won't")):::Start
+  I-.-WONT
+
+  WORK_IN("work in")
+  SOCIAL_MEDIA("'Social Media'")
+  VIDEO_COMPUTER_GAMES("Video / Computer Games")
+  GAMBLING_BETTING("Gambling / Betting")
+
+  class WORK_IN Verb;
+
+  WONT-.-WORK_IN
+
+  WORK_IN-.-SOCIAL_MEDIA
+  WORK_IN-.-VIDEO_COMPUTER_GAMES
+  WORK_IN-.-GAMBLING_BETTING
 ```
