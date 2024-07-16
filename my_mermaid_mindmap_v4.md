@@ -173,7 +173,7 @@ flowchart TD
   WORK_WITH_1-.-SQL-.-DATABASES
   WORK_WITH_1-.-NONSQL-.-DATABASES
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  FILES_NOTE["That is, from any Microsoft file-format to any other Microsoft file-format, or any XML file format - including DITA XML"]
+  FILES_NOTE["That is, from any Microsoft file-format<br/>&ensp;to any other Microsoft file-format"]
 
   USE_1("use")
   VBA("Visual Basic for<br/>Applications")
@@ -184,35 +184,37 @@ flowchart TD
   DOCX_1("Word")
   EXCEL_1("Excel")
   POWERPOINT_1("PowerPoint")
-  XML_1("XML")
+  VISIO_1("Visio")
   FILES_1("Files")
   IN_TO_1("in to")
 
   DOCX_2("Word")
   EXCEL_2("Excel")
   POWERPOINT_2("PowerPoint")
-  XML_2("XML")
+  VISIO_2("Visio")
   FILES_2("Files")
 
   class USE_1,TO_1,TRANSFORM_1 Verb;
-  class TO_1 Adverb;
+  class TO_1,IN_TO_1 Adverb;
+  class FILES_NOTE Note;
 
   CAN-.-USE_1-.-VBA-.-TO_1-.-TRANSFORM_1
 
   TRANSFORM_1-.-MICROSOFT_1
-  TRANSFORM_1-.-XML_1
 
   MICROSOFT_1-.-DOCX_1-.-FILES_1
   MICROSOFT_1-.-EXCEL_1-.-FILES_1
   MICROSOFT_1-.-POWERPOINT_1-.-FILES_1
+  MICROSOFT_1-.-VISIO_1-.-FILES_1
 
-  XML_1-.-FILES_1
   FILES_1-.-IN_TO_1
 
   IN_TO_1-.-DOCX_2-.-FILES_2
   IN_TO_1-.-EXCEL_2-.-FILES_2
   IN_TO_1-.-POWERPOINT_2-.-FILES_2
-  IN_TO_1-.-XML_2-.-FILES_2
+  IN_TO_1-.-VISIO_2-.-FILES_2
+
+  FILES_2-.-FILES_NOTE
 
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   LOVE(("Love")):::Start
