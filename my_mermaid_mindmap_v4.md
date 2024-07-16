@@ -47,6 +47,18 @@ flowchart TD
   AM-.-
   I
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  DONT(("Don't")):::Start
+  DONT-.-I
+
+  WRITE_1("write")
+  PROMOTIONAL("Promotional")
+  CONTENT_2("Content")
+
+  class WRITE_1 Verb;
+  class PROMOTIONAL Adjective;
+
+  CONTENT_2-.-PROMOTIONAL-.-WRITE_1-.-DONT
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   FEEL(("Feel")):::Start
 
   DOMAIN("Domain")
