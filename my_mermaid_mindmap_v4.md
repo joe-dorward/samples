@@ -10,7 +10,23 @@ flowchart TD
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   I(("I")):::Start
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  DONT(("Don't")):::Start
+  DONT-.-I
+
+  WRITE_1("write")
+  PROMOTIONAL("Promotional")
+  CONTENT_2("Content")
+
+  class WRITE_1 Verb;
+  class PROMOTIONAL Adjective;
+
+  CONTENT_2-.-PROMOTIONAL-.-WRITE_1-.-DONT
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+
+
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   AM(("Am")):::Start
+  AM-.-I
 
   CATEGORISATION_NOTE["Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It is<br/>&ensp;about structure and findability"]
   HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that the<br/>&ensp;content<i>must be</i> online, that it's easy<br/>&ensp;to access, and that sought after<br/>&ensp;content is easy to find"]  
@@ -44,21 +60,9 @@ flowchart TD
 
   CREATING_1-.-
   INTERESTED_IN-.-
-  AM-.-
-  I
+  AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
-  DONT(("Don't")):::Start
-  DONT-.-I
 
-  WRITE_1("write")
-  PROMOTIONAL("Promotional")
-  CONTENT_2("Content")
-
-  class WRITE_1 Verb;
-  class PROMOTIONAL Adjective;
-
-  CONTENT_2-.-PROMOTIONAL-.-WRITE_1-.-DONT
-  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   FEEL(("Feel")):::Start
 
   DOMAIN("Domain")
