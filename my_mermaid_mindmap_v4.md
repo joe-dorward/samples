@@ -164,14 +164,14 @@ flowchart TD
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   WORK_WITH_1("work with")
   SQL("SQL")
-  NONSQL("NonSQL")
+  NOSQL("NoSQL")
   DATABASES("Databases")
 
   class WORK_WITH_1 Verb;
 
   CAN-.-WORK_WITH_1
   WORK_WITH_1-.-SQL-.-DATABASES
-  WORK_WITH_1-.-NONSQL-.-DATABASES
+  WORK_WITH_1-.-NOSQL-.-DATABASES
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   FILES_NOTE["That is, from any Microsoft file-format<br/>&ensp;to any other Microsoft file-format"]
 
