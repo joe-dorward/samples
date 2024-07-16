@@ -10,17 +10,32 @@ flowchart TD
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   I(("I")):::Start
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  SPECIALISE_IN(("Specialise In")):::Start
+  SPECIALISE_IN-.-I
+
+  WRITING_1("writing")
+  HIGHLY_TECHNICAL_1("highly-technical")
+  CONTENT_2("Content")
+  FOR_1("For")
+  HIGHLY_TECHNICAL_2("highly-technical")
+  AUDIENCES("Audiences")
+
+  class WRITING_1 Verb;
+  class HIGHLY_TECHNICAL_1,HIGHLY_TECHNICAL_2 Adjective;
+
+  AUDIENCES-.-HIGHLY_TECHNICAL_2-.-FOR_1-.-CONTENT_2-.-HIGHLY_TECHNICAL_1-.-WRITING_1-.-SPECIALISE_IN
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   DONT(("Don't")):::Start
   DONT-.-I
 
-  WRITE_1("write")
-  PROMOTIONAL("Promotional")
-  CONTENT_2("Content")
+  %%WRITE_1("write")
+  %%PROMOTIONAL("Promotional")
 
-  class WRITE_1 Verb;
-  class PROMOTIONAL Adjective;
 
-  CONTENT_2-.-PROMOTIONAL-.-WRITE_1-.-DONT
+
+
+
+  %%CONTENT_2-.-PROMOTIONAL-.-WRITE_1-.-DONT
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
 
 
