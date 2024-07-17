@@ -13,7 +13,7 @@ flowchart TD
   AM(("Am")):::Start
   AM-.-I
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
-  TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or <b>to understand</b> something"]
+  TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or<br/>&ensp;<b>to understand</b> something"]
 
   TECHNICAL_WRITING("Technical Writing")
   HIGHLY_TECHNICAL("highly-technical")
