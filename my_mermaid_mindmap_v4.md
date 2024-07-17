@@ -1,7 +1,7 @@
 ```mermaid
 %%{init: { "theme":"forest" } }%%
 flowchart TD
-  classDef Start fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:14pt, padding:10px;
+  classDef Start fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
   classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:10px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:18pt;
@@ -12,7 +12,18 @@ flowchart TD
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   AM(("Am")):::Start
   AM-.-I
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or <b>to understand</b> something"]
 
+  TECHNICAL_WRITING("Technical Writing")
+  HIGHLY_TECHNICAL("highly-technical")
+  CREATING_1("creating")
+
+  class TECHNICAL_WRITING_NOTE Note;
+  class HIGHLY_TECHNICAL Adjective;
+
+  TECHNICAL_WRITING_NOTE-.-TECHNICAL_WRITING-.-HIGHLY_TECHNICAL-.-CREATING_1
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   CATEGORISATION_NOTE["Take a look at how MediaWiki&ensp;<br/>&ensp;categorisation works. It is<br/>&ensp;about structure and findability"]
   HIGHLY_AVAILABLE_NOTE["<b>Highly-available</b> implies that the<br/>&ensp;content<i>must be</i> online, that it's easy<br/>&ensp;to access, and that sought after<br/>&ensp;content is easy to find"]  
   HIGHLY_COLABORATIVE_NOTE["<b>Highly-collaborative</b> implies an<br/>&ensp;epectation that some users of the<br/>&ensp;content (not on the initial content<br/>&ensp;creation team) will make changes<br/>&ensp;without further permission"]
@@ -24,7 +35,7 @@ flowchart TD
   CONTENT_SYSTEMS("Content Systems")
   HIGHLY_AVAILABLE("highly-available")
   HIGHLY_COLABORATIVE("highly-collaborative")
-  CREATING_1("creating")
+  %%CREATING_1("creating")
   INTERESTED_IN("interested in")
 
   class INTERESTED_IN,HIGHLY_AVAILABLE,HIGHLY_COLABORATIVE Adjective;
