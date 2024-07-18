@@ -5,6 +5,7 @@ flowchart TD
   classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:10px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:18pt;
+  classDef Other fill:transparent, stroke:transparent;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
 
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
@@ -13,11 +14,52 @@ flowchart TD
   AM(("Am")):::Start
   AM-.-I
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  INTERESTED_IN_1("interested in")
+  CONDITIONAL_1("conditional")
+  class INTERESTED_IN_1,CONDITIONAL_1 Adjective;
+
+
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  FROM_1("from")
+  class FROM_1 Other
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  USING_1
+  USING_2
+  USING_3("using")
+  class USING_1,USING_2,USING_3 Verb
+
+  %%CREATING_1("creating")
+  %%CREATING_2("creating")
+
+  TO_CREATE_1(to create)
+
+  class CREATING_1,CREATING_2,TO_CREATE_1 Verb;
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  SEMI_AUTOMATICALLY("semi-automatically")
+
+  class SEMI_AUTOMATICALLY Adverb
+
+  PYTHON_2("Python")
+  VBA_1("VBA")
+  CUSTOMISED_CONTENT("Customised Content")
+  CONTENT_COMPONENTS("Content Components")
+
+  CONTENT_COMPONENTS-.-FROM_1-.-SEMI_AUTOMATICALLY-.-CUSTOMISED_CONTENT-.-CONDITIONAL_1-.-TO_CREATE_1
+
+  TO_CREATE_1-.-PYTHON_2
+  TO_CREATE_1-.-VBA_1
+
+  PYTHON_2-.-USING_3
+  VBA_1-.-USING_3
+  USING_3-.-INTERESTED_IN_1
+
+
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or<br/>&ensp;<b>to understand</b> something"]
 
   TECHNICAL_WRITING("Technical Writing")
   HIGHLY_TECHNICAL("highly-technical")
-  CREATING_1("creating")
+
 
   class TECHNICAL_WRITING_NOTE Note;
   class HIGHLY_TECHNICAL Adjective;
@@ -36,10 +78,10 @@ flowchart TD
   HIGHLY_AVAILABLE("highly-available")
   HIGHLY_COLABORATIVE("highly-collaborative")
   %%CREATING_1("creating")
-  INTERESTED_IN("interested in")
+  %%INTERESTED_IN("interested in")
 
-  class INTERESTED_IN,HIGHLY_AVAILABLE,HIGHLY_COLABORATIVE Adjective;
-  class CREATING_1,THAT_LEVERAGE Verb;
+  class HIGHLY_AVAILABLE,HIGHLY_COLABORATIVE Adjective;
+  class THAT_LEVERAGE Verb;
 
   CATEGORISATION_NOTE-.-
   CATEGORISATION-.-
@@ -55,7 +97,7 @@ flowchart TD
   HIGHLY_COLABORATIVE-.-CREATING_1
 
   CREATING_1-.-
-  INTERESTED_IN-.-
+  INTERESTED_IN_1-.-
   AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
 
