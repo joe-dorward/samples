@@ -28,7 +28,7 @@ flowchart TD
   USING_3("using")
   class USING_1,USING_2,USING_3 Verb
 
-  %%CREATING_1("creating")
+  CREATING_1("creating")
   %%CREATING_2("creating")
 
   TO_CREATE_1(to create)
@@ -38,12 +38,23 @@ flowchart TD
   SEMI_AUTOMATICALLY("semi-automatically")
 
   class SEMI_AUTOMATICALLY Adverb
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  CONTENT_COMPONENTS_NOTE["
+    <b>Visual Basic for Applications</b> can be used to
+    &ensp;customise a WORD document (for example) by
+    &ensp;'reading' any other WORD document.
+    &ensp;<b>Python</b> can be used to customise XML documents
+    &ensp;by 'reading' any other XML document.
+  "]
+  class CONTENT_COMPONENTS_NOTE Note
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
   PYTHON_2("Python")
   VBA_1("VBA")
   CUSTOMISED_CONTENT("Customised Content")
   CONTENT_COMPONENTS("Content Components")
 
+  CONTENT_COMPONENTS_NOTE-.-
   CONTENT_COMPONENTS-.-FROM_1-.-SEMI_AUTOMATICALLY-.-CUSTOMISED_CONTENT-.-CONDITIONAL_1-.-TO_CREATE_1
 
   TO_CREATE_1-.-PYTHON_2
