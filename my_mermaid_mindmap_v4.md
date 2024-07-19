@@ -14,10 +14,14 @@ flowchart TD
   AM(("Am")):::Start
   AM-.-I
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  CURIOUS_1("curious")
+  TENACIOUS_1("tenacious")
   EXCITED_1("excited")
+
   INTERESTED_IN_1("interested in")
   CONDITIONAL_1("conditional")
-  class EXCITED_1,INTERESTED_IN_1,CONDITIONAL_1 Adjective;
+
+  class CURIOUS_1,TENACIOUS_1,EXCITED_1,INTERESTED_IN_1,CONDITIONAL_1 Adjective;
 
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
@@ -46,11 +50,18 @@ flowchart TD
 
   CREATE_1("create")
   class CREATE_1 Verb;
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+
   SEMI_AUTOMATICALLY("semi-automatically")
 
   class SEMI_AUTOMATICALLY Adverb
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  TENACIOUS_1-.-AM
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  CURIOUS_1-.-AM
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  EXCITED_1-.-AM
+
   CONTENT_COMPONENTS_NOTE["
     <b>Visual Basic for Applications</b> can be used to
     &ensp;customise a WORD document (for example) by
@@ -81,7 +92,8 @@ flowchart TD
   PYTHON_2-.-USING_3
   VBA_1-.-USING_3
 
-  USING_3-.-OF_1-.-IDEAS_1-.-by_1-.-EXCITED_1-.-AM
+  %%USING_3-.-OF_1-.-IDEAS_1-.-by_1-.-EXCITED_1-.-AM
+  USING_3-.-OF_1-.-IDEAS_1-.-by_1-.-EXCITED_1
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or<br/>&ensp;<b>to understand</b> something"]
 
