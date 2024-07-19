@@ -4,7 +4,7 @@ flowchart TD
   classDef Start fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
   classDef Verb fill:aliceblue, color:royalblue, stroke:royalblue, font-family:verdana, padding:10px;
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic;
-  classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:18pt;
+  classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:190%, padding:10px;
   classDef Other fill:transparent, stroke:transparent;
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
 
@@ -23,11 +23,16 @@ flowchart TD
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   by_1("by")
   FROM_1("from")
-  IN_1("in")
+  %%IN_1("in")
+  OF_1("of")
+  TO_1("to")
+  TO_2("to")
 
   class by_1 Other;
   class FROM_1 Other;
   class IN_1 Other;
+  class OF_1 Other;
+  class TO_1,TO_2 Other;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   USING_1
   USING_2
@@ -37,9 +42,10 @@ flowchart TD
   CREATING_1("creating")
   %%CREATING_2("creating")
 
-  TO_CREATE_1(to create)
-
   class CREATING_1,CREATING_2,TO_CREATE_1 Verb;
+
+  CREATE_1("create")
+  class CREATE_1 Verb;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   SEMI_AUTOMATICALLY("semi-automatically")
 
@@ -52,8 +58,11 @@ flowchart TD
     &ensp;<b>Python</b> can be used to customise XML documents
     &ensp;by 'reading' any other XML document.
   "]
+
   class CONTENT_COMPONENTS_NOTE Note
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  IDEAS_1("Ideas")
+
 
   PYTHON_2("Python")
   VBA_1("VBA")
@@ -63,15 +72,16 @@ flowchart TD
   %%CONTENT_COMPONENTS_NOTE-.-
   %%CONTENT_COMPONENTS-.-FROM_1-.-SEMI_AUTOMATICALLY-.-CUSTOMISED_CONTENT-.-CONDITIONAL_1-.-TO_CREATE_1
 
-  %%TO_CREATE_1-.-PYTHON_2
-  %%TO_CREATE_1-.-VBA_1
+  CONTENT_COMPONENTS_NOTE-.-
+  CONTENT_COMPONENTS-.-FROM_1-.-CUSTOMISED_CONTENT-.-CONDITIONAL_1-.-CREATE_1-.-SEMI_AUTOMATICALLY-.-TO_2
 
-  %%PYTHON_2-.-USING_3
-  %%VBA_1-.-USING_3
-  %%USING_3-.-INTERESTED_IN_1
+  TO_2-.-PYTHON_2  
+  TO_2-.-VBA_1
 
+  PYTHON_2-.-USING_3
+  VBA_1-.-USING_3
 
-  EXCITED_1-.-AM
+  USING_3-.-OF_1-.-IDEAS_1-.-by_1-.-EXCITED_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or<br/>&ensp;<b>to understand</b> something"]
 
