@@ -14,14 +14,20 @@ flowchart TD
   AM(("Am")):::Start
   AM-.-I
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  EXCITED_1("excited")
   INTERESTED_IN_1("interested in")
   CONDITIONAL_1("conditional")
-  class INTERESTED_IN_1,CONDITIONAL_1 Adjective;
+  class EXCITED_1,INTERESTED_IN_1,CONDITIONAL_1 Adjective;
 
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  by_1("by")
   FROM_1("from")
-  class FROM_1 Other
+  IN_1("in")
+
+  class by_1 Other;
+  class FROM_1 Other;
+  class IN_1 Other;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   USING_1
   USING_2
@@ -54,17 +60,18 @@ flowchart TD
   CUSTOMISED_CONTENT("Customised Content")
   CONTENT_COMPONENTS("Content Components")
 
-  CONTENT_COMPONENTS_NOTE-.-
-  CONTENT_COMPONENTS-.-FROM_1-.-SEMI_AUTOMATICALLY-.-CUSTOMISED_CONTENT-.-CONDITIONAL_1-.-TO_CREATE_1
+  %%CONTENT_COMPONENTS_NOTE-.-
+  %%CONTENT_COMPONENTS-.-FROM_1-.-SEMI_AUTOMATICALLY-.-CUSTOMISED_CONTENT-.-CONDITIONAL_1-.-TO_CREATE_1
 
-  TO_CREATE_1-.-PYTHON_2
-  TO_CREATE_1-.-VBA_1
+  %%TO_CREATE_1-.-PYTHON_2
+  %%TO_CREATE_1-.-VBA_1
 
-  PYTHON_2-.-USING_3
-  VBA_1-.-USING_3
-  USING_3-.-INTERESTED_IN_1
+  %%PYTHON_2-.-USING_3
+  %%VBA_1-.-USING_3
+  %%USING_3-.-INTERESTED_IN_1
 
 
+  EXCITED_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   TECHNICAL_WRITING_NOTE["That is, any objectively factual writing<br/>&ensp;that helps people <b>to know</b>, <b>to do</b>, or<br/>&ensp;<b>to understand</b> something"]
 
