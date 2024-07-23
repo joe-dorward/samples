@@ -1,5 +1,5 @@
-The main purpose of this mindmap is for me to map out (for myself) my thinking about my skills, knowledge, and the
-nature of the work I want to do in the future.
+The main purpose of this mindmap is for me to lay out (for myself) what I think about my skills, knowledge, and the
+kind of work I want to do in the future.
 
 ```mermaid
 %%{init: { "theme":"forest" } }%%
