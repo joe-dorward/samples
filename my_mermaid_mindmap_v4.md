@@ -1,3 +1,6 @@
+The main purpose of this mindmap is for me to map out (for myself) my thinking about my skills, knowledge, and the
+nature of the work I want to do in the future.
+
 ```mermaid
 %%{init: { "theme":"forest" } }%%
 flowchart TD
@@ -15,19 +18,22 @@ flowchart TD
   AM-.-I
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   CURIOUS_1("curious")
-  TENACIOUS_1("tenacious")
-  EXCITED_1("excited")
-
-  INTERESTED_IN_1("interested in")
   CONDITIONAL_1("conditional")
 
-  class CURIOUS_1,TENACIOUS_1,EXCITED_1,INTERESTED_IN_1,CONDITIONAL_1 Adjective;
+  EXCITED_1("excited")
+  INTERESTED_1("interested")
+  SELF_MOTIVATED_1("self motivated")
+  TENACIOUS_1("tenacious")
+  
+  class CURIOUS_1,CONDITIONAL_1 Adjective;
+
+  class TENACIOUS_1,EXCITED_1,INTERESTED_1,SELF_MOTIVATED_1 Adjective;
 
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   by_1("by")
   FROM_1("from")
-  %%IN_1("in")
+  IN_1("in")
   OF_1("of")
   TO_1("to")
   TO_2("to")
@@ -137,8 +143,13 @@ flowchart TD
   HIGHLY_COLABORATIVE-.-CREATING_1
 
   CREATING_1-.-
-  INTERESTED_IN_1-.-
+  IN_1-.-
+  INTERESTED_1-.-
   AM
+  %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  %% SELF MOTIVATED
+
+  SELF_MOTIVATED_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
 
   FEEL(("Feel")):::Start
