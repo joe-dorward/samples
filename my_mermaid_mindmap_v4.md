@@ -148,7 +148,10 @@ flowchart TD
   AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   %% SELF MOTIVATED
+  SELF_MOTIVATED_NOTE["I do the best job I can, all the time,<br/>&ensp;because I'm always looking over<br/>&ensp;my own shoulder"]
+  class SELF_MOTIVATED_NOTE Note;
 
+  SELF_MOTIVATED_NOTE-.-
   SELF_MOTIVATED_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
 
