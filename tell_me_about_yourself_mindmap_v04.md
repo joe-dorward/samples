@@ -37,13 +37,14 @@ flowchart TD
   FROM_1("from")
   IN_1("in")
   OF_1("of")
+  OF_2("of")
   TO_1("to")
   TO_2("to")
 
   class by_1 Other;
   class FROM_1 Other;
   class IN_1 Other;
-  class OF_1 Other;
+  class OF_1,OF_2 Other;
   class TO_1,TO_2 Other;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   USING_1
@@ -70,6 +71,10 @@ flowchart TD
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   EXCITED_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
+  TEAMWORK_1("Teamwork")
+
+  TEAMWORK_1-.-
+  OF_2-.-
   SUPPORTIVE_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   %%CONTENT_COMPONENTS_NOTE["`<b>Visual Basic for Applications</b> can be used to
@@ -85,7 +90,6 @@ flowchart TD
   class CONTENT_COMPONENTS_NOTE Note
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   IDEAS_1("Ideas")
-
 
   PYTHON_2("Python")
   VBA_1("VBA")
