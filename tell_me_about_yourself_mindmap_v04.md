@@ -22,29 +22,32 @@ flowchart TD
   CONDITIONAL_1("conditional")
 
   EXCITED_1("excited")
-  SUPPORTIVE_1("supportive")
+  ENTHUSIASTIC_1("enthusiastic")
   INTERESTED_1("interested")
   SELF_MOTIVATED_1("self motivated")
   TENACIOUS_1("tenacious")
   
   class CURIOUS_1,CONDITIONAL_1 Adjective;
 
-  class EXCITED_1,SUPPORTIVE_1,INTERESTED_1,SELF_MOTIVATED_1,TENACIOUS_1 Adjective;
+  class EXCITED_1,ENTHUSIASTIC_1,INTERESTED_1,SELF_MOTIVATED_1,TENACIOUS_1 Adjective;
 
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  A_1("a")
+  ABOUT_1("about")
   by_1("by")
   FROM_1("from")
   IN_1("in")
   OF_1("of")
-  OF_2("of")
   TO_1("to")
   TO_2("to")
 
+  class A_1 Other;
+  class ABOUT_1 Other;
   class by_1 Other;
   class FROM_1 Other;
   class IN_1 Other;
-  class OF_1,OF_2 Other;
+  class OF_1 Other;
   class TO_1,TO_2 Other;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   USING_1
@@ -74,8 +77,8 @@ flowchart TD
   TEAMWORK_1("Teamwork")
 
   TEAMWORK_1-.-
-  OF_2-.-
-  SUPPORTIVE_1-.-AM
+  ABOUT_1-.-
+  ENTHUSIASTIC_1-.-AM
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   %%CONTENT_COMPONENTS_NOTE["`<b>Visual Basic for Applications</b> can be used to
     %%&ensp;customise a WORD document (for example) by
