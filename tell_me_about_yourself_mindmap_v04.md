@@ -9,7 +9,8 @@ flowchart TD
   classDef Adverb fill:whitesmoke, color:indigo, stroke:indigo, font-family:verdana, font-style:italic, line-height:180%, padding:10px;
   classDef Adjective fill:ivory, color:darkred, stroke:darkred, font-family:verdana, line-height:180%, padding:10px;
   classDef Other fill:transparent, stroke:transparent;
-  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:8px;
+  %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:8px;
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left;
 
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   I(("I")):::Start
@@ -68,13 +69,15 @@ flowchart TD
   %% ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========
   EXCITED_1-.-AM
 
-  CONTENT_COMPONENTS_NOTE["
-    <b>Visual Basic for Applications</b> can be used to
-    &ensp;customise a WORD document (for example) by
-    &ensp;'reading' any other WORD document.
-    &ensp;<b>Python</b> can be used to customise XML documents
-    &ensp;by 'reading' any other XML document.
-  "]
+  %%CONTENT_COMPONENTS_NOTE["`<b>Visual Basic for Applications</b> can be used to
+    %%&ensp;customise a WORD document (for example) by
+    %%&ensp;'reading' any other WORD document.
+    %%&ensp;<b>Python</b> can be used to customise XML documents
+    %%&ensp;by 'reading' any other XML document.
+  %%`"]
+
+  CONTENT_COMPONENTS_NOTE["`<b>Visual Basic for Applications</b> can be used to customise a WORD document (for example) by 'reading' any other WORD document.<br/>
+  <b>Python</b> can be used to customise XML documents by 'reading' any other XML document.`"]
 
   class CONTENT_COMPONENTS_NOTE Note
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
