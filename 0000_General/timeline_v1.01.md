@@ -1,4 +1,19 @@
 ```mermaid
+%%{init: { 'theme':'forest', 'timeline':{'disableMulticolor': true} } }%%
+    
+timeline
+  from ~ 13000 BCE  : Natufian Culture
+  from ~ 10,000 BCE : Pre-Pottery Neolithic A
+  from ~ 9,500 BCE  : End of the last-glacial period
+  from ~ 9,500 BCE  : Gobekli Tepe
+  from ~ 7,500 BCE  : Catalhoyuk
+  from ~ 7,000 BCE : Pottery Neolithic
+  from ~ 6,400 BCE : Yarnukian Culture<br>(Pottery Neolithic)
+  from ~ 5,500 BCE : Sumer 
+  from ~ 5,500 BCE : Kish
+```
+
+```mermaid
 flowchart TD
   %%classDef When height:90px, valign:top, fill:black, color:white, stroke:black, font-family:verdana, font-size:12pt, padding:0px;
   %%classDef What fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
@@ -16,9 +31,6 @@ flowchart TD
 
   class YOUNGER_DRYAS,NATUFIAN,PPNA What;
   class 9500,10000,13000,10000 When;
-
-
-
 
 
   YOUNGER_DRYAS
