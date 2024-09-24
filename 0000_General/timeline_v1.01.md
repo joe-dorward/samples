@@ -1,17 +1,19 @@
 ```mermaid
 flowchart TD
-  classDef Start fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:14pt, padding:10px;
-  classDef When fill:black, color:white, stroke:black, font-family:verdana, font-size:12pt, padding:10px;
-  classDef What fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
+  %%classDef When height:90px, valign:top, fill:black, color:white, stroke:black, font-family:verdana, font-size:12pt, padding:0px;
+  %%classDef What fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
+  classDef When fill:black, color:white, stroke:black;
+  classDef What fill:cornsilk, stroke:saddlebrown, color:saddlebrown, text-align:left;
 
-  class 9500,10000 When;
-  class YOUNGER_DRYAS Start;
-
-  %% ========== ========== ========== ========== ==========
-  I_AM(("I Am")):::Start
-  I_AM-.-START
-
-  9500("9,500 BCE"):::When
+  13000("13,000 BCE")
+  9500("9,500 BCE")
   YOUNGER_DRYAS["Younger Dryas"]
+
+  class 9500,13000,10000 When;
+  class YOUNGER_DRYAS What;
+
+  YOUNGER_DRYAS-.-
+  9500
+
 
 ```
