@@ -22,6 +22,9 @@ flowchart TD
     9500([from ~ 9,500 BCE])-.-GOBEKLI_TEPE[Gobekli Tepe]
     7500([from ~ 7,500 BCE])-.-CATALHOYUK[Catalhoyuk]
     7000([from ~ 7,000 BCE])-.-POTTERY_NEOLITHIC[Pottery Neolithic]
+    6400([from ~ 6,400 BCE])-.-YARNUKIAN[Yarnukian Culture (Pottery Neolithic)]
+    5500([from ~ 5,500 BCE])-.-SUMER[Sumer] 
+    5500([from ~ 5,500 BCE])-.-KISH[Kish]
 
     13000-.-
     10000-.-
