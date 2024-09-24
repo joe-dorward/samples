@@ -14,7 +14,7 @@ timeline
 ```
 
 ```mermaid
-%%{init: { 'theme':'forest' }}%%
+%%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'8' } }}%%
 flowchart TD
     %% ========== ========== ========== ========== ==========
     13000([from ~ 13000 BCE])-.-NATUFIAN_[Natufian Culture]
