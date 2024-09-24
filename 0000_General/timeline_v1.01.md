@@ -1,19 +1,4 @@
 ```mermaid
-%%{init: { 'theme':'forest', 'timeline':{'disableMulticolor': true} } }%%
-    
-timeline
-  from ~ 13000 BCE  : Natufian Culture
-  from ~ 10,000 BCE : Pre-Pottery Neolithic A
-  from ~ 9,500 BCE  : End of the last-glacial period
-  from ~ 9,500 BCE  : Gobekli Tepe
-  from ~ 7,500 BCE  : Catalhoyuk
-  from ~ 7,000 BCE : Pottery Neolithic
-  from ~ 6,400 BCE : Yarnukian Culture<br>(Pottery Neolithic)
-  from ~ 5,500 BCE : Sumer 
-  from ~ 5,500 BCE : Kish
-```
-
-```mermaid
 %%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'7' } }}%%
 flowchart TD
     %% ========== ========== ========== ========== ==========
@@ -22,15 +7,18 @@ flowchart TD
     9500([from ~ 9,500 BCE])-.-GOBEKLI_TEPE[Gobekli Tepe]
     7500([from ~ 7,500 BCE])-.-CATALHOYUK[Catalhoyuk]
     7000([from ~ 7,000 BCE])-.-POTTERY_NEOLITHIC[Pottery Neolithic]
-    6400([from ~ 6,400 BCE])-.-YARNUKIAN["Yarnukian Culture (Pottery Neolithic)"]
+    6400([from ~ 6,400 BCE])-.-YARNUKIAN["Yarnukian Culture"]
     5500([from ~ 5,500 BCE])-.-SUMER[Sumer] 
-    5500([from ~ 5,500 BCE])-.-KISH[Kish]
+    5500_KISH([from ~ 5,500 BCE])-.-KISH[Kish]
 
     13000-.-
     10000-.-
     9500-.-
     7500-.-
-    7000
+    7000-.-
+    6400-.-
+    5500-.-
+    5500_KISH
 ```
 
 ```mermaid
