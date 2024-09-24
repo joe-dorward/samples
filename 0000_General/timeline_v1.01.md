@@ -14,6 +14,23 @@ timeline
 ```
 
 ```mermaid
+%%{init: { 'theme':'forest' }}%%
+flowchart TD
+    %% ========== ========== ========== ========== ==========
+    13000([from ~ 13000 BCE])-.-NATUFIAN_[Natufian Culture]
+    10000([from ~ 10,000 BCE])-.-PRE_POTTERY_NEOLITHIC_A[Pre-Pottery Neolithic A]
+    9500([from ~ 9,500 BCE])-.-GOBEKLI_TEPE[Gobekli Tepe]
+    7500([from ~ 7,500 BCE])-.-CATALHOYUK[Catalhoyuk]
+    7000([from ~ 7,000 BCE])-.-POTTERY_NEOLITHIC[Pottery Neolithic]
+
+    13000-.-
+    10000-.-
+    9500-.-
+    7500-.-
+    7000
+```
+
+```mermaid
 flowchart TD
   %%classDef When height:90px, valign:top, fill:black, color:white, stroke:black, font-family:verdana, font-size:12pt, padding:0px;
   %%classDef What fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:8px;
@@ -42,9 +59,7 @@ flowchart TD
   10000-.-
   9500
     
-    %% ========== ========== ========== ========== ==========
-    13000([from ~ 13000 BCE])-.-NATUFIAN[Natufian Culture]
-    9500([from ~ 9,500 BCE])-.-GOBEKLI_TEPE[Gobekli Tepe]
+
 
 
 ```
