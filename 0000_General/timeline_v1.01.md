@@ -41,6 +41,10 @@ flowchart TD
   13000-.-
   10000-.-
   9500
+    
+    %% ========== ========== ========== ========== ==========
+    13000([from ~ 13000 BCE])-.-NATUFIAN[Natufian Culture]
+    9500([from ~ 9,500 BCE])-.-GOBEKLI_TEPE[Gobekli Tepe]
 
 
 ```
