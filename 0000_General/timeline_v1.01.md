@@ -18,7 +18,7 @@ flowchart TD
     POTTERY_NEOLITHIC[Pottery Neolithic]
     YARNUKIAN["Yarnukian Culture"]
     SUMER[Sumer]
-    KISH[Kish]
+    %%KISH[Kish]
 
     13000-.-NATUFIAN
     10000-.-PRE_POTTERY_NEOLITHIC_A
@@ -27,5 +27,5 @@ flowchart TD
     7000-.-POTTERY_NEOLITHIC
     6400-.-YARNUKIAN
     5500_SUMER-.-SUMER[Sumer]
-    5500_KISH-.-KISH[Kish]
+    5500_SUMER-.-KISH[Kish]
 ```
