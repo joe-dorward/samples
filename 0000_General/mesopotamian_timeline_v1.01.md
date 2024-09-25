@@ -1,5 +1,6 @@
 ## Mesopotamian Timeline
-At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went. That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age about ten-to-fifteen thousand years ago (but don't quote me on that).
+At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went. That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age about ten-to-fifteen thousand years ago (but don't quote me on that). If you'd thought about the name a little, you would likely have realised that _meso_ means _between_, and you might guess that _pota_ likely has the same meaning that it has in _potable_ - and - that would be a good guess. Mesopotamia, rather than being a country (in any sense of the word) is the name applied to the geographical area between, and surrounding the
+[Tigris](https://en.wikipedia.org/wiki/Tigris) and [Euphrates](https://en.wikipedia.org/wiki/Euphrates).
 
 ```mermaid
 %%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'8pt' } }}%%
@@ -32,8 +33,10 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
       click YARNUKIAN "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
 
       5500([from ~ 5,500 BCE])
-      SUMER[Sumer]
-      click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
+            UBAID[Ubaid Period]
+            click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
+            SUMER[Sumer]
+            click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
       5400([from ~ 5,400 BCE])
       ERIDU[Eridu]
@@ -41,7 +44,7 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
 
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,SUMER,ERIDU Note;
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU Note;
 
       %% ========== ========== ========== ========== ==========
       START-.-13000-.-NATUFIAN
@@ -50,7 +53,8 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
       START-.-7500-.-CATALHOYUK
       START-.-7000-.-POTTERY_NEOLITHIC
       START-.-6400-.-YARNUKIAN
-      START-.-5500-.-SUMER
+      START-.-5500-.-UBAID
+              5500-.-SUMER
       START-.-5400-.-ERIDU
      
       
