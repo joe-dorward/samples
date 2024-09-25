@@ -38,7 +38,7 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
 
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN Note;
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,SUMER,ERIDU Note;
 
       %% ========== ========== ========== ========== ==========
       START-.-13000-.-NATUFIAN
