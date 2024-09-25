@@ -1,4 +1,8 @@
+At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went. That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age about ten-to-fifteen thousand years ago (but don't quote me on that).
 ```mermaid
+---
+title: Mesopotamian Timeline
+---
 %%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'8pt' } }}%%
 flowchart LR
 classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:0px, padding:0px;
