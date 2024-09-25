@@ -56,13 +56,17 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
             CUNEIFORM(Cuneiform)
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
+      2600([from ~ 2,600 BCE])
+            EARLY_ASSYRIAN_PERIOD(Early Assyrian Period)
+            click EARLY_ASSYRIAN_PERIOD "https://en.wikipedia.org/wiki/Early_Assyrian_period" _blank
+
       2334([from ~ 2,334 BCE])
             AKKADIAN_EMPIRE(Akkadian Empire)
             click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
 
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,AKKADIAN_EMPIRE Note;
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
       %% ========== ========== ========== ========== ==========
       START-.-13000-.-NATUFIAN
       START-.-10000-.-PRE_POTTERY_NEOLITHIC_A
@@ -76,4 +80,6 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
       START-.-4000-.-URUK_PERIOD
               4000-.-URUK-."see".-INANNA
       START-.-3100-.-CUNEIFORM
+      START-.-2600-.-EARLY_ASSYRIAN_PERIOD
+      START-.-2334-.-AKKADIAN_EMPIRE
 ```
