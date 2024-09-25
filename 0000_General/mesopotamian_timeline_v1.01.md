@@ -1,5 +1,5 @@
 ## Mesopotamian Timeline
-At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went. That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age about ten-to-fifteen thousand years ago (but don't quote me on that). If you'd thought about the name a little, you would likely have realised that _meso_ means _between_, and you might guess that _pota_ likely has the same meaning that it has in _potable_ - and - that would be a good guess. Mesopotamia, rather than being a country (in any sense of the word) is the name applied to the geographical area between, and surrounding the
+At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went. That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age about ten-to-fifteen thousand years ago (but don't quote me on that). If you'd thought about the name a little, you would likely have realised that _meso_ means _between_, and that _pot_ likely has the same meaning that it has in _potable_ - and - that would be a good guess. Mesopotamia, rather than being a country (in any sense of the word) is the name applied to the geographical area between, and surrounding the
 [Tigris](https://en.wikipedia.org/wiki/Tigris) and [Euphrates](https://en.wikipedia.org/wiki/Euphrates).
 
 ```mermaid
@@ -42,10 +42,27 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
       ERIDU[Eridu]
       click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
 
+      4000([from ~ 4,000 BCE])
+            URUK_PERIOD[Uruk Period]
+            click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
+
+            URUK[Uruk]
+            click URUK "https://en.wikipedia.org/wiki/Uruk" _blank
+
+            INANNA[Inanna]
+            click INANNA "https://en.wikipedia.org/wiki/Inanna" _blank
+
+      3100([from ~ 3,100 BCE])
+            CUNEIFORM(Cuneiform)
+            click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
+
+      2334([from ~ 2,334 BCE])
+            AKKADIAN_EMPIRE(Akkadian Empire)
+            click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU Note;
 
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,AKKADIAN_EMPIRE Note;
       %% ========== ========== ========== ========== ==========
       START-.-13000-.-NATUFIAN
       START-.-10000-.-PRE_POTTERY_NEOLITHIC_A
@@ -56,6 +73,7 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
       START-.-5500-.-UBAID
               5500-.-SUMER
       START-.-5400-.-ERIDU
-     
-      
+      START-.-4000-.-URUK_PERIOD
+              4000-.-URUK-."see".-INANNA
+      START-.-3100-.-CUNEIFORM
 ```
