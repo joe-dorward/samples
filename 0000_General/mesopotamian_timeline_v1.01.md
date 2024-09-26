@@ -64,7 +64,7 @@ classDef Summary fill:white, stroke:white, text-align:left
 
       3100([from ~ 3,100 BCE])
             CUNEIFORM[Cuneiform]
-            CUNEIFORM_NOTE[#151; the earliest know writing system]
+            CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians)"]
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
 
