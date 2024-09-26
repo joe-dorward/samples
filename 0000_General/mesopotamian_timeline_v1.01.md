@@ -26,7 +26,7 @@ classDef Summary fill:white, stroke:white, text-align:left
 
       7500([from ~ 7,500 BCE])
       CATALHOYUK[Çatalhöyük]
-      CATALHOYUK_NOTE[Çatalhöyük is the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
+      CATALHOYUK_NOTE[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
       click CATALHOYUK "https://en.wikipedia.org/wiki/Çatalhöyük" _blank
 
       7000([from ~ 7,000 BCE])
@@ -46,7 +46,7 @@ classDef Summary fill:white, stroke:white, text-align:left
             UBAID[Ubaid Period]
             click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
             SUMER[Sumer]
-            SUMER_NOTE[`&endash;` the earliest known civilization in southern Mesopotamia, where the Sumerians invented the Cuneiform writing system.]
+            SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
             click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
       5400([from ~ 5,400 BCE])
@@ -61,11 +61,12 @@ classDef Summary fill:white, stroke:white, text-align:left
             click URUK "https://en.wikipedia.org/wiki/Uruk" _blank
 
             INANNA[Inanna]
+            INANNA_NOTE[#151; the patron goddess of the Eanna temple in Uruk]
             click INANNA "https://en.wikipedia.org/wiki/Inanna" _blank
 
       3100([from ~ 3,100 BCE])
             CUNEIFORM[Cuneiform]
-            CUNEIFORM_NOTE[- the earliest know writing system]
+            CUNEIFORM_NOTE[#151; the earliest know writing system]
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
       2600([from ~ 2,600 BCE])
@@ -79,7 +80,7 @@ classDef Summary fill:white, stroke:white, text-align:left
 
 
       class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
-      class CATALHOYUK_NOTE,SUMER_NOTE,CUNEIFORM_NOTE Summary
+      class CATALHOYUK_NOTE,SUMER_NOTE,INANNA_NOTE,CUNEIFORM_NOTE Summary
       %% ========== ========== ========== ========== ==========
       KEY_YEARS-.-13000-.-NATUFIAN
       KEY_YEARS-.-10000-.-PRE_POTTERY_NEOLITHIC_A
@@ -92,7 +93,7 @@ classDef Summary fill:white, stroke:white, text-align:left
                   5500-.-SUMER~~~SUMER_NOTE
       KEY_YEARS-.-5400-.-ERIDU
       KEY_YEARS-.-4000-.-URUK_PERIOD
-                  4000-.-URUK~~~INANNA
+                  4000-.-URUK~~~INANNA~~~INANNA_NOTE
       KEY_YEARS-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
       KEY_YEARS-.-2600-.-EARLY_ASSYRIAN_PERIOD
       KEY_YEARS-.-2334-.-AKKADIAN_EMPIRE
