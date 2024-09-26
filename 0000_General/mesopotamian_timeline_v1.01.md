@@ -10,7 +10,7 @@ flowchart LR
 classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, line-height:150%, margin:0px, padding:0px;
 classDef Summary fill:white, stroke:white, text-align:left
 
-      START(("Start"))
+      KEY_YEARS(("Key Years"))
 
       13000([from ~ 13000 BCE])
       NATUFIAN[Natufian Culture]
@@ -46,6 +46,7 @@ classDef Summary fill:white, stroke:white, text-align:left
             UBAID[Ubaid Period]
             click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
             SUMER[Sumer]
+            SUMER_NOTE[`&endash;` the earliest known civilization in southern Mesopotamia, where the Sumerians invented the Cuneiform writing system.]
             click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
       5400([from ~ 5,400 BCE])
@@ -64,7 +65,7 @@ classDef Summary fill:white, stroke:white, text-align:left
 
       3100([from ~ 3,100 BCE])
             CUNEIFORM[Cuneiform]
-            CUNEIFORM_NOTE[Cuneiform is the earliest know writing system]
+            CUNEIFORM_NOTE[- the earliest know writing system]
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
       2600([from ~ 2,600 BCE])
@@ -77,23 +78,24 @@ classDef Summary fill:white, stroke:white, text-align:left
 
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
-      class CATALHOYUK_NOTE,CUNEIFORM_NOTE Summary
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
+      class CATALHOYUK_NOTE,SUMER_NOTE,CUNEIFORM_NOTE Summary
       %% ========== ========== ========== ========== ==========
-      START-.-13000-.-NATUFIAN
-      START-.-10000-.-PRE_POTTERY_NEOLITHIC_A
-      START-.-9500-.-GOBEKLI_TEPE
-      START-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
-      START-.-7000-.-POTTERY_NEOLITHIC
-      START-.-6400-.-YARNUKIAN
-      START-.-5500-.-UBAID
-              5500-.-SUMER
-      START-.-5400-.-ERIDU
-      START-.-4000-.-URUK_PERIOD
-              4000-.-URUK~~~INANNA
-      START-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
-      START-.-2600-.-EARLY_ASSYRIAN_PERIOD
-      START-.-2334-.-AKKADIAN_EMPIRE
+      KEY_YEARS-.-13000-.-NATUFIAN
+      KEY_YEARS-.-10000-.-PRE_POTTERY_NEOLITHIC_A
+      KEY_YEARS-.-9500-.-GOBEKLI_TEPE
+      KEY_YEARS-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
+      KEY_YEARS-.-7000-.-POTTERY_NEOLITHIC
+      KEY_YEARS-.-6400-.-YARNUKIAN
+      KEY_YEARS-.-6100-.-HALAF
+      KEY_YEARS-.-5500-.-UBAID
+                  5500-.-SUMER~~~SUMER_NOTE
+      KEY_YEARS-.-5400-.-ERIDU
+      KEY_YEARS-.-4000-.-URUK_PERIOD
+                  4000-.-URUK~~~INANNA
+      KEY_YEARS-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
+      KEY_YEARS-.-2600-.-EARLY_ASSYRIAN_PERIOD
+      KEY_YEARS-.-2334-.-AKKADIAN_EMPIRE
 
     %%linkStyle 0 stroke-width:2px,fill:none,stroke:red;
     %%linkStyle 1 stroke-width:2px,fill:none,stroke:blue;
