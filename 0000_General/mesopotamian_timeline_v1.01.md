@@ -6,7 +6,8 @@ At some point in time, our ancestors began moving about the landscape less and d
 %%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'8pt' } }}%%
 flowchart LR
 %%classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:0px, padding:0px, height:40px;
-classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:0px, padding:0px;
+%%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:0px, padding:0px;
+classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, line-height:150%, margin:0px, padding:0px;
 classDef Summary fill:white, stroke:white, text-align:left
 
       START(("Start"))
@@ -35,6 +36,12 @@ classDef Summary fill:white, stroke:white, text-align:left
       YARNUKIAN[Yarmukian Culture]
       click YARNUKIAN "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
 
+      6100([from ~ 6,100 BCE])
+      HALAF[Halaf Culture]
+      click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
+
+
+
       5500([from ~ 5,500 BCE])
             UBAID[Ubaid Period]
             click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
@@ -56,21 +63,22 @@ classDef Summary fill:white, stroke:white, text-align:left
             click INANNA "https://en.wikipedia.org/wiki/Inanna" _blank
 
       3100([from ~ 3,100 BCE])
-            CUNEIFORM(Cuneiform)
+            CUNEIFORM[Cuneiform]
+            CUNEIFORM_NOTE[Cuneiform is the earliest know writing system]
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
       2600([from ~ 2,600 BCE])
-            EARLY_ASSYRIAN_PERIOD(Early Assyrian Period)
+            EARLY_ASSYRIAN_PERIOD[Early Assyrian Period]
             click EARLY_ASSYRIAN_PERIOD "https://en.wikipedia.org/wiki/Early_Assyrian_period" _blank
 
       2334([from ~ 2,334 BCE])
-            AKKADIAN_EMPIRE(Akkadian Empire)
+            AKKADIAN_EMPIRE[Akkadian Empire]
             click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
 
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
-      class CATALHOYUK_NOTE Summary
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
+      class CATALHOYUK_NOTE,CUNEIFORM_NOTE Summary
       %% ========== ========== ========== ========== ==========
       START-.-13000-.-NATUFIAN
       START-.-10000-.-PRE_POTTERY_NEOLITHIC_A
@@ -82,8 +90,8 @@ classDef Summary fill:white, stroke:white, text-align:left
               5500-.-SUMER
       START-.-5400-.-ERIDU
       START-.-4000-.-URUK_PERIOD
-              4000-.-URUK-."see".-INANNA
-      START-.-3100-.-CUNEIFORM
+              4000-.-URUK~~~INANNA
+      START-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
       START-.-2600-.-EARLY_ASSYRIAN_PERIOD
       START-.-2334-.-AKKADIAN_EMPIRE
 
