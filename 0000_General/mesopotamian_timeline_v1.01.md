@@ -86,6 +86,7 @@ classDef Summary fill:white, stroke:white, text-align:left
       2100([from ~ 2,100 BCE])
             ASSYRIA[Assyria]
             ASSYRIA_NOTE[#151; a major civilization of northern Mesopotamia]
+            click ASSYRIA "https://en.wikipedia.org/wiki/Assyria" _blank
 
       class EARLY_ASSYRIAN_PERIOD,SARGON_OF_AKKAD,AKKADIAN_EMPIRE,AKKAD,ASSYRIA Note;
       class SARGON_OF_AKKAD_NOTE,AKKAD_NOTE,ASSYRIA_NOTE Summary
