@@ -40,8 +40,6 @@ classDef Summary fill:white, stroke:white, text-align:left
       HALAF[Halaf Culture]
       click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
 
-
-
       5500([from ~ 5,500 BCE])
             UBAID[Ubaid Period]
             click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
@@ -74,6 +72,8 @@ classDef Summary fill:white, stroke:white, text-align:left
             click EARLY_ASSYRIAN_PERIOD "https://en.wikipedia.org/wiki/Early_Assyrian_period" _blank
 
       2334([from ~ 2,334 BCE])
+            SARGON_OF_AKKAD[Sargon of Akkad]
+            SARGON_OF_AKKAD_NOTE[#151; the first ruler of the Akkadian Empire, known for his conquests of the Sumerian city-states from 2,334 BCE to 2,279 BCE]
             AKKADIAN_EMPIRE[Akkadian Empire]
             AKKAD[Akkad]
             AKKAD_NOTE["#151; the capital city of the Akkadian Empire (location unknown)"]
@@ -81,8 +81,8 @@ classDef Summary fill:white, stroke:white, text-align:left
 
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE,AKKAD Note;
-      class CATALHOYUK_NOTE,SUMER_NOTE,INANNA_NOTE,CUNEIFORM_NOTE,AKKAD_NOTE Summary
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM,EARLY_ASSYRIAN_PERIOD,SARGON_OF_AKKAD,AKKADIAN_EMPIRE,AKKAD Note;
+      class CATALHOYUK_NOTE,SUMER_NOTE,INANNA_NOTE,CUNEIFORM_NOTE,SARGON_OF_AKKAD_NOTE,AKKAD_NOTE Summary
       %% ========== ========== ========== ========== ==========
       KEY_YEARS-.-13000-.-NATUFIAN
       KEY_YEARS-.-10000-.-PRE_POTTERY_NEOLITHIC_A
@@ -98,7 +98,9 @@ classDef Summary fill:white, stroke:white, text-align:left
                   4000-.-URUK~~~INANNA~~~INANNA_NOTE
       KEY_YEARS-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
       KEY_YEARS-.-2600-.-EARLY_ASSYRIAN_PERIOD
-      KEY_YEARS-.-2334-.-AKKADIAN_EMPIRE~~~AKKAD~~~AKKAD_NOTE
+      KEY_YEARS-.-2334-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
+                  2334-.-AKKADIAN_EMPIRE
+                         AKKADIAN_EMPIRE~~~AKKAD~~~AKKAD_NOTE
 
     %%linkStyle 0 stroke-width:2px,fill:none,stroke:red;
     %%linkStyle 1 stroke-width:2px,fill:none,stroke:blue;
