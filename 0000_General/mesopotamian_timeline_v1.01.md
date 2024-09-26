@@ -5,8 +5,10 @@ At some point in time, our ancestors began moving about the landscape less and d
 ```mermaid
 %%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'8pt' } }}%%
 flowchart LR
+%%classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:0px, padding:0px, height:40px;
 classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:0px, padding:0px;
-classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:0px, padding:0px, height:40px;
+classDef Summary fill:white, stroke:white, text-align:left
+
       START(("Start"))
 
       13000([from ~ 13000 BCE])
@@ -23,6 +25,7 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
 
       7500([from ~ 7,500 BCE])
       CATALHOYUK[Çatalhöyük]
+      CATALHOYUK_NOTE[Çatalhöyük is the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
       click CATALHOYUK "https://en.wikipedia.org/wiki/Çatalhöyük" _blank
 
       7000([from ~ 7,000 BCE])
@@ -67,11 +70,12 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
 
 
       class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,EARLY_ASSYRIAN_PERIOD,AKKADIAN_EMPIRE Note;
+      class CATALHOYUK_NOTE Summary
       %% ========== ========== ========== ========== ==========
       START-.-13000-.-NATUFIAN
       START-.-10000-.-PRE_POTTERY_NEOLITHIC_A
       START-.-9500-.-GOBEKLI_TEPE
-      START-.-7500-.-CATALHOYUK
+      START-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
       START-.-7000-.-POTTERY_NEOLITHIC
       START-.-6400-.-YARNUKIAN
       START-.-5500-.-UBAID
@@ -82,4 +86,10 @@ classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-famil
       START-.-3100-.-CUNEIFORM
       START-.-2600-.-EARLY_ASSYRIAN_PERIOD
       START-.-2334-.-AKKADIAN_EMPIRE
+
+    %%linkStyle 0 stroke-width:2px,fill:none,stroke:red;
+    %%linkStyle 1 stroke-width:2px,fill:none,stroke:blue;
+    %%linkStyle 2 stroke-width:2px,fill:none,stroke:red;
+    %%linkStyle 3 stroke-width:2px,fill:none,stroke:blue;
+    %%linkStyle 4 stroke-width:2px,fill:none,stroke:red;
 ```
