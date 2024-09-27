@@ -115,16 +115,20 @@ classDef Summary fill:white, stroke:white, text-align:left
             ASSYRIA_NOTE[#151; a major civilization of northern Mesopotamia]
             click ASSYRIA "https://en.wikipedia.org/wiki/Assyria" _blank
 
-      2025([from ~ 2,025 BCE])
-            ASSUR[Aššur]
-            ASSUR_NOTE[#151; by then, the capital of the Assyrian city-state]
-            click ASSUR "https://en.wikipedia.org/wiki/Assur" _blank
+            ASSUR_02[Aššur]
+            ASSUR_02_NOTE[#151; from ~ 2,025 BCE, the capital of the Assyrian city-state]
+            click ASSUR_02 "https://en.wikipedia.org/wiki/Assur" _blank
+
+      %%2025([from ~ 2,025 BCE])
+            %%ASSUR[Aššur]
+            %%ASSUR_NOTE[#151; by then, the capital of the Assyrian city-state]
+            %%click ASSUR "https://en.wikipedia.org/wiki/Assur" _blank
 
 
       %% ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
-      class EARLY_ASSYRIAN_PERIOD,SARGON_OF_AKKAD,AKKADIAN_EMPIRE,AKKAD,ASSYRIA,ASSUR_01,ASSUR Note;
-      class SARGON_OF_AKKAD_NOTE,AKKAD_NOTE,ASSYRIA_NOTE,ASSUR_NOTE,EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE Summary
+      class EARLY_ASSYRIAN_PERIOD,SARGON_OF_AKKAD,AKKADIAN_EMPIRE,AKKAD,ASSYRIA,ASSUR_01,ASSUR_02,ASSUR Note;
+      class SARGON_OF_AKKAD_NOTE,AKKAD_NOTE,ASSYRIA_NOTE,ASSUR_NOTE,EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE,ASSUR_02_NOTE Summary
 
       class EARLY_DYNASTIC_PERIOD Note;
       class EARLY_DYNASTIC_PERIOD Period;
@@ -138,7 +142,9 @@ classDef Summary fill:white, stroke:white, text-align:left
                   2334-.-AKKADIAN_EMPIRE
                          AKKADIAN_EMPIRE~~~AKKAD~~~AKKAD_NOTE
       KEY_YEARS-.-2100-.-ASSYRIA~~~ASSYRIA_NOTE
-      KEY_YEARS-.-2025-.-ASSUR~~~ASSUR_NOTE
+                         ASSYRIA-.-ASSUR_02~~~ASSUR_02_NOTE
+
+      %%KEY_YEARS-.-2025-.-ASSUR~~~ASSUR_NOTE
 
       %% ========== ========== ========== ========== ==========
 
