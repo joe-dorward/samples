@@ -7,6 +7,7 @@ At some point in time, our ancestors began moving about the landscape less and d
 flowchart LR
 %%classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:0px, padding:0px, height:40px;
 %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:0px, padding:0px;
+classDef Period fill:linen, stroke:darkred, color:darkred;
 classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, line-height:150%, margin:0px, padding:0px;
 classDef Summary fill:white, stroke:white, text-align:left
 
@@ -88,6 +89,15 @@ classDef Summary fill:white, stroke:white, text-align:left
       KEY_YEARS-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
       %% ========== ========== ========== ========== ==========
+      2900([from ~ 2,900 BCE])
+            EARLY_DYNASTIC_PERIOD(Early Dynastic Period)
+            click EARLY_DYNASTIC_PERIOD "https://en.wikipedia.org/wiki/Early_Dynastic_Period_(Mesopotamia)" _blank
+            EARLY_DYNASTIC_PERIOD_NOTE[#151; characterized by the existence of many city-states]
+
+            ASSUR_01[Aššur]
+            ASSUR_01_NOTE[#151; the founding of]
+
+
       %%2600([from ~ 2,600 BCE])
             %%EARLY_ASSYRIAN_PERIOD[Early Assyrian Period]
             %%click EARLY_ASSYRIAN_PERIOD "https://en.wikipedia.org/wiki/Early_Assyrian_period" _blank
@@ -112,9 +122,16 @@ classDef Summary fill:white, stroke:white, text-align:left
 
 
       %% ---------- ---------- ---------- ---------- ---------- ---------- ----------
-      class EARLY_ASSYRIAN_PERIOD,SARGON_OF_AKKAD,AKKADIAN_EMPIRE,AKKAD,ASSYRIA,ASSUR Note;
-      class SARGON_OF_AKKAD_NOTE,AKKAD_NOTE,ASSYRIA_NOTE,ASSUR_NOTE Summary
+
+      class EARLY_ASSYRIAN_PERIOD,SARGON_OF_AKKAD,AKKADIAN_EMPIRE,AKKAD,ASSYRIA,ASSUR_01,ASSUR Note;
+      class SARGON_OF_AKKAD_NOTE,AKKAD_NOTE,ASSYRIA_NOTE,ASSUR_NOTE,EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE Summary
+
+      class EARLY_DYNASTIC_PERIOD Note;
+      class EARLY_DYNASTIC_PERIOD Period;
       %% ---------- ---------- ---------- ---------- ---------- ---------- ----------
+      KEY_YEARS-.-2900-.-EARLY_DYNASTIC_PERIOD~~~EARLY_DYNASTIC_PERIOD_NOTE
+                         EARLY_DYNASTIC_PERIOD---ASSUR_01~~~ASSUR_01_NOTE
+
 
       %%KEY_YEARS-.-2600-.-EARLY_ASSYRIAN_PERIOD
       KEY_YEARS-.-2334-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
