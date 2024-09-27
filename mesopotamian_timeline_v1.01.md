@@ -117,7 +117,7 @@ classDef Summary fill:white, stroke:white, text-align:left
 
       2025([from ~ 2,025 BCE])
             ASSUR[Aššur]
-            ASSUR_NOTE[#151; (by then) the capital of the Assyrian city-state]
+            ASSUR_NOTE[#151; by then, the capital of the Assyrian city-state]
             click ASSUR "https://en.wikipedia.org/wiki/Assur" _blank
 
 
