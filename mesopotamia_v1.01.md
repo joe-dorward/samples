@@ -19,7 +19,7 @@ flowchart LR
 %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, text-align:left, line-height:150%, margin:0px, padding:0px;
 %%classDef Period fill:linen, stroke:darkred, color:darkred;
 classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
-classDef Summary fill:white, stroke:white, text-align:left
+classDef Summary fill:white, stroke:white, text-align:left;
 
       KEY_YEARS(("Key Years"))
 
@@ -174,11 +174,11 @@ classDef Summary fill:white, stroke:white, text-align:left
 
     1894([from ~ 1,894 BCE])
       BABYLON[Babylon]
-
-    1810([from ~ 1,810 BCE])
       HAMMURABI[Hammurabi]
       HAMMURABI_NOTE[#151; from ~ 1,810 BCE, the 6th king of Babylon]
 
     KEY_YEARS-.-1894-.-BABYLON
                        BABYLON-.-HAMMURABI~~~HAMMURABI_NOTE
+
+    class HAMMURABI_NOTE Summary
 ```
