@@ -15,7 +15,6 @@ At some point in time, our ancestors began moving about the landscape less and d
   }
 }%%
 ```mermaid
-%%{init: { 'theme':'forest', 'themeVariables': {  } }}%%
 %%{
   init: {
     'theme': 'base',
@@ -28,8 +27,8 @@ At some point in time, our ancestors began moving about the landscape less and d
       'lineColor': '#F8B229',
       'secondaryColor': '#006100',
 
-      'tertiaryColor': 'white',,
-      'tertiaryTextColor': 'forestgreen'
+      'tertiaryColor': 'white',
+      'tertiaryTextColor': 'forestgreen',
       'tertiaryBorderColor': 'forestgreen'
     }
   }
