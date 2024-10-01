@@ -78,14 +78,18 @@ classDef Summary fill:white, stroke:white, text-align:left
             GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
             click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
+      3800([from ~ 3,800 BCE])
+            UR[Ur]
+            click UR "https://en.wikipedia.org/wiki/Cuneiform" _blank
+
       3100([from ~ 3,100 BCE])
             CUNEIFORM[Cuneiform]
             CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians)"]
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,GILGAMESH,CUNEIFORM Note;
-      class CATALHOYUK_NOTE,SUMER_NOTE,URUK_NOTE,INANNA_NOTE,CUNEIFORM_NOTE,GILGAMESH_NOTE Summary
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Note;
+      class CATALHOYUK_NOTE,SUMER_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Summary
       %% ========== ========== ========== ========== ==========
 
       %% ========== ========== ========== ========== ==========
@@ -105,6 +109,7 @@ classDef Summary fill:white, stroke:white, text-align:left
                          URUK-.-INANNA~~~INANNA_NOTE
                          URUK-.-GILGAMESH~~~GILGAMESH_NOTE
 
+      KEY_YEARS-.-3800-.-UR
       KEY_YEARS-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
       %% ========== ========== ========== ========== ==========
