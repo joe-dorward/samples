@@ -3,12 +3,22 @@ At some point in time, our ancestors began moving about the landscape less and d
 [Tigris](https://en.wikipedia.org/wiki/Tigris) and [Euphrates](https://en.wikipedia.org/wiki/Euphrates).
 
 ```mermaid
-%%{init: { 'theme':'forest', 'themeVariables': { 'fontSize':'8pt' } }}%%
+%%{
+  init: {
+    'theme': 'forest',
+    'themeVariables': {
+      'fontSize':'9pt'
+
+    }
+  }
+}%%
+
+
 flowchart LR
-%%classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, margin:0px, padding:0px, height:40px;
-%%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, text-align:left, line-height:150%, margin:0px, padding:0px;
-classDef Period fill:linen, stroke:darkred, color:darkred;
-classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, line-height:150%, margin:0px, padding:0px;
+%%classDef Note_b fill:cornsilk, stroke:saddlebrown, color:saddlebrown, text-align:left, margin:0px, padding:0px, height:40px;
+%%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, text-align:left, line-height:150%, margin:0px, padding:0px;
+%%classDef Period fill:linen, stroke:darkred, color:darkred;
+classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
 classDef Summary fill:white, stroke:white, text-align:left
 
       KEY_YEARS(("Key Years"))
@@ -57,11 +67,16 @@ classDef Summary fill:white, stroke:white, text-align:left
             click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
 
             URUK[Uruk]
+            URUK_NOTE[#151; city founded ~ 5,000 BCE]
             click URUK "https://en.wikipedia.org/wiki/Uruk" _blank
 
             INANNA[Inanna]
             INANNA_NOTE[#151; the patron goddess of the Eanna temple in Uruk]
             click INANNA "https://en.wikipedia.org/wiki/Inanna" _blank
+
+            GILGAMESH[Gilgamesh]
+            GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
+            click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
       3100([from ~ 3,100 BCE])
             CUNEIFORM[Cuneiform]
@@ -69,8 +84,8 @@ classDef Summary fill:white, stroke:white, text-align:left
             click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
 
-      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,CUNEIFORM Note;
-      class CATALHOYUK_NOTE,SUMER_NOTE,INANNA_NOTE,CUNEIFORM_NOTE Summary
+      class NATUFIAN,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC,YARNUKIAN,HALAF,UBAID,SUMER,ERIDU,URUK_PERIOD,URUK,INANNA,GILGAMESH,CUNEIFORM Note;
+      class CATALHOYUK_NOTE,SUMER_NOTE,URUK_NOTE,INANNA_NOTE,CUNEIFORM_NOTE,GILGAMESH_NOTE Summary
       %% ========== ========== ========== ========== ==========
 
       %% ========== ========== ========== ========== ==========
@@ -84,8 +99,12 @@ classDef Summary fill:white, stroke:white, text-align:left
       KEY_YEARS-.-5500-.-UBAID
                   5500-.-SUMER~~~SUMER_NOTE
       KEY_YEARS-.-5400-.-ERIDU
+
       KEY_YEARS-.-4000-.-URUK_PERIOD
-                  4000-.-URUK~~~INANNA~~~INANNA_NOTE
+                  4000-.-URUK~~~URUK_NOTE
+                         URUK-.-INANNA~~~INANNA_NOTE
+                         URUK-.-GILGAMESH~~~GILGAMESH_NOTE
+
       KEY_YEARS-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
       %% ========== ========== ========== ========== ==========
@@ -148,9 +167,4 @@ classDef Summary fill:white, stroke:white, text-align:left
 
       %% ========== ========== ========== ========== ==========
 
-    %%linkStyle 0 stroke-width:2px,fill:none,stroke:red;
-    %%linkStyle 1 stroke-width:2px,fill:none,stroke:blue;
-    %%linkStyle 2 stroke-width:2px,fill:none,stroke:red;
-    %%linkStyle 3 stroke-width:2px,fill:none,stroke:blue;
-    %%linkStyle 4 stroke-width:2px,fill:none,stroke:red;
 ```
