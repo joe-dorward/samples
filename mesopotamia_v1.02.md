@@ -20,12 +20,14 @@ At some point in time, our ancestors began moving about the landscape less and d
     'theme': 'base',
     'themeVariables': {
       'fontSize':'8pt',
+      'fontFamily':'verdana',
 
-      'primaryColor': '#BB2528',
-      'primaryTextColor': '#fff',
-      'primaryBorderColor': '#7C0000',
-      'lineColor': '#F8B229',
-      'secondaryColor': '#006100',
+      'primaryColor': '#CDE498',
+      'primaryTextColor': 'forestgreen',
+      'primaryBorderColor': 'forestgreen',
+
+      'lineColor': 'red',
+      'secondaryColor': 'red',
 
       'tertiaryColor': 'white',
       'tertiaryTextColor': 'forestgreen',
@@ -36,9 +38,11 @@ At some point in time, our ancestors began moving about the landscape less and d
 flowchart LR
 
   %%classDef Period fill:linen, stroke:darkred, color:darkred;
-  %%classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, font-family:verdana, line-height:150%, margin:0px, padding:0px;
+
   %%classDef Summary fill:white, stroke:white, text-align:left
   %%classDef Culture fill:white, stroke:forestgreen, color:forestgreen, font-family:verdana, margin:0px, padding:0px;
+
+  classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
   %% ========== ========== ========== ========== ==========
   YEAR_DOT(("Year Dot"))
   %% ========== ========== ========== ========== ==========
