@@ -80,7 +80,7 @@ classDef Summary fill:white, stroke:white, text-align:left
 
       3800([from ~ 3,800 BCE])
             UR[Ur]
-            click UR "https://en.wikipedia.org/wiki/Cuneiform" _blank
+            click UR "https://en.wikipedia.org/wiki/Ur" _blank
 
       3100([from ~ 3,100 BCE])
             CUNEIFORM[Cuneiform]
