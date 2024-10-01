@@ -176,7 +176,9 @@ classDef Summary fill:white, stroke:white, text-align:left
       BABYLON[Babylon]
 
     1810([from ~ 1,810 BCE])
+      HAMMURABI[Hammurabi]
+      HAMMURABI_NOTE[#151; from ~ 1,810 BCE, the 6th king of Babylon]
 
     KEY_YEARS-.-1894-.-BABYLON
-                       BABYLON-.-1810
+                       BABYLON-.-HAMMURABI~~~HAMMURABI_NOTE
 ```
