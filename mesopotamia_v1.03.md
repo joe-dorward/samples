@@ -27,8 +27,8 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ~ 15000 BCE - PRE-HISTORIC
   %% ========== ========== ========== ========== ==========
   13000([from ~ 13000 BCE])
-    NATUFIAN[Natufian Culture]
-    click NATUFIAN "https://en.wikipedia.org/wiki/Natufian_culture" _blank
+    NATUFIAN_CULTURE[Natufian Culture]
+    click NATUFIAN_CULTURE "https://en.wikipedia.org/wiki/Natufian_culture" _blank
 
   10000([from ~ 10,000 BCE])
     PRE_POTTERY_NEOLITHIC_A[Pre-Pottery Neolithic A]
@@ -47,8 +47,8 @@ classDef Note fill:white, stroke:white, text-align:left;
     POTTERY_NEOLITHIC[Pottery Neolithic]
 
   6400([from ~ 6,400 BCE])
-    YARNUKIAN[Yarmukian Culture]
-    click YARNUKIAN "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
+    YARNUKIAN_CULTURE[Yarmukian Culture]
+    click YARNUKIAN_CULTURE "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
 
   6100([from ~ 6,100 BCE])
     HALAF[Halaf Culture]
@@ -96,12 +96,12 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT-.-13000-.-NATUFIAN
+  YEAR_DOT-.-13000-.-NATUFIAN_CULTURE
   YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
   YEAR_DOT-.-7000-.-POTTERY_NEOLITHIC
-  YEAR_DOT-.-6400-.-YARNUKIAN
+  YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
   YEAR_DOT-.-6100-.-HALAF
 
   YEAR_DOT-.-5500-.-UBAID_PERIOD
@@ -145,20 +145,15 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT-.-2900-.-EARLY_DYNASTIC_PERIOD~~~EARLY_DYNASTIC_PERIOD_NOTE
+  YEAR_DOT-.-2900-.-EARLY_DYNASTIC_PERIOD--oEARLY_DYNASTIC_PERIOD_NOTE
                     EARLY_DYNASTIC_PERIOD-.-ASSUR_01~~~ASSUR_01_NOTE
 
   YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
-                    AKKADIAN_EMPIRE-.-AKKAD-.-AKKAD_NOTE
+                    AKKADIAN_EMPIRE-.-AKKAD--oAKKAD_NOTE
                                       AKKAD-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
-
-
-  linkStyle 24 stroke:mediumseagreen, stroke-width:3px;
 
   class ASSUR_01,AKKAD,SARGON_OF_AKKAD Node
   class EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE,AKKAD_NOTE,SARGON_OF_AKKAD_NOTE Note
-
-
 
   %% ========== ========== ========== ========== ==========
   %% 2000 BCE & BABYLONIA
@@ -183,3 +178,5 @@ classDef Note fill:white, stroke:white, text-align:left;
 
     class BABYLON,HAMMURABI Node;
     class BABYLON_NOTE,HAMMURABI_NOTE Note
+
+linkStyle 24,35,41 stroke:mediumseagreen, stroke-width:3px;
