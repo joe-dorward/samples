@@ -68,6 +68,12 @@ classDef Note fill:white, stroke:white, text-align:left;
     URUK_PERIOD[Uruk Period]
     click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
 
+    URUK[Uruk]
+    URUK_NOTE[#151; 'sumerian' city founded ~ 5,000 BCE]
+    click URUK "https://en.wikipedia.org/wiki/Uruk" _blank
+
+
+
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   YEAR_DOT-.-13000-.-NATUFIAN
@@ -82,6 +88,7 @@ classDef Note fill:white, stroke:white, text-align:left;
                     UBAID_PERIOD-.-ERIDU~~~ERIDU_NOTE
 
   YEAR_DOT-.-4000-.-URUK_PERIOD
+                    URUK_PERIOD-.-URUK~~~URUK_NOTE
 
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU Node
   class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE Note
