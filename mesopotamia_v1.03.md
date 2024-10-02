@@ -123,10 +123,9 @@ classDef Note fill:white, stroke:white, text-align:left;
 
     ASSUR_01[Aššur]
     ASSUR_01_NOTE[#151; 'assyrian' city founded ~ 2025 BCE]
-
+    click ASSUR "https://en.wikipedia.org/wiki/Assur" _blank
 
   2334([from ~ 2,334 BCE])
-
 
     SARGON_OF_AKKAD[Sargon of Akkad]
     SARGON_OF_AKKAD_NOTE[#151; the first ruler of the Akkadian Empire, known for his conquests of the Sumerian city-states]
@@ -139,10 +138,9 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT-.-2900-.-EARLY_DYNASTIC_PERIOD
+  YEAR_DOT-.-2900-.-EARLY_DYNASTIC_PERIOD~~~EARLY_DYNASTIC_PERIOD_NOTE
                     EARLY_DYNASTIC_PERIOD-.-ASSUR_01~~~ASSUR_01_NOTE
 
-  %%YEAR_DOT-.-2334-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
   YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
                     AKKADIAN_EMPIRE-.-AKKAD~~~AKKAD_NOTE
                                       AKKAD-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
@@ -152,7 +150,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
 
   class ASSUR_01,AKKAD,SARGON_OF_AKKAD_NOTE Node
-  class ASSUR_01_NOTE,AKKAD_NOTE,SARGON_OF_AKKAD_NOTE Note
+  class EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE,AKKAD_NOTE,SARGON_OF_AKKAD_NOTE Note
 
 
 
