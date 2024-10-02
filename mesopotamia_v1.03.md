@@ -181,4 +181,23 @@ classDef Note fill:white, stroke:white, text-align:left;
     class BABYLON,HAMMURABI Node;
     class BABYLON_NOTE,HAMMURABI_NOTE Note
 
-linkStyle 24,35,41 stroke:darkseagreen, stroke-width:3px;
+%%linkStyle 24,35,41 stroke:darkseagreen, stroke-width:3px;
+  %% ========== ========== ========== ========== ==========
+  %% ASSYRIAN EMPIRE
+  %% ========== ========== ========== ========== ==========
+  1400([from ~ 1,400 BCE])
+    ASSYRIAN_EMPIRE[Assyrian Empire]
+    ASSYRIAN_EMPIRE_NOTE[#151; an empire emerges from ~ 1,400 BCE]
+    click ASSYRIAN_EMPIRE "https://en.wikipedia.org/wiki/Assyria" _blank
+
+    ASHURBANIPAL[Ashurbanipal]
+    ASHURBANIPAL_NOTE[#151; - Assyrian king, from ~ 669 BCE]
+    click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
+  %% ---------- ---------- ---------- ---------- ----------
+  %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-1400-.-ASSYRIAN_EMPIRE~~~ASSYRIAN_EMPIRE_NOTE
+                    ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
+
+    class ASSYRIAN_EMPIRE,ASHURBANIPAL Node;
+    class ASSYRIAN_EMPIRE_NOTE,ASHURBANIPAL_NOTE Note
