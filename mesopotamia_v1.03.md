@@ -112,8 +112,8 @@ classDef Note fill:white, stroke:white, text-align:left;
                     URUK_PERIOD-.-URUK~~~URUK_NOTE
                                   URUK-.-INANNA~~~INANNA_NOTE
                                   URUK-.-GILGAMESH~~~GILGAMESH_NOTE
-                                  URUK-.-CUNEIFORM~~~CUNEIFORM_NOTE
                                   URUK-.-UR~~~UR_NOTE
+                                  URUK-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
   %%YEAR_DOT-.-3800-.-UR
   %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
