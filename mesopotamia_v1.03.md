@@ -83,13 +83,14 @@ classDef Note fill:white, stroke:white, text-align:left;
     GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
     click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
-  3800([from ~ 3,800 BCE])
+  %%3800([from ~ 3,800 BCE])
     UR[Ur]
+    UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
     click UR "https://en.wikipedia.org/wiki/Ur" _blank
 
-  3100([from ~ 3,100 BCE])
+  %%3100([from ~ 3,100 BCE])
     CUNEIFORM[Cuneiform]
-    CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians)"]
+    CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians) ~ 3,100 BCE"]
     click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
   %% ---------- ---------- ---------- ---------- ----------
@@ -111,12 +112,14 @@ classDef Note fill:white, stroke:white, text-align:left;
                     URUK_PERIOD-.-URUK~~~URUK_NOTE
                                   URUK-.-INANNA~~~INANNA_NOTE
                                   URUK-.-GILGAMESH~~~GILGAMESH_NOTE
+                                  URUK-.-CUNEIFORM~~~CUNEIFORM_NOTE
+                                  URUK-.-UR~~~UR_NOTE
 
-  YEAR_DOT-.-3800-.-UR
-  YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
+  %%YEAR_DOT-.-3800-.-UR
+  %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
-  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,CUNEIFORM_NOTE Note
+  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
   %% ========== ========== ========== ========== ==========
   %% 3000 BCE & ASSYRIA
   %% ========== ========== ========== ========== ==========
