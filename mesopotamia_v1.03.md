@@ -45,6 +45,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   7000([from ~ 7,000 BCE])
     POTTERY_NEOLITHIC[Pottery Neolithic]
+    click POTTERY_NEOLITHIC "https://en.wikipedia.org/wiki/Late_Neolithic" _blank
 
   6400([from ~ 6,400 BCE])
     YARNUKIAN_CULTURE[Yarmukian Culture]
@@ -112,8 +113,8 @@ classDef Note fill:white, stroke:white, text-align:left;
                     URUK_PERIOD-.-URUK--oURUK_NOTE
                                   URUK-.-INANNA~~~INANNA_NOTE
                                   URUK-.-GILGAMESH~~~GILGAMESH_NOTE
-                                  URUK-.-UR~~~UR_NOTE
-                                  URUK-.-CUNEIFORM~~~CUNEIFORM_NOTE
+                    URUK_PERIOD-.-UR~~~UR_NOTE
+                    URUK_PERIOD-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
   %%YEAR_DOT-.-3800-.-UR
   %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
