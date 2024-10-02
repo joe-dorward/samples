@@ -90,8 +90,8 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-4000-.-URUK_PERIOD
                     URUK_PERIOD-.-URUK~~~URUK_NOTE
 
-  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU Node
-  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE Note
+  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK Node
+  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% 2000 & BABYLONIA
