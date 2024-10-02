@@ -36,11 +36,12 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   9500([from ~ 9,500 BCE])
     GOBEKLI_TEPE[Göbekli Tepe]
+    GOBEKLI_TEPE_NOTE[#151; early 'town' in south-eastern Anatolia, founded ~ 9500.]
     click GOBEKLI_TEPE "https://en.wikipedia.org/wiki/Göbekli_Tepe" _blank
 
   7500([from ~ 7,500 BCE])
     CATALHOYUK[Çatalhöyük]
-    CATALHOYUK_NOTE[#151; earliest known 'town', hundreds of people living in a cluster of mudbrick houses.]
+    CATALHOYUK_NOTE[#151; early 'town' in southern Anatolia, with hundreds of people living in a cluster of mudbrick houses.]
     click CATALHOYUK "https://en.wikipedia.org/wiki/Çatalhöyük" _blank
 
   7000([from ~ 7,000 BCE])
@@ -99,7 +100,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-13000-.-NATUFIAN_CULTURE
   YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A
-  YEAR_DOT-.-9500-.-GOBEKLI_TEPE
+  YEAR_DOT-.-9500-.-GOBEKLI_TEPE~~~GOBEKLI_TEPE_NOTE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
   YEAR_DOT-.-7000-.-POTTERY_NEOLITHIC
   YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
@@ -120,7 +121,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
-  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
+  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
   %% ========== ========== ========== ========== ==========
   %% 3000 BCE & ASSYRIA
   %% ========== ========== ========== ========== ==========
