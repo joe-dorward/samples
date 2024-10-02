@@ -59,6 +59,10 @@ classDef Note fill:white, stroke:white, text-align:left;
     SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
     click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
+  5400([from ~ 5,400 BCE])
+    ERIDU[Eridu]
+    click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
+
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   YEAR_DOT-.-13000-.-NATUFIAN
@@ -69,10 +73,10 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-6100-.-HALAF
   YEAR_DOT-.-5500-.-UBAID
              5500-.-SUMER~~~SUMER_NOTE
+  YEAR_DOT-.-5400-.-ERIDU
 
 
-
-  class GOBEKLI_TEPE,SUMER Node
+  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU Node
   class CATALHOYUK_NOTE,SUMER_NOTE Note
 
   %% ========== ========== ========== ========== ==========
