@@ -80,9 +80,18 @@ classDef Note fill:white, stroke:white, text-align:left;
     GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
     click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
+  3800([from ~ 3,800 BCE])
+    UR[Ur]
+    click UR "https://en.wikipedia.org/wiki/Ur" _blank
+
+  3100([from ~ 3,100 BCE])
+    CUNEIFORM[Cuneiform]
+    CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians)"]
+    click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-13000-.-NATUFIAN
   YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE
@@ -99,12 +108,56 @@ classDef Note fill:white, stroke:white, text-align:left;
                                   URUK-.-INANNA~~~INANNA_NOTE
                                   URUK-.-GILGAMESH~~~GILGAMESH_NOTE
 
+  YEAR_DOT-.-3800-.-UR
+  YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
-  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH Node
-  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE Note
+  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
+  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,CUNEIFORM_NOTE Note
+  %% ========== ========== ========== ========== ==========
+  %% 3000 BCE & ASSYRIA
+  %% ========== ========== ========== ========== ==========
+  2900([from ~ 2,900 BCE])
+    EARLY_DYNASTIC_PERIOD(Early Dynastic Period)
+    click EARLY_DYNASTIC_PERIOD "https://en.wikipedia.org/wiki/Early_Dynastic_Period_(Mesopotamia)" _blank
+    EARLY_DYNASTIC_PERIOD_NOTE[#151; characterized by the existence of many city-states]
+
+    ASSUR_01[Aššur]
+    ASSUR_01_NOTE[#151; 'assyrian' city founded ~ 2025 BCE]
+
+
+  2334([from ~ 2,334 BCE])
+
+
+    SARGON_OF_AKKAD[Sargon of Akkad]
+    SARGON_OF_AKKAD_NOTE[#151; the first ruler of the Akkadian Empire, known for his conquests of the Sumerian city-states]
+    AKKADIAN_EMPIRE[Akkadian Empire]
+    AKKAD[Akkad]
+    AKKAD_NOTE["#151; the capital city of the Akkadian Empire (location unknown)"]
+    click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
+
+
+  %% ---------- ---------- ---------- ---------- ----------
+  %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-2900-.-EARLY_DYNASTIC_PERIOD
+                    EARLY_DYNASTIC_PERIOD-.-ASSUR_01~~~ASSUR_01_NOTE
+
+  %%YEAR_DOT-.-2334-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
+  YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
+                    AKKADIAN_EMPIRE-.-AKKAD~~~AKKAD_NOTE
+                                      AKKAD-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
+
+
+
+
+
+  class ASSUR_01,AKKAD,SARGON_OF_AKKAD_NOTE Node
+  class ASSUR_01_NOTE,AKKAD_NOTE,SARGON_OF_AKKAD_NOTE Note
+
+
 
   %% ========== ========== ========== ========== ==========
-  %% 2000 & BABYLONIA
+  %% 2000 BCE & BABYLONIA
   %% ========== ========== ========== ========== ==========
   1894([from ~ 1,894 BCE])
     OLD_BABYLONIAN_EMPIRE[Old Babylonian Empire]
