@@ -52,16 +52,20 @@ classDef Note fill:white, stroke:white, text-align:left;
     click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
 
   5500([from ~ 5,500 BCE])
-    UBAID[Ubaid Period]
-    click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
+    UBAID_PERIOD[Ubaid Period]
+    click UBAID_PERIOD "https://en.wikipedia.org/wiki/Ubaid_period" _blank
 
     SUMER[Sumer]
-    SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
+    SUMER_NOTE['Sumerian' #151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
     click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
   5400([from ~ 5,400 BCE])
     ERIDU[Eridu]
     click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
+
+  4000([from ~ 4,000 BCE])
+    URUK_PERIOD[Uruk Period]
+    click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
 
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
@@ -71,10 +75,12 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
   YEAR_DOT-.-6400-.-YARNUKIAN
   YEAR_DOT-.-6100-.-HALAF
-  YEAR_DOT-.-5500-.-UBAID
-             5500-.-SUMER~~~SUMER_NOTE
-  YEAR_DOT-.-5400-.-ERIDU
 
+  YEAR_DOT-.-5500-.-UBAID_PERIOD
+                    UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
+
+  YEAR_DOT-.-5400-.-ERIDU
+  YEAR_DOT-.-4000-.-URUK_PERIOD
 
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU Node
   class CATALHOYUK_NOTE,SUMER_NOTE Note
