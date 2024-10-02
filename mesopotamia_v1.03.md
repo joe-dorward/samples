@@ -59,7 +59,7 @@ classDef Note fill:white, stroke:white, text-align:left;
     SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
     click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
-  5400([from ~ 5,400 BCE])
+  %%5400([from ~ 5,400 BCE])
     ERIDU[Eridu]
     ERIDU_NOTE[#151; 'sumerian' city.]
     click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
@@ -72,6 +72,13 @@ classDef Note fill:white, stroke:white, text-align:left;
     URUK_NOTE[#151; 'sumerian' city founded ~ 5,000 BCE]
     click URUK "https://en.wikipedia.org/wiki/Uruk" _blank
 
+    INANNA[Inanna]
+    INANNA_NOTE[#151; the patron goddess of the Eanna temple in Uruk]
+    click INANNA "https://en.wikipedia.org/wiki/Inanna" _blank
+
+    GILGAMESH[Gilgamesh]
+    GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
+    click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
 
   %% ---------- ---------- ---------- ---------- ----------
@@ -89,9 +96,12 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   YEAR_DOT-.-4000-.-URUK_PERIOD
                     URUK_PERIOD-.-URUK~~~URUK_NOTE
+                                  URUK-.-INANNA~~~INANNA_NOTE
+                                  URUK-.-GILGAMESH~~~GILGAMESH_NOTE
 
-  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK Node
-  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE Note
+
+  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH Node
+  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% 2000 & BABYLONIA
