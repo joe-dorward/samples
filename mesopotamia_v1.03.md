@@ -56,11 +56,12 @@ classDef Note fill:white, stroke:white, text-align:left;
     click UBAID_PERIOD "https://en.wikipedia.org/wiki/Ubaid_period" _blank
 
     SUMER[Sumer]
-    SUMER_NOTE['Sumerian' #151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
+    SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
     click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
   5400([from ~ 5,400 BCE])
     ERIDU[Eridu]
+    ERIDU_NOTE[#151; 'sumerian' city.]
     click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
 
   4000([from ~ 4,000 BCE])
@@ -78,12 +79,12 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   YEAR_DOT-.-5500-.-UBAID_PERIOD
                     UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
+                    UBAID_PERIOD-.-ERIDU~~~ERIDU_NOTE
 
-  YEAR_DOT-.-5400-.-ERIDU
   YEAR_DOT-.-4000-.-URUK_PERIOD
 
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU Node
-  class CATALHOYUK_NOTE,SUMER_NOTE Note
+  class CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% 2000 & BABYLONIA
