@@ -21,8 +21,6 @@ classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:
 classDef Note fill:white, stroke:white, text-align:left;
 
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-
-
   YEAR_DOT(("Year Dot"))
 
   %% ========== ========== ========== ========== ==========
@@ -42,8 +40,24 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   7500([from ~ 7,500 BCE])
     CATALHOYUK[Çatalhöyük]
-    CATALHOYUK_NOTE[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
+    CATALHOYUK_NOTE[#151; earliest known 'town', hundreds of people living in a cluster of mudbrick houses.]
     click CATALHOYUK "https://en.wikipedia.org/wiki/Çatalhöyük" _blank
+
+  6400([from ~ 6,400 BCE])
+    YARNUKIAN[Yarmukian Culture]
+    click YARNUKIAN "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
+
+  6100([from ~ 6,100 BCE])
+    HALAF[Halaf Culture]
+    click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
+
+  5500([from ~ 5,500 BCE])
+    UBAID[Ubaid Period]
+    click UBAID "https://en.wikipedia.org/wiki/Ubaid_period" _blank
+
+    SUMER[Sumer]
+    SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
+    click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
@@ -51,9 +65,15 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
+  YEAR_DOT-.-6400-.-YARNUKIAN
+  YEAR_DOT-.-6100-.-HALAF
+  YEAR_DOT-.-5500-.-UBAID
+             5500-.-SUMER~~~SUMER_NOTE
 
-  class GOBEKLI_TEPE Node
-  class CATALHOYUK_NOTE Note
+
+
+  class GOBEKLI_TEPE,SUMER Node
+  class CATALHOYUK_NOTE,SUMER_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% 2000 & BABYLONIA
