@@ -190,14 +190,23 @@ classDef Note fill:white, stroke:white, text-align:left;
     ASSYRIAN_EMPIRE_NOTE[#151; an empire emerges from ~ 1,400 BCE]
     click ASSYRIAN_EMPIRE "https://en.wikipedia.org/wiki/Assyria" _blank
 
+    NINEVEH[Nineveh]
+    NINEVEH_NOTE["#151; founded (as early as) ~ 6,000 BCE, and the Assyrian capital from ~ 705 BCE"]
+    ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
+
     ASHURBANIPAL[Ashurbanipal]
-    ASHURBANIPAL_NOTE[#151; - Assyrian king, from ~ 669 BCE]
+    ASHURBANIPAL_NOTE[#151; Assyrian king, from ~ 669 BCE]
     click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT-.-1400-.-ASSYRIAN_EMPIRE~~~ASSYRIAN_EMPIRE_NOTE
+  YEAR_DOT-.-1400-.-ASSYRIAN_EMPIRE--oASSYRIAN_EMPIRE_NOTE
                     ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
+                    ASSYRIAN_EMPIRE-.-NINEVEH--oNINEVEH_NOTE
+                                      NINEVEH--oROYAL_LION_HUNT_NOTE
 
-    class ASSYRIAN_EMPIRE,ASHURBANIPAL Node;
-    class ASSYRIAN_EMPIRE_NOTE,ASHURBANIPAL_NOTE Note
+    class ASSYRIAN_EMPIRE,NINEVEH,ASHURBANIPAL Node;
+    class ASSYRIAN_EMPIRE_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE Note
+
+  %%   and decorated his North Palace at the city of Nineveh (also in the north of present-day Iraq) with brilliantly carved  t
+```
