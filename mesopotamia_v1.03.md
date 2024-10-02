@@ -43,6 +43,9 @@ classDef Note fill:white, stroke:white, text-align:left;
     CATALHOYUK_NOTE[#151; earliest known 'town', hundreds of people living in a cluster of mudbrick houses.]
     click CATALHOYUK "https://en.wikipedia.org/wiki/Çatalhöyük" _blank
 
+  7000([from ~ 7,000 BCE])
+    POTTERY_NEOLITHIC[Pottery Neolithic]
+
   6400([from ~ 6,400 BCE])
     YARNUKIAN[Yarmukian Culture]
     click YARNUKIAN "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
@@ -96,6 +99,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
+  YEAR_DOT-.-7000-.-POTTERY_NEOLITHIC
   YEAR_DOT-.-6400-.-YARNUKIAN
   YEAR_DOT-.-6100-.-HALAF
 
