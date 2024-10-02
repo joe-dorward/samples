@@ -10,7 +10,7 @@ Mesopotamia, rather than being a country (in any sense of the word) is the name 
   init: {
     'theme': 'forest',
     'themeVariables': {
-      'fontSize':'9pt'
+      'fontSize':'8pt'
 
     }
   }
@@ -21,7 +21,7 @@ classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:
 classDef Note fill:white, stroke:white, text-align:left;
 
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT(("Year Dot"))
+  YEAR_DOT(("Year<br>Dot"))
 
   %% ========== ========== ========== ========== ==========
   %% ~ 15000 BCE - PRE-HISTORIC
@@ -65,7 +65,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   %%5400([from ~ 5,400 BCE])
     ERIDU[Eridu]
-    ERIDU_NOTE[#151; 'sumerian' city.]
+    ERIDU_NOTE[#151; 'sumerian' city, founded ~ 5,500 BCE.]
     click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
 
   4000([from ~ 4,000 BCE])
@@ -180,4 +180,4 @@ classDef Note fill:white, stroke:white, text-align:left;
     class BABYLON,HAMMURABI Node;
     class BABYLON_NOTE,HAMMURABI_NOTE Note
 
-linkStyle 24,35,41 stroke:mediumseagreen, stroke-width:3px;
+linkStyle 24,35,41 stroke:darkseagreen, stroke-width:3px;
