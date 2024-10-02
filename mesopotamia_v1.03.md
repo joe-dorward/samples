@@ -123,16 +123,18 @@ classDef Note fill:white, stroke:white, text-align:left;
 
     ASSUR_01[Aššur]
     ASSUR_01_NOTE[#151; 'assyrian' city founded ~ 2025 BCE]
-    click ASSUR "https://en.wikipedia.org/wiki/Assur" _blank
+    click ASSUR_01 "https://en.wikipedia.org/wiki/Assur" _blank
 
   2334([from ~ 2,334 BCE])
+    AKKADIAN_EMPIRE[Akkadian Empire]
+    click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
+
+    AKKAD[Akkad]
+    AKKAD_NOTE["#151; the capital city of the Akkadian Empire (location unknown)"]
 
     SARGON_OF_AKKAD[Sargon of Akkad]
     SARGON_OF_AKKAD_NOTE[#151; the first ruler of the Akkadian Empire, known for his conquests of the Sumerian city-states]
-    AKKADIAN_EMPIRE[Akkadian Empire]
-    AKKAD[Akkad]
-    AKKAD_NOTE["#151; the capital city of the Akkadian Empire (location unknown)"]
-    click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
+
 
 
   %% ---------- ---------- ---------- ---------- ----------
