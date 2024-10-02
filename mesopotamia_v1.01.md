@@ -170,15 +170,20 @@ classDef Summary fill:white, stroke:white, text-align:left;
 
       %%KEY_YEARS-.-2025-.-ASSUR~~~ASSUR_NOTE
 
-      %% ========== ========== ========== ========== ==========
+  %% ========== ========== ========== ========== ==========
+  %% 2000 & BABYLONIA
+  %% ========== ========== ========== ========== ==========
+  1894([from ~ 1,894 BCE])
+    OLD_BABYLONIAN_EMPIRE[Old Babylonian Empire]
+    BABYLON[Babylon]
 
-    1894([from ~ 1,894 BCE])
-      BABYLON[Babylon]
-      HAMMURABI[Hammurabi]
-      HAMMURABI_NOTE[#151; from ~ 1,810 BCE, the 6th king of Babylon]
+    HAMMURABI[Hammurabi]
+    HAMMURABI_NOTE[#151; from ~ 1,810 BCE, the 6th king of Babylon]
 
-    KEY_YEARS-.-1894-.-BABYLON
-                       BABYLON-.-HAMMURABI~~~HAMMURABI_NOTE
+    KEY_YEARS-.-1894-.-OLD_BABYLONIAN_EMPIRE
+    OLD_BABYLONIAN_EMPIRE-.-BABYLON
+    OLD_BABYLONIAN_EMPIRE-.-HAMMURABI~~~HAMMURABI_NOTE
 
+    class BABYLON Note;
     class HAMMURABI_NOTE Summary
 ```
