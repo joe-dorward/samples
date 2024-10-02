@@ -109,7 +109,7 @@ classDef Note fill:white, stroke:white, text-align:left;
                     UBAID_PERIOD-.-ERIDU~~~ERIDU_NOTE
 
   YEAR_DOT-.-4000-.-URUK_PERIOD
-                    URUK_PERIOD-.-URUK~~~URUK_NOTE
+                    URUK_PERIOD-.-URUK--oURUK_NOTE
                                   URUK-.-INANNA~~~INANNA_NOTE
                                   URUK-.-GILGAMESH~~~GILGAMESH_NOTE
                                   URUK-.-UR~~~UR_NOTE
@@ -142,8 +142,6 @@ classDef Note fill:white, stroke:white, text-align:left;
     SARGON_OF_AKKAD[Sargon of Akkad]
     SARGON_OF_AKKAD_NOTE[#151; the first ruler of the Akkadian Empire, known for his conquests of the Sumerian city-states]
 
-
-
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
@@ -151,14 +149,13 @@ classDef Note fill:white, stroke:white, text-align:left;
                     EARLY_DYNASTIC_PERIOD-.-ASSUR_01~~~ASSUR_01_NOTE
 
   YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
-                    AKKADIAN_EMPIRE-.-AKKAD~~~AKKAD_NOTE
+                    AKKADIAN_EMPIRE-.-AKKAD-.-AKKAD_NOTE
                                       AKKAD-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
 
 
+  linkStyle 24 stroke:mediumseagreen, stroke-width:3px;
 
-
-
-  class ASSUR_01,AKKAD,SARGON_OF_AKKAD_NOTE Node
+  class ASSUR_01,AKKAD,SARGON_OF_AKKAD Node
   class EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE,AKKAD_NOTE,SARGON_OF_AKKAD_NOTE Note
 
 
