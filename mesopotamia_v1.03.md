@@ -209,4 +209,18 @@ classDef Note fill:white, stroke:white, text-align:left;
     class ASSYRIAN_EMPIRE_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE Note
 
   %%   and decorated his North Palace at the city of Nineveh (also in the north of present-day Iraq) with brilliantly carved  t
+  %% ========== ========== ========== ========== ==========
+  %% NEO-BABYLONIAN EMPIRE
+  %% ========== ========== ========== ========== ==========
+  626([from ~ 626 BCE])
+    NEO_BABYLONIAN_EMPIRE[Neo-Babylonian Empire]
+
+  %% ---------- ---------- ---------- ---------- ----------
+  %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-626-.-NEO_BABYLONIAN_EMPIRE
+
+
+
+
 ```
