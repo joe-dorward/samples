@@ -220,14 +220,24 @@ classDef Note fill:white, stroke:white, text-align:left;
     NEBUCHADNEZZAR_II_NOTE[#151; Babylonian king, from ~ 605 BCE]
     click NEBUCHADNEZZAR_II "https://en.wikipedia.org/wiki/Nebuchadnezzar_II" _blank
 
+  587([from ~ 587 BCE])
+    DESTRUCTION_OF_JERUSALEM[Destruction of Jerusalem]
+
+  539([from ~ 539 BCE])
+    BATTLE_OF_OPIS[Battle of Opis]
+
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-626-.-NEO_BABYLONIAN_EMPIRE
                    NEO_BABYLONIAN_EMPIRE-.-NEBUCHADNEZZAR_II~~~NEBUCHADNEZZAR_II_NOTE
 
+  YEAR_DOT-.-587-.-DESTRUCTION_OF_JERUSALEM
+  YEAR_DOT-.-539-.-BATTLE_OF_OPIS
 
-  class NEBUCHADNEZZAR_II Node;
+  %%NEBUCHADNEZZAR_II--oDESTRUCTION_OF_JERUSALEM
+
+  class NEBUCHADNEZZAR_II,DESTRUCTION_OF_JERUSALEM Node;
   class NEBUCHADNEZZAR_II_NOTE Note
 
 
