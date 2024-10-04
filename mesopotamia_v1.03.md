@@ -214,13 +214,21 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ========== ========== ========== ========== ==========
   626([from ~ 626 BCE])
     NEO_BABYLONIAN_EMPIRE[Neo-Babylonian Empire]
+    click NEO_BABYLONIAN_EMPIRE "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire" _blank
+
+    NEBUCHADNEZZAR_II[Nebuchadnezzar II]
+    NEBUCHADNEZZAR_II_NOTE[#151; Babylonian king, from ~ 605 BCE]
+    click NEBUCHADNEZZAR_II "https://en.wikipedia.org/wiki/Nebuchadnezzar_II" _blank
 
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-626-.-NEO_BABYLONIAN_EMPIRE
+                   NEO_BABYLONIAN_EMPIRE-.-NEBUCHADNEZZAR_II~~~NEBUCHADNEZZAR_II_NOTE
 
 
+  class NEBUCHADNEZZAR_II Node;
+  class NEBUCHADNEZZAR_II_NOTE Note
 
 
 ```
