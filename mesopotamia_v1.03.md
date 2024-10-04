@@ -85,6 +85,10 @@ classDef Note fill:white, stroke:white, text-align:left;
     GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
     click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
+    SUSA[Susa]
+    SUSA_NOTE[#151; proto-elamite city founded ~ 4,000 BCE]
+    click SUSA "https://en.wikipedia.org/wiki/Susa" _blank
+
   %%3800([from ~ 3,800 BCE])
     UR[Ur]
     UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
@@ -114,14 +118,20 @@ classDef Note fill:white, stroke:white, text-align:left;
                     URUK_PERIOD-.-URUK--oURUK_NOTE
                                   URUK-.-INANNA~~~INANNA_NOTE
                                   URUK-.-GILGAMESH~~~GILGAMESH_NOTE
+
                     URUK_PERIOD-.-UR~~~UR_NOTE
+
+                    URUK_PERIOD-.-SUSA~~~SUSA_NOTE
+
                     URUK_PERIOD-.-CUNEIFORM~~~CUNEIFORM_NOTE
+
+
 
   %%YEAR_DOT-.-3800-.-UR
   %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
-  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
-  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
+  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,SUSA,CUNEIFORM Node
+  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,SUSA_NOTE,CUNEIFORM_NOTE Note
   %% ========== ========== ========== ========== ==========
   %% 3000 BCE & ASSYRIA
   %% ========== ========== ========== ========== ==========
