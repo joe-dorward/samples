@@ -206,7 +206,7 @@ classDef Note fill:white, stroke:white, text-align:left;
     class BABYLON,HAMMURABI Node;
     class BABYLON_NOTE,HAMMURABI_NOTE Note
 
-%%linkStyle 24,35,41 stroke:darkseagreen, stroke-width:3px;
+  %%linkStyle 24,35,41 stroke:darkseagreen, stroke-width:3px;
   %% ========== ========== ========== ========== ==========
   %% ASSYRIAN EMPIRE
   %% ========== ========== ========== ========== ==========
@@ -219,6 +219,10 @@ classDef Note fill:white, stroke:white, text-align:left;
     NINEVEH_NOTE["#151; founded (as early as) ~ 6,000 BCE, and the Assyrian capital from ~ 705 BCE"]
     ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
 
+    TAYLOR_PRISM[Taylor Prism]
+    TAYLOR_PRISM_NOTE[#151; a clay prisim, recording the 'annals of Sennacherbi', dating to 691 BCE]
+    click TAYLOR_PRISM "https://en.wikipedia.org/wiki/Sennacherib's_Annals" _blank
+
     ASHURBANIPAL[Ashurbanipal]
     ASHURBANIPAL_NOTE[#151; Assyrian king, from ~ 669 BCE]
     click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
@@ -226,12 +230,14 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-1400-.-ASSYRIAN_EMPIRE--oASSYRIAN_EMPIRE_NOTE
+                    ASSYRIAN_EMPIRE-.-TAYLOR_PRISM~~~TAYLOR_PRISM_NOTE
                     ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
                     ASSYRIAN_EMPIRE-.-NINEVEH--oNINEVEH_NOTE
                                       NINEVEH--oROYAL_LION_HUNT_NOTE
 
-    class ASSYRIAN_EMPIRE,NINEVEH,ASHURBANIPAL Node;
-    class ASSYRIAN_EMPIRE_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE Note
+
+    class NINEVEH,TAYLOR_PRISM,ASHURBANIPAL Node;
+    class ASSYRIAN_EMPIRE_NOTE,TAYLOR_PRISM_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE Note
 
   %%   and decorated his North Palace at the city of Nineveh (also in the north of present-day Iraq) with brilliantly carved  t
   %% ========== ========== ========== ========== ==========
