@@ -266,7 +266,11 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% PERSIAN EMPIRE
   %% ========== ========== ========== ========== ==========
   550([from ~ 550 BCE])
+    PERSEPOLIS[Persepolis]
+
+  550([from ~ 550 BCE])
     PERSIAN_EMPIRE[Persian Empire]
+    CYRUS_THE_GREAT[Cyrus the Great]
 
   539([from ~ 539 BCE])
     BATTLE_OF_OPIS[Battle of Opis]
@@ -277,11 +281,14 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-515-.-PERSEPOLIS
+
   YEAR_DOT-.-550-.-PERSIAN_EMPIRE
+                   PERSIAN_EMPIRE-.-CYRUS_THE_GREAT
 
   YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
 
-  class PERSIAN_EMPIRE,BATTLE_OF_OPIS Node;
+  class PERSEPOLIS,CYRUS_THE_GREAT,BATTLE_OF_OPIS Node;
   class BATTLE_OF_OPIS_NOTE Note
 
 
