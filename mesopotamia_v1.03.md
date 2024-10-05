@@ -245,8 +245,15 @@ classDef Note fill:white, stroke:white, text-align:left;
     NEBUCHADNEZZAR_II_NOTE[#151; Babylonian king, from ~ 605 BCE]
     click NEBUCHADNEZZAR_II "https://en.wikipedia.org/wiki/Nebuchadnezzar_II" _blank
 
-  587([from ~ 587 BCE])
-    DESTRUCTION_OF_JERUSALEM[Destruction of Jerusalem]
+  597([from ~ 597 BCE])
+    SEIGE_OF_JERUSALEM[Seige of Jerusalem]
+
+    BABYLONIAN_CAPTIVITY[Babylonian captivity]
+    BABYLONIAN_CAPTIVITY_NOTE[#151; forcible relocation of Judeans to Babylonia by Nebuchadnezzar II]
+    click BABYLONIAN_CAPTIVITY "https://en.wikipedia.org/wiki/Babylonian_captivity" _blank
+
+  %%587([from ~ 587 BCE])
+    %%DESTRUCTION_OF_JERUSALEM[Destruction of Jerusalem]
 
   539([from ~ 539 BCE])
     BATTLE_OF_OPIS[Battle of Opis]
@@ -259,13 +266,13 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-626-.-NEO_BABYLONIAN_EMPIRE
                    NEO_BABYLONIAN_EMPIRE-.-NEBUCHADNEZZAR_II~~~NEBUCHADNEZZAR_II_NOTE
 
-  YEAR_DOT-.-587-.-DESTRUCTION_OF_JERUSALEM
+  YEAR_DOT-.-597-.-SEIGE_OF_JERUSALEM-.-BABYLONIAN_CAPTIVITY~~~BABYLONIAN_CAPTIVITY_NOTE
   YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
 
   %%NEBUCHADNEZZAR_II--oDESTRUCTION_OF_JERUSALEM
 
-  class NEBUCHADNEZZAR_II,DESTRUCTION_OF_JERUSALEM,BATTLE_OF_OPIS Node;
-  class NEBUCHADNEZZAR_II_NOTE,BATTLE_OF_OPIS_NOTE Note
+  class NEBUCHADNEZZAR_II,SEIGE_OF_JERUSALEM,BABYLONIAN_CAPTIVITY,BATTLE_OF_OPIS Node;
+  class NEBUCHADNEZZAR_II_NOTE,BATTLE_OF_OPIS_NOTE,BABYLONIAN_CAPTIVITY_NOTE Note
 
 
 ```
