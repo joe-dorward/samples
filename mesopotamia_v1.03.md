@@ -220,7 +220,7 @@ classDef Note fill:white, stroke:white, text-align:left;
     ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
 
     TAYLOR_PRISM[Taylor Prism]
-    TAYLOR_PRISM_NOTE[#151; a clay prisim, recording the 'annals of Sennacherbi', dating to 691 BCE]
+    TAYLOR_PRISM_NOTE["#151; a clay prisim (in the British Museum), recording the 'annals of Sennacherbi', dating to 691 BCE"]
     click TAYLOR_PRISM "https://en.wikipedia.org/wiki/Sennacherib's_Annals" _blank
 
     ASHURBANIPAL[Ashurbanipal]
