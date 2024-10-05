@@ -250,6 +250,8 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   539([from ~ 539 BCE])
     BATTLE_OF_OPIS[Battle of Opis]
+    BATTLE_OF_OPIS_NOTE[#151; the decisive battle between the Babylonians and Persians]
+    click BATTLE_OF_OPIS "https://en.wikipedia.org/wiki/Battle_of_Opis" _blank
 
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
@@ -258,12 +260,12 @@ classDef Note fill:white, stroke:white, text-align:left;
                    NEO_BABYLONIAN_EMPIRE-.-NEBUCHADNEZZAR_II~~~NEBUCHADNEZZAR_II_NOTE
 
   YEAR_DOT-.-587-.-DESTRUCTION_OF_JERUSALEM
-  YEAR_DOT-.-539-.-BATTLE_OF_OPIS
+  YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
 
   %%NEBUCHADNEZZAR_II--oDESTRUCTION_OF_JERUSALEM
 
   class NEBUCHADNEZZAR_II,DESTRUCTION_OF_JERUSALEM,BATTLE_OF_OPIS Node;
-  class NEBUCHADNEZZAR_II_NOTE Note
+  class NEBUCHADNEZZAR_II_NOTE,BATTLE_OF_OPIS_NOTE Note
 
 
 ```
