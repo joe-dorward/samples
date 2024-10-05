@@ -252,14 +252,6 @@ classDef Note fill:white, stroke:white, text-align:left;
     BABYLONIAN_CAPTIVITY_NOTE[#151; forcible relocation of Judeans to Babylonia by Nebuchadnezzar II]
     click BABYLONIAN_CAPTIVITY "https://en.wikipedia.org/wiki/Babylonian_captivity" _blank
 
-  %%587([from ~ 587 BCE])
-    %%DESTRUCTION_OF_JERUSALEM[Destruction of Jerusalem]
-
-  539([from ~ 539 BCE])
-    BATTLE_OF_OPIS[Battle of Opis]
-    BATTLE_OF_OPIS_NOTE[#151; the decisive battle between the Babylonians and Persians]
-    click BATTLE_OF_OPIS "https://en.wikipedia.org/wiki/Battle_of_Opis" _blank
-
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
@@ -273,6 +265,28 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   class NEBUCHADNEZZAR_II,SEIGE_OF_JERUSALEM,BABYLONIAN_CAPTIVITY,BATTLE_OF_OPIS Node;
   class NEBUCHADNEZZAR_II_NOTE,BATTLE_OF_OPIS_NOTE,BABYLONIAN_CAPTIVITY_NOTE Note
+  %% ========== ========== ========== ========== ==========
+  %% PERSIAN EMPIRE
+  %% ========== ========== ========== ========== ==========
+  550([from ~ 550 BCE])
+    PERSIAN_EMPIRE[Persian Empire]
+
+  539([from ~ 539 BCE])
+    BATTLE_OF_OPIS[Battle of Opis]
+    BATTLE_OF_OPIS_NOTE[#151; the decisive battle between the Babylonians and Persians]
+    click BATTLE_OF_OPIS "https://en.wikipedia.org/wiki/Battle_of_Opis" _blank
+
+
+  %% ---------- ---------- ---------- ---------- ----------
+  %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-550-.-PERSIAN_EMPIRE
+
+  YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
+
+  class PERSIAN_EMPIRE,BATTLE_OF_OPIS Node;
+  class BATTLE_OF_OPIS_NOTE Note
+
 
 
 ```
