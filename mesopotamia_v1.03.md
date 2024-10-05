@@ -265,7 +265,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ========== ========== ========== ========== ==========
   %% PERSIAN EMPIRE
   %% ========== ========== ========== ========== ==========
-  550([from ~ 550 BCE])
+  515([from ~ 515 BCE])
     PERSEPOLIS[Persepolis]
 
   550([from ~ 550 BCE])
