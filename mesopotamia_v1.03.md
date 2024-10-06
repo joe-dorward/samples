@@ -1,6 +1,7 @@
 ## Mesopotamia
 At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went.
-That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age more than ten-thousand years ago (but don't quote me on that). 
+That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age more than ten-thousand years ago (but don't quote me on that).
+
 If you'd thought about the name a little, you would likely have realised that _meso_ means _between_, and that _pot_ likely has the same meaning that it has in _potable_ - and - that would be a good guess. 
 Mesopotamia, rather than being a country (in any sense of the word) is the name applied to the geographical area between, and surrounding the
 [Tigris](https://en.wikipedia.org/wiki/Tigris) and [Euphrates](https://en.wikipedia.org/wiki/Euphrates).
@@ -282,7 +283,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   539([from ~ 539 BCE])
     BATTLE_OF_OPIS[Battle of Opis]
-    BATTLE_OF_OPIS_NOTE[#151; the decisive battle between the Babylonians and Persians]
+    BATTLE_OF_OPIS_NOTE["#151; the decisive battle between the Persians (Cyrus the Great) and Babylonians (Nabonidus)"]
     click BATTLE_OF_OPIS "https://en.wikipedia.org/wiki/Battle_of_Opis" _blank
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
