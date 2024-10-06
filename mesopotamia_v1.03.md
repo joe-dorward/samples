@@ -273,7 +273,9 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ========== ========== ========== ========== ==========
   550([from ~ 550 BCE])
     PERSIAN_EMPIRE[Persian Empire]
-    CYRUS_THE_GREAT[Cyrus the Great]
+      CYRUS_THE_GREAT[Cyrus the Great]
+      CYRUS_CYLINDER[Cyrus Cylinder]
+      CYRUS_CYLINDER_NOTE["#151; after 539 BCE, a clay cylinder (foundational deposit in Babylon)"]
 
     PERSEPOLIS[Persepolis]
 
@@ -282,20 +284,19 @@ classDef Note fill:white, stroke:white, text-align:left;
     BATTLE_OF_OPIS[Battle of Opis]
     BATTLE_OF_OPIS_NOTE[#151; the decisive battle between the Babylonians and Persians]
     click BATTLE_OF_OPIS "https://en.wikipedia.org/wiki/Battle_of_Opis" _blank
-
-
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-550-.-PERSIAN_EMPIRE
                    PERSIAN_EMPIRE-.-CYRUS_THE_GREAT
+                                    CYRUS_THE_GREAT-.-CYRUS_CYLINDER~~~CYRUS_CYLINDER_NOTE
 
                    PERSIAN_EMPIRE-.-PERSEPOLIS
 
   YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
 
-  class PERSEPOLIS,CYRUS_THE_GREAT,BATTLE_OF_OPIS Node;
-  class BATTLE_OF_OPIS_NOTE Note
+  class PERSEPOLIS,CYRUS_THE_GREAT,CYRUS_CYLINDER,BATTLE_OF_OPIS Node;
+  class CYRUS_CYLINDER_NOTE,BATTLE_OF_OPIS_NOTE Note
 
 
 
