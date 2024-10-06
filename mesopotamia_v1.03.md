@@ -278,7 +278,7 @@ classDef Note fill:white, stroke:white, text-align:left;
       CYRUS_CYLINDER_NOTE["#151; after 539 BCE, a clay cylinder (foundational deposit in Babylon)"]
 
     PERSEPOLIS[Persepolis]
-
+    PERSEPOLIS_NOTE[#151; the earliest parts date from ~ 515 BCE]
 
   539([from ~ 539 BCE])
     BATTLE_OF_OPIS[Battle of Opis]
@@ -291,12 +291,12 @@ classDef Note fill:white, stroke:white, text-align:left;
                    PERSIAN_EMPIRE-.-CYRUS_THE_GREAT
                                     CYRUS_THE_GREAT-.-CYRUS_CYLINDER~~~CYRUS_CYLINDER_NOTE
 
-                   PERSIAN_EMPIRE-.-PERSEPOLIS
+                   PERSIAN_EMPIRE-.-PERSEPOLIS~~~PERSEPOLIS_NOTE
 
   YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
 
   class PERSEPOLIS,CYRUS_THE_GREAT,CYRUS_CYLINDER,BATTLE_OF_OPIS Node;
-  class CYRUS_CYLINDER_NOTE,BATTLE_OF_OPIS_NOTE Note
+  class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
 
 
 
