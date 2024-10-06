@@ -1,6 +1,6 @@
 ## Mesopotamia
 At some point in time, our ancestors began moving about the landscape less and dragging all 'their stuff' with them when they went.
-That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age about ten-to-fifteen thousand years ago (but don't quote me on that). 
+That appears to have happened first in Mesopotamia, when Northern Europe was still deep in the Ice Age more than ten-thousand years ago (but don't quote me on that). 
 If you'd thought about the name a little, you would likely have realised that _meso_ means _between_, and that _pot_ likely has the same meaning that it has in _potable_ - and - that would be a good guess. 
 Mesopotamia, rather than being a country (in any sense of the word) is the name applied to the geographical area between, and surrounding the
 [Tigris](https://en.wikipedia.org/wiki/Tigris) and [Euphrates](https://en.wikipedia.org/wiki/Euphrates).
@@ -26,9 +26,9 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ========== ========== ========== ========== ==========
   %% ~ 15000 BCE - PRE-HISTORIC
   %% ========== ========== ========== ========== ==========
-  13000([from ~ 13000 BCE])
-    NATUFIAN_CULTURE[Natufian Culture]
-    click NATUFIAN_CULTURE "https://en.wikipedia.org/wiki/Natufian_culture" _blank
+  %%13000([from ~ 13000 BCE])
+    %%NATUFIAN_CULTURE[Natufian Culture]
+    %%click NATUFIAN_CULTURE "https://en.wikipedia.org/wiki/Natufian_culture" _blank
 
   10000([from ~ 10,000 BCE])
     PRE_POTTERY_NEOLITHIC_A[Pre-Pottery Neolithic A]
@@ -102,7 +102,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT-.-13000-.-NATUFIAN_CULTURE
+  %%YEAR_DOT-.-13000-.-NATUFIAN_CULTURE
   YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE~~~GOBEKLI_TEPE_NOTE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
