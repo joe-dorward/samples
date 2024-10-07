@@ -68,10 +68,11 @@ classDef Note fill:white, stroke:white, text-align:left;
     SUMER_NOTE[#151; the earliest known civilization in southern Mesopotamia, and where Cuneiform was invented.]
     click SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
-  %%5400([from ~ 5,400 BCE])
     ERIDU[Eridu]
     ERIDU_NOTE[#151; 'sumerian' city, founded ~ 5,500 BCE.]
     click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
+
+
 
   4000([from ~ 4,000 BCE])
     URUK_PERIOD[Uruk Period]
@@ -119,7 +120,8 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   YEAR_DOT-.-5500-.-UBAID_PERIOD
                     UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
-                    UBAID_PERIOD-.-ERIDU~~~ERIDU_NOTE
+                                   SUMER-.-ERIDU~~~ERIDU_NOTE
+
 
   YEAR_DOT-.-4000-.-URUK_PERIOD
                     URUK_PERIOD-.-URUK--oURUK_NOTE
