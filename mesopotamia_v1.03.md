@@ -86,7 +86,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
     2900_1([~ 2,900 BCE])
     GILGAMESH[Gilgamesh]
-    GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
+    GILGAMESH_NOTE[#151; King of Uruk]
     click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
   4000([from ~ 4,000 BCE])
