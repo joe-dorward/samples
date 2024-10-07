@@ -20,7 +20,7 @@ flowchart LR
 
 classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
 classDef Note fill:white, stroke:white, text-align:left;
-
+classDef KeyDate fill:black, color:white;
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
 
@@ -227,6 +227,11 @@ classDef Note fill:white, stroke:white, text-align:left;
     ASHURBANIPAL[Ashurbanipal]
     ASHURBANIPAL_NOTE[#151; Assyrian king, from ~ 669 BCE]
     click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
+
+  653([653 BCE])
+    BATTLE_OF_ULAI[Battle of Ulai]
+    BATTLE_OF_ULAI_NOTE["#151; the decisive battle between the Assyrians (Ashurbanipal) and Elamites (Teumman). The battle is also known as the Battle of Til-Tuba"]
+    click BATTLE_OF_ULAI "https://en.wikipedia.org/wiki/Battle_of_Ulai" _blank
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
@@ -236,11 +241,13 @@ classDef Note fill:white, stroke:white, text-align:left;
                     ASSYRIAN_EMPIRE-.-NINEVEH--oNINEVEH_NOTE
                                       NINEVEH--oROYAL_LION_HUNT_NOTE
 
+                                      ASHURBANIPAL-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
+  %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
-    class NINEVEH,TAYLOR_PRISM,ASHURBANIPAL Node;
-    class ASSYRIAN_EMPIRE_NOTE,TAYLOR_PRISM_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE Note
+  class 653 KeyDate;
+  class NINEVEH,TAYLOR_PRISM,ASHURBANIPAL,BATTLE_OF_ULAI Node;
+  class ASSYRIAN_EMPIRE_NOTE,TAYLOR_PRISM_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE Note
 
-  %%   and decorated his North Palace at the city of Nineveh (also in the north of present-day Iraq) with brilliantly carved  t
   %% ========== ========== ========== ========== ==========
   %% NEO-BABYLONIAN EMPIRE
   %% ========== ========== ========== ========== ==========
