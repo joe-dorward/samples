@@ -224,7 +224,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
     IRON_FROM([from ~ 1,200 BCE])
     IRON_DOT_1(["&nbsp;"])
-    IRON_DESCRIPTION[Iron Age]
+    IRON_DESCRIPTION([Iron Age])
     IRON_DOT_2(["&nbsp;"])
     IRON_TO([to ~ 550 BCE])
 
@@ -324,7 +324,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
   %% ---------- ---------- ---------- ---------- ----------
   classDef KeyDate fill:black, color:white;
-  classDef Age fill:darkseagreen, color:honeydew;
+  classDef Age fill:seagreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
   class 539,597,653 KeyDate;
