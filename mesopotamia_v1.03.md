@@ -57,7 +57,11 @@ classDef Note fill:white, stroke:white, text-align:left;
     click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
 
   COPPER_FROM([from ~ 6,000 BCE])
+  COPPER_DOT_1(["&nbsp;"])
+  COPPER_DOT_2(["&nbsp;"])
   COPPER_DESCRIPTION[Copper Age]
+  COPPER_DOT_3(["&nbsp;"])
+  COPPER_DOT_4(["&nbsp;"])
   COPPER_TO([to ~ 3,500 BCE])
 
   5500([from ~ 5,500 BCE])
@@ -117,7 +121,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
   YEAR_DOT-.-6100-.-HALAF
 
-  YEAR_DOT~~~COPPER_FROM-.-COPPER_DESCRIPTION-.-COPPER_TO
+  YEAR_DOT~~~COPPER_FROM-.-COPPER_DOT_1-.-COPPER_DOT_2-.-COPPER_DESCRIPTION-.-COPPER_DOT_3-.-COPPER_DOT_4-.-COPPER_TO
 
   YEAR_DOT-.-5500-.-UBAID_PERIOD
                     UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
