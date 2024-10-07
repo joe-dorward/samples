@@ -20,7 +20,7 @@ flowchart LR
 
 classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
 classDef Note fill:white, stroke:white, text-align:left;
-classDef KeyDate fill:black, color:white;
+classDef Age fill:forestgreen, color:honeydew;
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
 
@@ -56,6 +56,12 @@ classDef KeyDate fill:black, color:white;
   6100([from ~ 6,100 BCE])
     HALAF[Halaf Culture]
     click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
+
+
+  CHALCOLITHIC_FROM([from ~ 6,000 BCE])
+  CHALCOLITHIC_DESCRIPTION[West Asian Chalcolithic]
+  CHALCOLITHIC_TO([to ~ 3,500 BCE])
+
 
   5500([from ~ 5,500 BCE])
     UBAID_PERIOD[Ubaid Period]
@@ -111,6 +117,12 @@ classDef KeyDate fill:black, color:white;
   YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
   YEAR_DOT-.-6100-.-HALAF
 
+
+  YEAR_DOT~~~
+  CHALCOLITHIC_FROM-.-
+  CHALCOLITHIC_DESCRIPTION-.-
+  CHALCOLITHIC_TO
+
   YEAR_DOT-.-5500-.-UBAID_PERIOD
                     UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
                     UBAID_PERIOD-.-ERIDU~~~ERIDU_NOTE
@@ -131,6 +143,7 @@ classDef KeyDate fill:black, color:white;
   %%YEAR_DOT-.-3800-.-UR
   %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
+  class CHALCOLITHIC_FROM,CHALCOLITHIC_TO Age
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,SUSA,CUNEIFORM Node
   class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,SUSA_NOTE,CUNEIFORM_NOTE Note
   %% ========== ========== ========== ========== ==========
