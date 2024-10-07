@@ -224,8 +224,10 @@ classDef Note fill:white, stroke:white, text-align:left;
 
     IRON_FROM([from ~ 1,200 BCE])
     IRON_DOT_1(["&nbsp;"])
-    IRON_DESCRIPTION([Iron Age])
     IRON_DOT_2(["&nbsp;"])
+    IRON_DESCRIPTION([Iron Age])
+    IRON_DOT_3(["&nbsp;"])
+    IRON_DOT_4(["&nbsp;"])
     IRON_TO([to ~ 550 BCE])
 
     NINEVEH[Nineveh]
@@ -255,7 +257,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
                                       ASHURBANIPAL-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
-  YEAR_DOT~~~IRON_FROM-.-IRON_DOT_1-.-IRON_DESCRIPTION-.-IRON_DOT_2-.-IRON_TO
+  YEAR_DOT~~~IRON_FROM---IRON_DOT_1---IRON_DOT_2---IRON_DESCRIPTION---IRON_DOT_3---IRON_DOT_4---IRON_TO
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
   class NINEVEH,ASHURBANIPAL,BATTLE_OF_ULAI Node;
@@ -331,4 +333,5 @@ classDef Note fill:white, stroke:white, text-align:left;
   class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
+  linkStyle 75 stroke:forestgreen, stroke-width:5px;
 ```
