@@ -270,7 +270,8 @@ classDef Note fill:white, stroke:white, text-align:left;
     NEBUCHADNEZZAR_II_NOTE[#151; Babylonian king, from ~ 605 BCE]
     click NEBUCHADNEZZAR_II "https://en.wikipedia.org/wiki/Nebuchadnezzar_II" _blank
 
-  597([from ~ 597 BCE])
+    %%597([from ~ 597 BCE])
+    597([597 BCE])
     SEIGE_OF_JERUSALEM[Seige of Jerusalem]
 
     BABYLONIAN_CAPTIVITY[Babylonian captivity]
@@ -283,7 +284,8 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-626-.-NEO_BABYLONIAN_EMPIRE
                    NEO_BABYLONIAN_EMPIRE-.-NEBUCHADNEZZAR_II~~~NEBUCHADNEZZAR_II_NOTE
 
-  YEAR_DOT-.-597-.-SEIGE_OF_JERUSALEM-.-BABYLONIAN_CAPTIVITY~~~BABYLONIAN_CAPTIVITY_NOTE
+                                           NEBUCHADNEZZAR_II-.-597-.-SEIGE_OF_JERUSALEM-.-BABYLONIAN_CAPTIVITY~~~BABYLONIAN_CAPTIVITY_NOTE
+  %%YEAR_DOT-.-597-.-SEIGE_OF_JERUSALEM-.-BABYLONIAN_CAPTIVITY~~~BABYLONIAN_CAPTIVITY_NOTE
 
   class NEBUCHADNEZZAR_II,SEIGE_OF_JERUSALEM,BABYLONIAN_CAPTIVITY,BATTLE_OF_OPIS Node;
   class NEBUCHADNEZZAR_II_NOTE,BATTLE_OF_OPIS_NOTE,BABYLONIAN_CAPTIVITY_NOTE Note
@@ -299,7 +301,8 @@ classDef Note fill:white, stroke:white, text-align:left;
     PERSEPOLIS[Persepolis]
     PERSEPOLIS_NOTE[#151; the earliest parts date from ~ 515 BCE]
 
-  539([from ~ 539 BCE])
+  %%539([from ~ 539 BCE])
+    539([539 BCE])
     BATTLE_OF_OPIS[Battle of Opis]
     BATTLE_OF_OPIS_NOTE["#151; the decisive battle between the Persians (Cyrus the Great) and Babylonians (Nabonidus)"]
     click BATTLE_OF_OPIS "https://en.wikipedia.org/wiki/Battle_of_Opis" _blank
@@ -308,21 +311,21 @@ classDef Note fill:white, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-550-.-PERSIAN_EMPIRE
                    PERSIAN_EMPIRE-.-CYRUS_THE_GREAT
+                                    CYRUS_THE_GREAT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
                                     CYRUS_THE_GREAT-.-CYRUS_CYLINDER~~~CYRUS_CYLINDER_NOTE
 
                    PERSIAN_EMPIRE-.-PERSEPOLIS~~~PERSEPOLIS_NOTE
 
-  YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
+  %%YEAR_DOT-.-539-.-BATTLE_OF_OPIS~~~BATTLE_OF_OPIS_NOTE
 
   class PERSEPOLIS,CYRUS_THE_GREAT,CYRUS_CYLINDER,BATTLE_OF_OPIS Node;
   class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
-
   %% ---------- ---------- ---------- ---------- ----------
   classDef KeyDate fill:black, color:white;
   classDef Age fill:forestgreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
-  class 653 KeyDate;
+  class 539,597,653 KeyDate;
   class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
