@@ -20,7 +20,6 @@ flowchart LR
 
 classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
 classDef Note fill:white, stroke:white, text-align:left;
-classDef Age fill:forestgreen, color:honeydew;
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
 
@@ -57,11 +56,9 @@ classDef Age fill:forestgreen, color:honeydew;
     HALAF[Halaf Culture]
     click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
 
-
   COPPER_FROM([from ~ 6,000 BCE])
   COPPER_DESCRIPTION[Copper Age]
   COPPER_TO([to ~ 3,500 BCE])
-
 
   5500([from ~ 5,500 BCE])
     UBAID_PERIOD[Ubaid Period]
@@ -101,7 +98,6 @@ classDef Age fill:forestgreen, color:honeydew;
     UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
     click UR "https://en.wikipedia.org/wiki/Ur" _blank
 
-
   BRONZE_FROM([from ~ 3,300 BCE])
   BRONZE_DESCRIPTION[Bronze Age]
   BRONZE_TO([to ~ 1,200 BCE])
@@ -139,13 +135,8 @@ classDef Age fill:forestgreen, color:honeydew;
 
                     URUK_PERIOD-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
-
-
   YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DESCRIPTION-.-BRONZE_TO
 
-  %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
-
-  class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO Age
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,SUSA,CUNEIFORM Node
   class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,SUSA_NOTE,CUNEIFORM_NOTE Note
   %% ========== ========== ========== ========== ==========
@@ -265,7 +256,6 @@ classDef Age fill:forestgreen, color:honeydew;
   YEAR_DOT~~~IRON_FROM-.-IRON_DESCRIPTION-.-IRON_TO
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
-  class 653 KeyDate;
   class NINEVEH,ASHURBANIPAL,BATTLE_OF_ULAI Node;
   class ASSYRIAN_EMPIRE_NOTE,TAYLOR_PRISM_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE Note
 
@@ -328,9 +318,12 @@ classDef Age fill:forestgreen, color:honeydew;
   class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
 
   %% ---------- ---------- ---------- ---------- ----------
-  %%classDef Age fill:forestgreen, color:honeydew;
+  classDef KeyDate fill:black, color:white;
+  classDef Age fill:forestgreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
-  class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
 
+  class 653 KeyDate;
+  class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
+  class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
 ```
