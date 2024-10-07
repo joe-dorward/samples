@@ -239,7 +239,7 @@ classDef Age fill:forestgreen, color:honeydew;
     NINEVEH_NOTE["#151; founded (as early as) ~ 6,000 BCE, and the Assyrian capital from ~ 705 BCE"]
     ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
 
-    TAYLOR_PRISM[Taylor Prism]
+    TAYLOR_PRISM{{Taylor Prism}}
     TAYLOR_PRISM_NOTE["#151; a clay prisim (in the British Museum), recording the 'annals of Sennacherbi', dating to 691 BCE"]
     click TAYLOR_PRISM "https://en.wikipedia.org/wiki/Sennacherib's_Annals" _blank
 
@@ -266,7 +266,7 @@ classDef Age fill:forestgreen, color:honeydew;
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
   class 653 KeyDate;
-  class NINEVEH,TAYLOR_PRISM,ASHURBANIPAL,BATTLE_OF_ULAI Node;
+  class NINEVEH,ASHURBANIPAL,BATTLE_OF_ULAI Node;
   class ASSYRIAN_EMPIRE_NOTE,TAYLOR_PRISM_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE Note
 
   %% ========== ========== ========== ========== ==========
@@ -303,7 +303,7 @@ classDef Age fill:forestgreen, color:honeydew;
   550([from ~ 550 BCE])
     PERSIAN_EMPIRE[Persian Empire]
       CYRUS_THE_GREAT[Cyrus the Great]
-      CYRUS_CYLINDER[Cyrus Cylinder]
+      CYRUS_CYLINDER{{Cyrus Cylinder}}
       CYRUS_CYLINDER_NOTE["#151; after 539 BCE, a clay cylinder (foundational deposit in Babylon)"]
 
     PERSEPOLIS[Persepolis]
@@ -327,6 +327,10 @@ classDef Age fill:forestgreen, color:honeydew;
   class PERSEPOLIS,CYRUS_THE_GREAT,CYRUS_CYLINDER,BATTLE_OF_OPIS Node;
   class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
 
+  %% ---------- ---------- ---------- ---------- ----------
+  %%classDef Age fill:forestgreen, color:honeydew;
+  classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
+  class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
 
 
 ```
