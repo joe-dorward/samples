@@ -58,9 +58,9 @@ classDef Age fill:forestgreen, color:honeydew;
     click HALAF "https://en.wikipedia.org/wiki/Halaf_culture" _blank
 
 
-  CHALCOLITHIC_FROM([from ~ 6,000 BCE])
-  CHALCOLITHIC_DESCRIPTION[West Asian Chalcolithic]
-  CHALCOLITHIC_TO([to ~ 3,500 BCE])
+  COPPER_FROM([from ~ 6,000 BCE])
+  COPPER_DESCRIPTION[Copper Age]
+  COPPER_TO([to ~ 3,500 BCE])
 
 
   5500([from ~ 5,500 BCE])
@@ -101,6 +101,11 @@ classDef Age fill:forestgreen, color:honeydew;
     UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
     click UR "https://en.wikipedia.org/wiki/Ur" _blank
 
+
+  BRONZE_FROM([from ~ 3,300 BCE])
+  BRONZE_DESCRIPTION[Bronze Age]
+  BRONZE_TO([to ~ 1,200 BCE])
+
   %%3100([from ~ 3,100 BCE])
     CUNEIFORM[Cuneiform]
     CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians) ~ 3,100 BCE"]
@@ -117,11 +122,7 @@ classDef Age fill:forestgreen, color:honeydew;
   YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
   YEAR_DOT-.-6100-.-HALAF
 
-
-  YEAR_DOT~~~
-  CHALCOLITHIC_FROM-.-
-  CHALCOLITHIC_DESCRIPTION-.-
-  CHALCOLITHIC_TO
+  YEAR_DOT~~~COPPER_FROM-.-COPPER_DESCRIPTION-.-COPPER_TO
 
   YEAR_DOT-.-5500-.-UBAID_PERIOD
                     UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
@@ -140,10 +141,11 @@ classDef Age fill:forestgreen, color:honeydew;
 
 
 
-  %%YEAR_DOT-.-3800-.-UR
+  YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DESCRIPTION-.-BRONZE_TO
+
   %%YEAR_DOT-.-3100-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
-  class CHALCOLITHIC_FROM,CHALCOLITHIC_TO Age
+  class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO Age
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,SUSA,CUNEIFORM Node
   class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,SUSA_NOTE,CUNEIFORM_NOTE Note
   %% ========== ========== ========== ========== ==========
