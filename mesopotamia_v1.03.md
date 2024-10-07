@@ -89,10 +89,6 @@ classDef Note fill:white, stroke:white, text-align:left;
     GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
     click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
 
-    SUSA[Susa]
-    SUSA_NOTE[#151; proto-elamite city founded ~ 4,000 BCE]
-    click SUSA "https://en.wikipedia.org/wiki/Susa" _blank
-
   %%3800([from ~ 3,800 BCE])
     UR[Ur]
     UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
@@ -132,14 +128,12 @@ classDef Note fill:white, stroke:white, text-align:left;
 
                     URUK_PERIOD-.-UR~~~UR_NOTE
 
-                    URUK_PERIOD-.-SUSA~~~SUSA_NOTE
-
                     URUK_PERIOD-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
   YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DESCRIPTION-.-BRONZE_TO
 
-  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,SUSA,CUNEIFORM Node
-  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,SUSA_NOTE,CUNEIFORM_NOTE Note
+  class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
+  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
 
 
 
@@ -165,10 +159,14 @@ classDef Note fill:white, stroke:white, text-align:left;
     ELAM[Elam]
     click ELAM "https://en.wikipedia.org/wiki/Elam" _blank
 
-  YEAR_DOT-.-3200-.-ELAM
+    SUSA[Susa]
+    SUSA_NOTE[#151; proto-elamite city founded ~ 4,000 BCE]
+    click SUSA "https://en.wikipedia.org/wiki/Susa" _blank
+    
+  YEAR_DOT-.-3200-.-ELAM-.-SUSA~~~SUSA_NOTE
 
-  class ELAM Node
-  %%class  Note
+  class ELAM,SUSA Node
+  class SUSA_NOTE Note
   %% ========== ========== ========== ========== ==========
   %% 3000 BCE & ASSYRIA
   %% ========== ========== ========== ========== ==========
@@ -257,7 +255,8 @@ classDef Note fill:white, stroke:white, text-align:left;
     ASHURBANIPAL_NOTE[#151; Assyrian king, from ~ 669 BCE]
     click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
 
-  653([653 BCE])
+  653_1([653 BCE])
+  653_2([653 BCE])
     BATTLE_OF_ULAI[Battle of Ulai]
     BATTLE_OF_ULAI_NOTE["#151; the decisive battle between the Assyrians (Ashurbanipal) and Elamites (Teumman). The battle is also known as the Battle of Til-Tuba"]
     click BATTLE_OF_ULAI "https://en.wikipedia.org/wiki/Battle_of_Ulai" _blank
@@ -270,7 +269,9 @@ classDef Note fill:white, stroke:white, text-align:left;
                     ASSYRIAN_EMPIRE-.-NINEVEH--oNINEVEH_NOTE
                                       NINEVEH--oROYAL_LION_HUNT_NOTE
 
-                                      ASHURBANIPAL-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
+                                      ASHURBANIPAL-.-653_1-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
+
+  SUSA-.-653_2-.-BATTLE_OF_ULAI
 
   YEAR_DOT~~~IRON_FROM---IRON_DOT_1---IRON_DOT_2---IRON_DESCRIPTION---IRON_DOT_3---IRON_DOT_4---IRON_TO
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
@@ -344,9 +345,9 @@ classDef Note fill:white, stroke:white, text-align:left;
   classDef Age fill:seagreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
-  class 539,597,653 KeyDate;
+  class 539,597,653_1,653_2 KeyDate;
   class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
-  linkStyle 75 stroke:forestgreen, stroke-width:5px;
+  linkStyle 70 stroke:forestgreen, stroke-width:5px;
 ```
