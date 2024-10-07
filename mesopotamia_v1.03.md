@@ -72,12 +72,6 @@ classDef Note fill:white, stroke:white, text-align:left;
     ERIDU_NOTE[#151; 'sumerian' city, founded ~ 5,500 BCE.]
     click ERIDU "https://en.wikipedia.org/wiki/Eridu" _blank
 
-
-
-  4000([from ~ 4,000 BCE])
-    URUK_PERIOD[Uruk Period]
-    click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
-
     URUK[Uruk]
     URUK_NOTE[#151; 'sumerian' city founded ~ 5,000 BCE]
     click URUK "https://en.wikipedia.org/wiki/Uruk" _blank
@@ -86,9 +80,20 @@ classDef Note fill:white, stroke:white, text-align:left;
     INANNA_NOTE[#151; the patron goddess of the Eanna temple in Uruk]
     click INANNA "https://en.wikipedia.org/wiki/Inanna" _blank
 
+    2900_1([~ 2,900 BCE])
     GILGAMESH[Gilgamesh]
     GILGAMESH_NOTE[#151; from ~ 2,900, the king of Uruk]
     click GILGAMESH "https://en.wikipedia.org/wiki/Gilgamesh" _blank
+
+  4000([from ~ 4,000 BCE])
+    URUK_PERIOD[Uruk Period]
+    click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
+
+
+
+
+
+
 
   %%3800([from ~ 3,800 BCE])
     UR[Ur]
@@ -121,12 +126,13 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT-.-5500-.-UBAID_PERIOD
                     UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
                                    SUMER-.-ERIDU~~~ERIDU_NOTE
-
+                                   SUMER-.-URUK--oURUK_NOTE
+                                           URUK-.-INANNA~~~INANNA_NOTE
+                                           URUK-.-2900_1-.-GILGAMESH~~~GILGAMESH_NOTE
 
   YEAR_DOT-.-4000-.-URUK_PERIOD
-                    URUK_PERIOD-.-URUK--oURUK_NOTE
-                                  URUK-.-INANNA~~~INANNA_NOTE
-                                  URUK-.-GILGAMESH~~~GILGAMESH_NOTE
+                                  %%URUK-.-INANNA~~~INANNA_NOTE
+                                  %%URUK-.-GILGAMESH~~~GILGAMESH_NOTE
 
                     URUK_PERIOD-.-UR~~~UR_NOTE
 
@@ -347,7 +353,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   classDef Age fill:seagreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
-  class 539,597,653_1,653_2 KeyDate;
+  class 2900_1,539,597,653_1,653_2 KeyDate;
   class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
