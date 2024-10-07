@@ -324,7 +324,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
   %% ---------- ---------- ---------- ---------- ----------
   classDef KeyDate fill:black, color:white;
-  classDef Age fill:mediumseagreen, color:honeydew;
+  classDef Age fill:darkseagreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
   class 539,597,653 KeyDate;
