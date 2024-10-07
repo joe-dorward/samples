@@ -223,7 +223,9 @@ classDef Note fill:white, stroke:white, text-align:left;
     click ASSYRIAN_EMPIRE "https://en.wikipedia.org/wiki/Assyria" _blank
 
     IRON_FROM([from ~ 1,200 BCE])
+    IRON_DOT_1(["&nbsp;"])
     IRON_DESCRIPTION[Iron Age]
+    IRON_DOT_2(["&nbsp;"])
     IRON_TO([to ~ 550 BCE])
 
     NINEVEH[Nineveh]
@@ -253,7 +255,7 @@ classDef Note fill:white, stroke:white, text-align:left;
 
                                       ASHURBANIPAL-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
-  YEAR_DOT~~~IRON_FROM-.-IRON_DESCRIPTION-.-IRON_TO
+  YEAR_DOT~~~IRON_FROM-.-IRON_DOT_1-.-IRON_DESCRIPTION-.-IRON_DOT_2-.-IRON_TO
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
   class NINEVEH,ASHURBANIPAL,BATTLE_OF_ULAI Node;
@@ -322,7 +324,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   class CYRUS_CYLINDER_NOTE,PERSEPOLIS_NOTE,BATTLE_OF_OPIS_NOTE Note
   %% ---------- ---------- ---------- ---------- ----------
   classDef KeyDate fill:black, color:white;
-  classDef Age fill:forestgreen, color:honeydew;
+  classDef Age fill:mediumseagreen, color:honeydew;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
   class 539,597,653 KeyDate;
