@@ -124,7 +124,7 @@ classDef Note fill:white, stroke:white, text-align:left;
   YEAR_DOT~~~COPPER_FROM-.-COPPER_DOT_1-.-COPPER_DOT_2-.-COPPER_DESCRIPTION-.-COPPER_DOT_3-.-COPPER_DOT_4-.-COPPER_TO
 
   YEAR_DOT-.-5500-.-UBAID_PERIOD
-                    UBAID_PERIOD-.-SUMER~~~SUMER_NOTE
+                    UBAID_PERIOD-.-SUMER--oSUMER_NOTE
                                    SUMER-.-ERIDU~~~ERIDU_NOTE
                                    SUMER-.-URUK--oURUK_NOTE
                                            URUK-.-INANNA~~~INANNA_NOTE
