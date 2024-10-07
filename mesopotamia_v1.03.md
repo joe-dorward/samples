@@ -107,6 +107,7 @@ classDef Note fill:white, stroke:white, text-align:left;
     CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians) ~ 3,100 BCE"]
     click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
 
+
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
@@ -139,6 +140,9 @@ classDef Note fill:white, stroke:white, text-align:left;
 
   class GOBEKLI_TEPE,CATALHOYUK,SUMER,ERIDU,URUK,INANNA,GILGAMESH,UR,SUSA,CUNEIFORM Node
   class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,SUSA_NOTE,CUNEIFORM_NOTE Note
+
+
+
   %% ========== ========== ========== ========== ==========
   %% 3100 BCE PROTO-ELAMITE
   %% ========== ========== ========== ========== ==========
@@ -147,12 +151,23 @@ classDef Note fill:white, stroke:white, text-align:left;
     %%PROTO_ELAMITE_PERIOD_NOTE[#151; ]
     click PROTO_ELAMITE_PERIOD "https://en.wikipedia.org/wiki/Proto-Elamite_(period)" _blank
 
+
+
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-3100-.-PROTO_ELAMITE_PERIOD
 
-  %%class  Node
+  %% ========== ========== ========== ========== ==========
+  %% 3200 BCE ELAM
+  %% ========== ========== ========== ========== ==========
+  3200([from ~ 3,200 BCE])
+    ELAM[Elam]
+    click ELAM "https://en.wikipedia.org/wiki/Elam" _blank
+
+  YEAR_DOT-.-3200-.-ELAM
+
+  class ELAM Node
   %%class  Note
   %% ========== ========== ========== ========== ==========
   %% 3000 BCE & ASSYRIA
