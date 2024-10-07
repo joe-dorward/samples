@@ -89,13 +89,9 @@ classDef Note fill:white, stroke:white, text-align:left;
     URUK_PERIOD[Uruk Period]
     click URUK_PERIOD "https://en.wikipedia.org/wiki/Uruk_period" _blank
 
+    URUK_SUMER[Sumer]
+    click URUK_SUMER "https://en.wikipedia.org/wiki/Sumer" _blank
 
-
-
-
-
-
-  %%3800([from ~ 3,800 BCE])
     UR[Ur]
     UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
     click UR "https://en.wikipedia.org/wiki/Ur" _blank
@@ -130,13 +126,12 @@ classDef Note fill:white, stroke:white, text-align:left;
                                            URUK-.-INANNA~~~INANNA_NOTE
                                            URUK-.-2900_1-.-GILGAMESH~~~GILGAMESH_NOTE
 
-  YEAR_DOT-.-4000-.-URUK_PERIOD
+  YEAR_DOT-.-4000-.-URUK_PERIOD-.-URUK_SUMER
                                   %%URUK-.-INANNA~~~INANNA_NOTE
                                   %%URUK-.-GILGAMESH~~~GILGAMESH_NOTE
 
-                    URUK_PERIOD-.-UR~~~UR_NOTE
-
-                    URUK_PERIOD-.-CUNEIFORM~~~CUNEIFORM_NOTE
+                                  URUK_SUMER-.-UR~~~UR_NOTE
+                                  URUK_SUMER-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
   YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DESCRIPTION-.-BRONZE_TO
 
