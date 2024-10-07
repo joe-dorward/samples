@@ -101,7 +101,11 @@ classDef Note fill:white, stroke:white, text-align:left;
     click UR "https://en.wikipedia.org/wiki/Ur" _blank
 
   BRONZE_FROM([from ~ 3,300 BCE])
+  BRONZE_DOT_1(["&nbsp;"])
+  BRONZE_DOT_2(["&nbsp;"])
   BRONZE_DESCRIPTION[Bronze Age]
+  BRONZE_DOT_3(["&nbsp;"])
+  BRONZE_DOT_4(["&nbsp;"])
   BRONZE_TO([to ~ 1,200 BCE])
 
   %%3100([from ~ 3,100 BCE])
@@ -137,7 +141,7 @@ classDef Note fill:white, stroke:white, text-align:left;
                                   URUK_SUMER-.-UR~~~UR_NOTE
                                   URUK_SUMER-.-CUNEIFORM~~~CUNEIFORM_NOTE
 
-  YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DESCRIPTION-.-BRONZE_TO
+  YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DOT_1-.-BRONZE_DOT_2-.-BRONZE_DESCRIPTION-.-BRONZE_DOT_3-.-BRONZE_DOT_4-.-BRONZE_TO
 
   class GOBEKLI_TEPE,CATALHOYUK,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
   class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
