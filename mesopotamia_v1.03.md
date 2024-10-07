@@ -231,6 +231,10 @@ classDef Age fill:forestgreen, color:honeydew;
     ASSYRIAN_EMPIRE_NOTE[#151; an empire emerges from ~ 1,400 BCE]
     click ASSYRIAN_EMPIRE "https://en.wikipedia.org/wiki/Assyria" _blank
 
+    IRON_FROM([from ~ 1,200 BCE])
+    IRON_DESCRIPTION[Iron Age]
+    IRON_TO([to ~ 550 BCE])
+
     NINEVEH[Nineveh]
     NINEVEH_NOTE["#151; founded (as early as) ~ 6,000 BCE, and the Assyrian capital from ~ 705 BCE"]
     ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
@@ -257,6 +261,8 @@ classDef Age fill:forestgreen, color:honeydew;
                                       NINEVEH--oROYAL_LION_HUNT_NOTE
 
                                       ASHURBANIPAL-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
+
+  YEAR_DOT~~~IRON_FROM-.-IRON_DESCRIPTION-.-IRON_TO
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
   class 653 KeyDate;
