@@ -11,7 +11,7 @@ Mesopotamia, rather than being a country (in any sense of the word) is the name 
   init: {
     'theme': 'forest',
     'themeVariables': {
-      'fontSize':'8pt'
+      'fontSize':'15pt'
 
     }
   }
