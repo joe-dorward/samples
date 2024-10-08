@@ -11,15 +11,15 @@ Mesopotamia, rather than being a country (in any sense of the word) is the name 
   init: {
     'theme': 'forest',
     'themeVariables': {
-      'fontSize':'15pt'
-
+      'fontSize':'15pt',
+      'margin':'20px'
     }
   }
 }%%
 flowchart LR
 
 classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
-classDef Note fill:white, stroke:white, text-align:left;
+classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
 
