@@ -126,6 +126,10 @@ classDef Note fill:white, stroke:white, text-align:left;
     UR_NOTE[#151; 'sumerian' city founded ~ 3,800 BCE]
     click UR "https://en.wikipedia.org/wiki/Ur" _blank
 
+    CUNEIFORM[Cuneiform]
+    CUNEIFORM_NOTE["#151; the earliest know writing system (invented by the Sumerians) ~ 3,100 BCE"]
+    click CUNEIFORM "https://en.wikipedia.org/wiki/Cuneiform" _blank
+
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
