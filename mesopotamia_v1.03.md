@@ -330,12 +330,18 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   %% ========== ========== ========== ========== ==========
   550([from ~ 550 BCE])
     PERSIAN_EMPIRE[Persian Empire]
-      CYRUS_THE_GREAT[Cyrus the Great]
-      CYRUS_CYLINDER{{Cyrus Cylinder}}
-      CYRUS_CYLINDER_NOTE["#151; after 539 BCE, a clay cylinder (foundational deposit in Babylon)"]
+    click PERSIAN_EMPIRE "https://en.wikipedia.org/wiki/Achaemenid_Empire" _blank
+
+    CYRUS_THE_GREAT[Cyrus the Great]
+    click CYRUS_THE_GREAT "https://en.wikipedia.org/wiki/Cyrus_the_Great" _blank
+
+    CYRUS_CYLINDER{{Cyrus Cylinder}}
+    CYRUS_CYLINDER_NOTE["#151; after 539 BCE, a clay cylinder (foundational deposit in Babylon)"]
+    click CYRUS_CYLINDER "https://en.wikipedia.org/wiki/Cyrus_Cylinder" _blank
 
     PERSEPOLIS[Persepolis]
     PERSEPOLIS_NOTE[#151; the earliest parts date from ~ 515 BCE]
+    click PERSEPOLIS "https://en.wikipedia.org/wiki/Persepolis" _blank
 
   %%539([from ~ 539 BCE])
     539([539 BCE])
