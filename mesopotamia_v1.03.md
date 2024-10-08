@@ -258,12 +258,16 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
     NINEVEH_NOTE["#151; founded (as early as) ~ 6,000 BCE, and the Assyrian capital from ~ 705 BCE"]
     ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
 
+    SENNACHERIB[Sennacherib]
+    SENNACHERIB_NOTE[#151; King of Assyria, from ~ 705 BCE, son of Sargon II]
+    click SENNACHERIB "https://en.wikipedia.org/wiki/Sennacherib" _blank
+
     TAYLOR_PRISM{{Taylor Prism}}
     TAYLOR_PRISM_NOTE["#151; a clay prisim (in the British Museum), recording the 'annals of Sennacherbi', dating to 691 BCE"]
     click TAYLOR_PRISM "https://en.wikipedia.org/wiki/Sennacherib's_Annals" _blank
 
     ASHURBANIPAL[Ashurbanipal]
-    ASHURBANIPAL_NOTE[#151; Assyrian king, from ~ 669 BCE]
+    ASHURBANIPAL_NOTE[#151; King of Assyria, from ~ 669 BCE]
     click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
 
   653_1([653 BCE])
@@ -275,11 +279,12 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
   YEAR_DOT-.-1400-.-ASSYRIAN_EMPIRE--oASSYRIAN_EMPIRE_NOTE
-                    ASSYRIAN_EMPIRE-.-TAYLOR_PRISM~~~TAYLOR_PRISM_NOTE
-                    ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
                     ASSYRIAN_EMPIRE-.-NINEVEH--oNINEVEH_NOTE
                                       NINEVEH--oROYAL_LION_HUNT_NOTE
 
+                    ASSYRIAN_EMPIRE-.-SENNACHERIB~~~SENNACHERIB_NOTE
+                    ASSYRIAN_EMPIRE-.-TAYLOR_PRISM~~~TAYLOR_PRISM_NOTE
+                    ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
                                       ASHURBANIPAL-.-653_1-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
   SUSA-.-653_2-.-BATTLE_OF_ULAI
@@ -287,8 +292,8 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   YEAR_DOT~~~IRON_FROM---IRON_DOT_1---IRON_DOT_2---IRON_DESCRIPTION---IRON_DOT_3---IRON_DOT_4---IRON_TO
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
-  class NINEVEH,ASHURBANIPAL,BATTLE_OF_ULAI Node;
-  class ASSYRIAN_EMPIRE_NOTE,TAYLOR_PRISM_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE Note
+  class NINEVEH,SENNACHERIB,ASHURBANIPAL,BATTLE_OF_ULAI Node;
+  class ASSYRIAN_EMPIRE_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,SENNACHERIB_NOTE,TAYLOR_PRISM_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% NEO-BABYLONIAN EMPIRE
