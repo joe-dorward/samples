@@ -264,7 +264,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
     ROYAL_LION_HUNT_NOTE[#151; the royal lion hunt reliefs in the British Museum are from Nineveh]
 
     SENNACHERIB[Sennacherib]
-    SENNACHERIB_NOTE[#151; King of Assyria, from ~ 705 BCE, son of Sargon II]
+    SENNACHERIB_NOTE[#151; King of Assyria, from ~ 705 BCE]
     click SENNACHERIB "https://en.wikipedia.org/wiki/Sennacherib" _blank
 
     TAYLOR_PRISM{{Taylor Prism}}
@@ -288,7 +288,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
                                       NINEVEH--oROYAL_LION_HUNT_NOTE
 
                     ASSYRIAN_EMPIRE-.-SENNACHERIB~~~SENNACHERIB_NOTE
-                    ASSYRIAN_EMPIRE-.-TAYLOR_PRISM~~~TAYLOR_PRISM_NOTE
+                                      SENNACHERIB-.-TAYLOR_PRISM~~~TAYLOR_PRISM_NOTE
                     ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
                                       ASHURBANIPAL-.-653_1-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
