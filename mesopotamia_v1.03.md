@@ -48,6 +48,10 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
     POTTERY_NEOLITHIC[Pottery Neolithic]
     click POTTERY_NEOLITHIC "https://en.wikipedia.org/wiki/Late_Neolithic" _blank
 
+  6800([from ~ 6,800 BCE])
+    CHOGHA_MISH[Choghā Mīsh]
+    click CHOGHA_MISH "https://en.wikipedia.org/wiki/Chogha_Mish" _blank
+
   6400([from ~ 6,400 BCE])
     YARNUKIAN_CULTURE[Yarmukian Culture]
     click YARNUKIAN_CULTURE "https://en.wikipedia.org/wiki/Yarmukian_culture" _blank
@@ -122,6 +126,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE~~~GOBEKLI_TEPE_NOTE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
   YEAR_DOT-.-7000-.-POTTERY_NEOLITHIC
+  YEAR_DOT-.-6800-.-CHOGHA_MISH
   YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
   YEAR_DOT-.-6100-.-HALAF
 
