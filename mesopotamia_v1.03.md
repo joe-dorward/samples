@@ -376,5 +376,5 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
-  linkStyle 90 stroke:forestgreen, stroke-width:5px;
+  linkStyle 95 stroke:forestgreen, stroke-width:5px;
 ```
