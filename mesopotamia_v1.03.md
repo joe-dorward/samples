@@ -275,6 +275,10 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
     ASHURBANIPAL_NOTE[#151; King of Assyria, from ~ 669 BCE]
     click ASHURBANIPAL "https://en.wikipedia.org/wiki/Ashurbanipal" _blank
 
+    RASSAM_CYLINDER{{Rassam Cylinder}}
+    RASSAM_CYLINDER_NOTE["#151; an artifact (in the British Museum), recording nine military campaigns of Ashurbanipal, dating to 643 BCE"]
+    click RASSAM_CYLINDER "https://en.wikipedia.org/wiki/Rassam_cylinder" _blank
+
   653_1([653 BCE])
   653_2([653 BCE])
     BATTLE_OF_ULAI[Battle of Ulai]
@@ -289,8 +293,10 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
 
                     ASSYRIAN_EMPIRE-.-SENNACHERIB~~~SENNACHERIB_NOTE
                                       SENNACHERIB-.-TAYLOR_PRISM~~~TAYLOR_PRISM_NOTE
+
                     ASSYRIAN_EMPIRE-.-ASHURBANIPAL~~~ASHURBANIPAL_NOTE
                                       ASHURBANIPAL-.-653_1-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
+                                      ASHURBANIPAL-.-RASSAM_CYLINDER~~~RASSAM_CYLINDER_NOTE
 
   SUSA-.-653_2-.-BATTLE_OF_ULAI
 
@@ -298,7 +304,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   %%YEAR_DOT-.-653-.-BATTLE_OF_ULAI~~~BATTLE_OF_ULAI_NOTE
 
   class NINEVEH,SENNACHERIB,ASHURBANIPAL,BATTLE_OF_ULAI Node;
-  class ASSYRIAN_EMPIRE_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,SENNACHERIB_NOTE,TAYLOR_PRISM_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE Note
+  class ASSYRIAN_EMPIRE_NOTE,NINEVEH_NOTE,ROYAL_LION_HUNT_NOTE,SENNACHERIB_NOTE,TAYLOR_PRISM_NOTE,ASHURBANIPAL_NOTE,BATTLE_OF_ULAI_NOTE,RASSAM_CYLINDER_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% NEO-BABYLONIAN EMPIRE
@@ -373,7 +379,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   classDef Clay fill:peachpuff, stroke:darkred, color:darkred;
 
   class 2900_1,539,597,653_1,653_2 KeyDate;
-  class TAYLOR_PRISM,CYRUS_CYLINDER Clay;
+  class RASSAM_CYLINDER,TAYLOR_PRISM,CYRUS_CYLINDER Clay;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
   linkStyle 95 stroke:forestgreen, stroke-width:5px;
