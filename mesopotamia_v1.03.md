@@ -384,4 +384,24 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   class COPPER_FROM,COPPER_TO,BRONZE_FROM,BRONZE_TO,IRON_FROM,IRON_TO Age
 
   linkStyle 95 stroke:forestgreen, stroke-width:5px;
+
+  %% ========== ========== ========== ========== ==========
+  %% ALEXANDER THE GREAT
+  %% ========== ========== ========== ========== ==========
+  334([in 334 BCE])
+    BATTLE_OF_GRANICUS[Battle of Granicus]
+    BATTLE_OF_GRANICUS_NOTE["#151; the first battle between the Macedonians (Alexander the Great) and Persians (Darius III)"]
+    click BATTLE_OF_GRANICUS "https://en.wikipedia.org/wiki/Battle_of_Granicus" _blank
+
+    ALEXANDER_THE_GREAT[Alexander the Great]
+    click ALEXANDER_THE_GREAT "https://en.wikipedia.org/wiki/Achaemenid_Empire" _blank
+
+  %% ---------- ---------- ---------- ---------- ----------
+  %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-334-.-BATTLE_OF_GRANICUS~~~BATTLE_OF_GRANICUS_NOTE
+                   BATTLE_OF_GRANICUS-.-ALEXANDER_THE_GREAT
+
+  class BATTLE_OF_GRANICUS,ALEXANDER_THE_GREAT Node;
+  class BATTLE_OF_GRANICUS_NOTE Note
 ```
