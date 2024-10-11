@@ -152,37 +152,35 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   class GOBEKLI_TEPE,CATALHOYUK,CHOGHA_MISH,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
   class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,CHOGHA_MISH_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
 
-
-
   %% ========== ========== ========== ========== ==========
   %% 3100 BCE PROTO-ELAMITE
   %% ========== ========== ========== ========== ==========
-  3100([from ~ 3,100 BCE])
-    PROTO_ELAMITE_PERIOD(Proto-Elamite Period)
+  %%3100([from ~ 3,100 BCE])
+    %%PROTO_ELAMITE_PERIOD(Proto-Elamite Period)
     %%PROTO_ELAMITE_PERIOD_NOTE[#151; ]
-    click PROTO_ELAMITE_PERIOD "https://en.wikipedia.org/wiki/Proto-Elamite_(period)" _blank
-
-
-
+    %%click PROTO_ELAMITE_PERIOD "https://en.wikipedia.org/wiki/Proto-Elamite_(period)" _blank
   %% ---------- ---------- ---------- ---------- ----------
   %% CONNECTIONS & CLASSES
   %% ---------- ---------- ---------- ---------- ----------
-  YEAR_DOT-.-3100-.-PROTO_ELAMITE_PERIOD
+  %%YEAR_DOT-.-3100-.-PROTO_ELAMITE_PERIOD
+
 
   %% ========== ========== ========== ========== ==========
-  %% 3200 BCE ELAM
+  %% 3200 BCE ELAMITE PERIOD
   %% ========== ========== ========== ========== ==========
   3200([from ~ 3,200 BCE])
-    ELAM[Elam]
-    click ELAM "https://en.wikipedia.org/wiki/Elam" _blank
+    ELAMITE_PERIOD[Elamite Period]
+    click ELAMITE_PERIOD "https://en.wikipedia.org/wiki/Elam" _blank
 
     SUSA[Susa]
-    SUSA_NOTE[#151; proto-elamite city founded ~ 4,000 BCE]
+    SUSA_NOTE[#151; Elamite city founded ~ 4,000 BCE]
     click SUSA "https://en.wikipedia.org/wiki/Susa" _blank
-    
-  YEAR_DOT-.-3200-.-ELAM-.-SUSA~~~SUSA_NOTE
+  %% ---------- ---------- ---------- ---------- ----------
+  %% CONNECTIONS & CLASSES
+  %% ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT-.-3200-.-ELAMITE_PERIOD-.-SUSA~~~SUSA_NOTE
 
-  class ELAM,SUSA Node
+  class SUSA Node
   class SUSA_NOTE Note
   %% ========== ========== ========== ========== ==========
   %% 3000 BCE & ASSYRIA
