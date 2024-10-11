@@ -212,7 +212,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
 
   YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
                     AKKADIAN_EMPIRE-.-AKKAD--oAKKAD_NOTE
-                                      AKKAD-.-SARGON_OF_AKKAD~~~SARGON_OF_AKKAD_NOTE
+                                      AKKAD-.-SARGON_OF_AKKAD--oSARGON_OF_AKKAD_NOTE
 
   class ASSUR_01,AKKAD,SARGON_OF_AKKAD Node
   class EARLY_DYNASTIC_PERIOD_NOTE,ASSUR_01_NOTE,AKKAD_NOTE,SARGON_OF_AKKAD_NOTE Note
