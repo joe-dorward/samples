@@ -36,7 +36,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
 
   9500([from ~ 9,500 BCE])
     GOBEKLI_TEPE[Göbekli Tepe]
-    GOBEKLI_TEPE_NOTE[#151; early 'town' in south-eastern Anatolia, founded ~ 9500.]
+    GOBEKLI_TEPE_NOTE[#151; early 'town' in south-eastern Anatolia, founded ~ 9,500 BCE.]
     click GOBEKLI_TEPE "https://en.wikipedia.org/wiki/Göbekli_Tepe" _blank
 
   7500([from ~ 7,500 BCE])
@@ -50,6 +50,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
 
   6800([from ~ 6,800 BCE])
     CHOGHA_MISH[Choghā Mīsh]
+    CHOGHA_MISH_NOTE[#151; early 'city' in the Susiana Plain, south-eastern Mesopotamia, founded ~ 6,800 BCE.]
     click CHOGHA_MISH "https://en.wikipedia.org/wiki/Chogha_Mish" _blank
 
   6400([from ~ 6,400 BCE])
@@ -126,7 +127,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   YEAR_DOT-.-9500-.-GOBEKLI_TEPE~~~GOBEKLI_TEPE_NOTE
   YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
   YEAR_DOT-.-7000-.-POTTERY_NEOLITHIC
-  YEAR_DOT-.-6800-.-CHOGHA_MISH
+  YEAR_DOT-.-6800-.-CHOGHA_MISH~~~CHOGHA_MISH_NOTE
   YEAR_DOT-.-6400-.-YARNUKIAN_CULTURE
   YEAR_DOT-.-6100-.-HALAF
 
@@ -149,7 +150,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:11pt;
   YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DOT_1-.-BRONZE_DOT_2-.-BRONZE_DESCRIPTION-.-BRONZE_DOT_3-.-BRONZE_DOT_4-.-BRONZE_TO
 
   class GOBEKLI_TEPE,CATALHOYUK,CHOGHA_MISH,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
-  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
+  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,CHOGHA_MISH_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
 
 
 
