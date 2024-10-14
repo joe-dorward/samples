@@ -31,7 +31,7 @@ flowchart LR
   classDef Summary_2 fill:rose, stroke:purple, text-align:left, width:300px, margin:50px, padding:50px;
   classDef Summary_3 fill:honeydew, stroke:forestgreen, text-align:left, width:400px, margin:70px, padding:110px;
   classDef Summary_4 fill:honeydew, stroke:forestgreen, text-align:left, width:350px, margin:0px, padding:150px;
-
+  classDef Summary_5 fill:honeydew, stroke:forestgreen, text-align:left, width:400px, margin:-150px, padding:300px;
 
   %% ========== ========== ========== ========== ==========
   YEAR_DOT(("Year Dot"))
@@ -51,14 +51,20 @@ flowchart LR
   7500_4([from ~ 7,500 BCE])
   CATALHOYUK_4[Çatalhöyük]
   CATALHOYUK_NOTE_4[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses. #151; the earliest known town-like human settlement, where hundreds of people ...]
-  %% ========== ========== ========== ========== ==========
+
+  7500_5([from ~ 7,500 BCE])
+  CATALHOYUK_5[Çatalhöyük]
+  CATALHOYUK_NOTE_5[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses. #151; the earliest known town-like human settlement, where hundreds of people ...]
+%% ========== ========== ========== ========== ==========
   class CATALHOYUK_1, Note;
   class CATALHOYUK_NOTE_1 Summary_1
   class CATALHOYUK_NOTE_2 Summary_2
   class CATALHOYUK_NOTE_3 Summary_3
   class CATALHOYUK_NOTE_4 Summary_4
+  class CATALHOYUK_NOTE_5 Summary_5
   %% ========== ========== ========== ========== ==========
   YEAR_DOT-.-7500_1-.-CATALHOYUK_1~~~CATALHOYUK_NOTE_1
   YEAR_DOT-.-7500_2-.-CATALHOYUK_2~~~CATALHOYUK_NOTE_2
   YEAR_DOT-.-7500_3-.-CATALHOYUK_3~~~CATALHOYUK_NOTE_3
   YEAR_DOT-.-7500_4-.-CATALHOYUK_4~~~CATALHOYUK_NOTE_4
+  YEAR_DOT-.-7500_5-.-CATALHOYUK_5~~~CATALHOYUK_NOTE_5
