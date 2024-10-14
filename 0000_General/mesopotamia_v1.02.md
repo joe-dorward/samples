@@ -26,44 +26,42 @@ At some point in time, our ancestors began moving about the landscape less and d
 }%%
 flowchart LR
   classDef Note fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
-  classDef Summary fill:white, stroke:white, color:black, text-align:left
+
+  classDef Summary_1 color:black, text-align:left;
+  classDef Summary_2 fill:rose, stroke:purple, text-align:left, width:300px, margin:50px, padding:50px;
+  classDef Summary_3 fill:honeydew, stroke:forestgreen, text-align:left, width:400px, margin:70px, padding:110px;
+  classDef Summary_4 fill:honeydew, stroke:forestgreen, text-align:left, width:400px, margin:90px, padding:110px;
+
+
+%% margin-left:150px, padding:70px;
+%% width:350px, margin-left:100px, padding-right:100px;
+
   %% ========== ========== ========== ========== ==========
   YEAR_DOT(("Year Dot"))
   %% ========== ========== ========== ========== ==========
-  13000([from ~ 13000 BCE])
-    subgraph NATUFIAN_CULTURE_WRAPPER[Natufian Culture]
-      NATUFIAN_CULTURE[Natufian Culture]
-      click NATUFIAN_CULTURE "https://en.wikipedia.org/wiki/Natufian_culture" _blank
-    end
+  7500_1([from ~ 7,500 BCE])
+  CATALHOYUK_1[Çatalhöyük]
+  CATALHOYUK_NOTE_1[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
 
-  10000([from ~ 10,000 BCE])
-    subgraph PRE_POTTERY_NEOLITHIC_A_WRAPPER[Pre-Pottery Neolithic A]
-      PRE_POTTERY_NEOLITHIC_A[Pre-Pottery Neolithic A]
-      click PRE_POTTERY_NEOLITHIC_A "https://en.wikipedia.org/wiki/Pre-Pottery_Neolithic_A" _blank
-    end
+  7500_2([from ~ 7,500 BCE])
+  CATALHOYUK_2[Çatalhöyük]
+  CATALHOYUK_NOTE_2[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
 
-  9500([from ~ 9,500 BCE])
-    GOBEKLI_TEPE[Göbekli Tepe]
-    click GOBEKLI_TEPE "https://en.wikipedia.org/wiki/Göbekli_Tepe" _blank
+  7500_3([from ~ 7,500 BCE])
+  CATALHOYUK_3[Çatalhöyük]
+  CATALHOYUK_NOTE_3[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
 
-  7500([from ~ 7,500 BCE])
-    CATALHOYUK[Çatalhöyük]
-    CATALHOYUK_NOTE[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
-    click CATALHOYUK "https://en.wikipedia.org/wiki/Çatalhöyük" _blank
-
-  7000([from ~ 7,000 BCE])
-    subgraph POTTERY_NEOLITHIC_SUBGRAPH[Pottery Neolithic]
-      POTTERY_NEOLITHIC[Pottery Neolithic]
-    end
-
-
+  7500_4([from ~ 7,500 BCE])
+  CATALHOYUK_4[Çatalhöyük]
+  CATALHOYUK_NOTE_4[#151; the earliest known town-like human settlement, where hundreds of people lived in a cluster of mudbrick houses.]
   %% ========== ========== ========== ========== ==========
-  class NATUFIAN_CULTURE,PRE_POTTERY_NEOLITHIC_A,GOBEKLI_TEPE,CATALHOYUK,POTTERY_NEOLITHIC Note;
-
-  class CATALHOYUK_NOTE Summary
+  class CATALHOYUK_1, Note;
+  class CATALHOYUK_NOTE_1 Summary_1
+  class CATALHOYUK_NOTE_2 Summary_2
+  class CATALHOYUK_NOTE_3 Summary_3
+  class CATALHOYUK_NOTE_4 Summary_4
   %% ========== ========== ========== ========== ==========
-  YEAR_DOT-.-13000-.-NATUFIAN_CULTURE_WRAPPER
-  YEAR_DOT-.-10000-.-PRE_POTTERY_NEOLITHIC_A_WRAPPER
-  YEAR_DOT-.-9500-.-GOBEKLI_TEPE
-  YEAR_DOT-.-7500-.-CATALHOYUK~~~CATALHOYUK_NOTE
-  YEAR_DOT-.-7000-.-POTTERY_NEOLITHIC_SUBGRAPH
+  YEAR_DOT-.-7500_1-.-CATALHOYUK_1~~~CATALHOYUK_NOTE_1
+  YEAR_DOT-.-7500_2-.-CATALHOYUK_2~~~CATALHOYUK_NOTE_2
+  YEAR_DOT-.-7500_3-.-CATALHOYUK_3~~~CATALHOYUK_NOTE_3
+  YEAR_DOT-.-7500_4-.-CATALHOYUK_4~~~CATALHOYUK_NOTE_4
