@@ -19,7 +19,8 @@ Mesopotamia, rather than being a country (in any sense of the word) is the name 
 flowchart LR
 
 classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
-classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
+%%classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
+classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:350px, margin:-5px, padding:150px  ;
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
 
@@ -71,6 +72,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
 
   5500([from ~ 5,500 BCE])
     UBAID_PERIOD[Ubaid Period]
+    UBAID_PERIOD_NOTE[#151; is the earliest known period in southern Mesopotamia ]
     click UBAID_PERIOD "https://en.wikipedia.org/wiki/Ubaid_period" _blank
 
     SUMER[Sumer]
@@ -133,7 +135,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
 
   YEAR_DOT~~~COPPER_FROM-.-COPPER_DOT_1-.-COPPER_DOT_2-.-COPPER_DESCRIPTION-.-COPPER_DOT_3-.-COPPER_DOT_4-.-COPPER_TO
 
-  YEAR_DOT-.-5500-.-UBAID_PERIOD
+  YEAR_DOT-.-5500-.-UBAID_PERIOD--oUBAID_PERIOD_NOTE
                     UBAID_PERIOD-.-SUMER--oSUMER_NOTE
                                    SUMER-.-ERIDU~~~ERIDU_NOTE
                                    SUMER-.-URUK--oURUK_NOTE
@@ -150,7 +152,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
   YEAR_DOT~~~BRONZE_FROM-.-BRONZE_DOT_1-.-BRONZE_DOT_2-.-BRONZE_DESCRIPTION-.-BRONZE_DOT_3-.-BRONZE_DOT_4-.-BRONZE_TO
 
   class GOBEKLI_TEPE,CATALHOYUK,CHOGHA_MISH,ERIDU,URUK,INANNA,GILGAMESH,UR,CUNEIFORM Node
-  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,CHOGHA_MISH_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
+  class GOBEKLI_TEPE_NOTE,CATALHOYUK_NOTE,CHOGHA_MISH_NOTE,UBAID_PERIOD_NOTE,SUMER_NOTE,ERIDU_NOTE,URUK_NOTE,INANNA_NOTE,GILGAMESH_NOTE,UR_NOTE,CUNEIFORM_NOTE Note
 
   %% ========== ========== ========== ========== ==========
   %% 3100 BCE PROTO-ELAMITE
