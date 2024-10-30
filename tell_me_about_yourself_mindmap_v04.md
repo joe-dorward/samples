@@ -1,3 +1,5 @@
+In many ways, working as a Technical Writer is the perfect work for me.
+
 The primary purpose of this mindmap is to lay out (for myself) the answer to the "Tell me about yourself" request, and secondarily,
 to lay out (for myself) what I think about my skills, knowledge, and the kind of work I want to do.
 
