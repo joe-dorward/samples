@@ -18,6 +18,10 @@ subgraph Product Development
 
 
   REQUEST_PRODUCT_PENETRATION_TESTING(Request Product Penetration Testing)
+  REMEDIATE_PRODUCT(Remediate Product)
+  RECENTLY_TESTED_QUESTION{Remediate Product?}
+
+
   NOTIFY_INTEREST_TO_DEPLOY(Notify Interest To Deploy)
 
 end
@@ -26,6 +30,7 @@ end
 subgraph Sage Provisioning Portal
   DUMMY_ONE(Dummy One)
 
+  SPP_PRODUCT_MANAGER(Product Manager)
 end
 
 subgraph Cloud Operations
@@ -48,19 +53,12 @@ end
 
   RECENTLY_TESTED_NOTE-.-RECENTLY_TESTED
 
-  REQUEST_PRODUCT_PENETRATION_TESTING--->PRODUCT_PENETRATION_TESTING--->PRODUCT_PENETRATION_TESTING_REPORT
+  REQUEST_PRODUCT_PENETRATION_TESTING--->PRODUCT_PENETRATION_TESTING--->PRODUCT_PENETRATION_TESTING_REPORT--->RECENTLY_TESTED_QUESTION--->REMEDIATE_PRODUCT
+  REMEDIATE_PRODUCT-- YES -->REQUEST_PRODUCT_PENETRATION_TESTING
+  REMEDIATE_PRODUCT-- NO -->NOTIFY_INTEREST_TO_DEPLOY--->SPP_PRODUCT_MANAGER
 
 class RECENTLY_TESTED_NOTE Note
 %%YEAR_DOT-.-9500-.-GOBEKLI_TEPE~~~GOBEKLI_TEPE_NOTE
 
-
-```
-
-```mermaid
-sequenceDiagram
-    participant Product
-    participant Sage Provisioning Portal
-    participant Cloud Operations
-    participant Information Security
 
 ```
