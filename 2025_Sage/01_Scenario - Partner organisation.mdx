@@ -1,0 +1,29 @@
+
+```mermaid
+%%{
+  init: {
+    'theme': 'forest',
+    'themeVariables': {
+      'fontSize':'15pt'
+    }
+  }
+}%%
+flowchart LR
+ classDef Sage fill:seagreen, color:honeydew;
+
+
+
+  6800([from ~ 6,800 BCE])
+    CHOGHA_MISH[Choghā Mīsh]
+    CHOGHA_MISH_NOTE[#151; early 'city' in the Susiana Plain, south-eastern Mesopotamia, founded ~ 6,800 BCE.]
+    click CHOGHA_MISH "https://en.wikipedia.org/wiki/Chogha_Mish" _blank
+
+
+  SAGE_OPERATING_COMPANY_01([Sage Operating Company])-.has a.-
+  SAGE_OPERATIONS_AGENT_01([Sage Operations Agent])-.creates.->
+  PARTNER_ORGANISATION_01[Partner Organisation]-.required.->
+  PRIMARY_CONTACT_01[Primary Contact]
+
+
+  class SAGE_OPERATING_COMPANY_01 Sage
+```
