@@ -4,13 +4,13 @@
   init: {
     'theme': 'forest',
     'themeVariables': {
-      'fontSize':'15pt'
+      'fontSize':'12pt'
     }
   }
 }%%
 flowchart LR
  classDef Sage fill:seagreen, color:honeydew;
-
+ classDef Note fill:pink, stroke:white, text-align:left, font-size:12pt, width:400px, margin:0px, padding:10px;
 
 
   6800([from ~ 6,800 BCE])
@@ -22,8 +22,11 @@ flowchart LR
   SAGE_OPERATING_COMPANY_01([Sage Operating Company])-.has a.-
   SAGE_OPERATIONS_AGENT_01([Sage Operations Agent])-.creates.->
   PARTNER_ORGANISATION_01[Partner Organisation]-.required.->
-  PRIMARY_CONTACT_01[Primary Contact]
+  PRIMARY_CONTACT_01[Primary Contact]--o
+  PRIMARY_CONTACT_01_NOTE[The **Primary Contact** is added with the **Partner Administrator** role]
+
 
 
   class SAGE_OPERATING_COMPANY_01 Sage
+  class PRIMARY_CONTACT_01_NOTE Note
 ```
