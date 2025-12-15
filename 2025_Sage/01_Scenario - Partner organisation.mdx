@@ -13,11 +13,14 @@ flowchart LR
  classDef Sage fill:seagreen, color:honeydew;
  classDef Note fill:white, stroke:white, text-align:left;
 
-  SAGE_OPERATING_COMPANY_01([Sage Operating Company])-.has a.-
+  SAGE_OPERATING_COMPANY_01(Sage Operating Company)-.has a.-
   SAGE_OPERATIONS_AGENT_01([Sage Operations Agent])-.who adds a.->
   PARTNER_ORGANISATION_01[Partner Organisation]-.and a<br/>(required).->
-  PRIMARY_CONTACT_01[Primary Contact]--o
+  PRIMARY_CONTACT_01([Primary Contact])--o
   PRIMARY_CONTACT_01_NOTE[The **Primary Contact** is added with the **Partner Administrator** role]
+
+  PARTNER_ORGANISATION_01-.and a<br/>(optional).->
+  PRODUCT_01(Product)
 
   class SAGE_OPERATING_COMPANY_01 Sage
   class PRIMARY_CONTACT_01_NOTE Note
