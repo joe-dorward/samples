@@ -16,11 +16,11 @@ flowchart LR
   SAGE_OPERATING_COMPANY_01(Sage Operating Company)-.has a.-
   SAGE_OPERATIONS_AGENT_01([&nbsp;Sage Operations Agent&nbsp;])-.who adds a.->
   PARTNER_ORGANISATION_01[Partner Organisation]-.and a<br/>(required).->
-  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])--o
+  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])-.-o
   PRIMARY_CONTACT_01_NOTE[The **Primary Contact** is added with the **Partner Administrator** role]
 
   SAGE_OPERATING_COMPANY_01-.has a.-
-  PRODUCT_01["Product"]--o
+  PRODUCT_01["Product"]-.-o
   PRODUCT_01_NOTE["A Sage Operating Company will (likely) have one-or-more **Products** associated with it"]
 
   PARTNER_ORGANISATION_01-.and a<br/>(optional).->
