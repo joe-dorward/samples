@@ -20,12 +20,13 @@ flowchart LR
   PRIMARY_CONTACT_01_NOTE[The **Primary Contact** is added with the **Partner Administrator** role]
 
   SAGE_OPERATING_COMPANY_01-.has a.-
-  PRODUCT_01[Product]
+  PRODUCT_01["Product"]--o
+  PRODUCT_01_NOTE["A Sage Operating Company will (likely) have one-or-more **Products** associated with it"]
 
   PARTNER_ORGANISATION_01-.and a<br/>(optional).->
-  PRODUCT_01
+  PRODUCT_03[Product]
 
   class SAGE_OPERATING_COMPANY_01 Sage
-  class PARTNER_ORGANISATION_01,PRODUCT_01 Noun
-  class PRIMARY_CONTACT_01_NOTE Note
+  class PARTNER_ORGANISATION_01,PRODUCT_01,PRODUCT_02,PRODUCT_03 Noun
+  class PRIMARY_CONTACT_01_NOTE,PRODUCT_01_NOTE Note
 ```
