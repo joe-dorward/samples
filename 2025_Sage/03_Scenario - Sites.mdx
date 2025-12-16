@@ -20,24 +20,33 @@ flowchart LR
   PARTNER_ORGANISATION_01[Partner Organisation]
 
   PARTNER_ORGANISATION_01-.has a.->
-  CUSTOMER_ORGANISATION_01[Customer Organisation]-.has a<br/>(required).->
-  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
+  PRODUCT_01[Product]
 
   PARTNER_ORGANISATION_01-.has a.->
   PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])
 
-  PARTNER_OPERATIONS_AGENT_01-.adds **Site**.-
-  SITE_01[Clouds - Sage 50]
+  PARTNER_ORGANISATION_01-.has a.->
+  CUSTOMER_ORGANISATION_01[Customer Organisation]-.has a<br/>(required).-
+  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
 
-  CUSTOMER_ORGANISATION_01-.associates.-
-  SITE_01-.associates.-
-  PRIMARY_CONTACT_01
 
-  %%-.who adds a.->
-  %%CUSTOMER_ORGANISATION_01[Customer Organisation]-.and a<br/>(required).->
-  %%PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])-.-o
-  %%PRIMARY_CONTACT_01_NOTE[The **Primary Contact** is added with the **Customer Operations Agent** role]
 
-  class PARTNER_ORGANISATION_01,CUSTOMER_ORGANISATION_01,SITE_01 Noun
-  class PRIMARY_CONTACT_01_NOTE Note
+  %%PARTNER_ORGANISATION_01-.has a.->
+
+
+  %%PARTNER_OPERATIONS_AGENT_01-.adds **Site**.-
+  %%SITE_01[Clouds - Sage 50]
+
+  %%CUSTOMER_ORGANISATION_01-.default association.-
+  %%SITE_01-.associates<br/>(required).-
+  %%PRIMARY_CONTACT_01
+
+  class PARTNER_ORGANISATION_01,CUSTOMER_ORGANISATION_01,PRODUCT_01 Noun
+
 ```
+<MessageCard type='proactive' label='Note'>**Sites** are added to **Customer** organisations, so that association is made by default<br/>
+
+
+
+
+A **Partner** organisation *MAY* be added as a Sage **Business unit**, which is the type of **Partner** organisation for direct sales to **Customer** organisations. Otherwise, a **Partner** organisation will be added as a thrid-party re-seller of Sage **Products**<br/><br/>**Partner** organisations are tightly associated with **Operating Companies** - for example **Sage North America**<br/><br/>When **Partner** organisations are added, a **Primary Contact** *MUST* also be added for the **Partner** organisation<br/><br/>When **Partner** organisations are added, they *MAY* (optionally at that time) be associated with one-or-more **Products**</MessageCard>
