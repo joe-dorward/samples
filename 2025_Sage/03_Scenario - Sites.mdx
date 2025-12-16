@@ -20,28 +20,28 @@ flowchart LR
   PARTNER_ORGANISATION_01[Partner Organisation]
 
   PARTNER_ORGANISATION_01-.has a.->
-  PRODUCT_01[Product]
+  PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])
 
   PARTNER_ORGANISATION_01-.has a.->
-  PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])
+  PRODUCT_01[Product]
 
   PARTNER_ORGANISATION_01-.has a.->
   CUSTOMER_ORGANISATION_01[Customer Organisation]-.has a<br/>(required).-
   PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
 
 
+  PARTNER_OPERATIONS_AGENT_01-.adds **Site**.-
+  SITE_01[Clouds - Sage 50]
 
-  %%PARTNER_ORGANISATION_01-.has a.->
+  SITE_01-.default association.-
+  PRODUCT_01
+
+  SITE_01-.associates<br/>(required).-
+  PRIMARY_CONTACT_01
 
 
-  %%PARTNER_OPERATIONS_AGENT_01-.adds **Site**.-
-  %%SITE_01[Clouds - Sage 50]
 
-  %%CUSTOMER_ORGANISATION_01-.default association.-
-  %%SITE_01-.associates<br/>(required).-
-  %%PRIMARY_CONTACT_01
-
-  class PARTNER_ORGANISATION_01,CUSTOMER_ORGANISATION_01,PRODUCT_01 Noun
+  class PARTNER_ORGANISATION_01,CUSTOMER_ORGANISATION_01,PRODUCT_01,SITE_01 Noun
 
 ```
 <MessageCard type='proactive' label='Note'>**Sites** are added to **Customer** organisations, so that association is made by default<br/>
