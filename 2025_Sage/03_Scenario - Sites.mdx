@@ -26,12 +26,18 @@ flowchart LR
   PARTNER_ORGANISATION_01-.has a.->
   PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])
 
+  PARTNER_OPERATIONS_AGENT_01-.adds **Site**.-
+  SITE_01[Clouds - Sage 50]
+
+  CUSTOMER_ORGANISATION_01-.associates.-
+  SITE_01-.associates.-
+  PRIMARY_CONTACT_01
 
   %%-.who adds a.->
   %%CUSTOMER_ORGANISATION_01[Customer Organisation]-.and a<br/>(required).->
   %%PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])-.-o
   %%PRIMARY_CONTACT_01_NOTE[The **Primary Contact** is added with the **Customer Operations Agent** role]
 
-  class PARTNER_ORGANISATION_01,CUSTOMER_ORGANISATION_01 Noun
+  class PARTNER_ORGANISATION_01,CUSTOMER_ORGANISATION_01,SITE_01 Noun
   class PRIMARY_CONTACT_01_NOTE Note
 ```
