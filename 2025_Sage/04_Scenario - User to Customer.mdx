@@ -21,9 +21,9 @@ flowchart LR
   PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])-.who adds a.->
   CUSTOMER_ORGANISATION_USER_01[Customer Organisation User]
 
-  CUSTOMER_ORGANISATION_01-."added to".-
+  CUSTOMER_ORGANISATION_01-.default<br/>association.-
   CUSTOMER_ORGANISATION_USER_01
 
   class CUSTOMER_ORGANISATION_01,CUSTOMER_ORGANISATION_USER_01 Noun
 ```
-<MessageCard type='proactive' label='Note'>A **Customer Operations Agent** will add a user ...</MessageCard>
+<MessageCard type='proactive' label='Note'>A **Customer Operations Agent** will add a user (by default) to the **Customer Organisation**</MessageCard>
