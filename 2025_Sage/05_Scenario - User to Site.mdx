@@ -1,0 +1,31 @@
+A user with **Customer Operations Agent** credentials:
+1. Signs-in to the Sage Provisioning Portal  
+2. Opens the **Site** specific **SiteDetails** page  
+3. Opens the **Environment** tab
+4. Clicks the **Assign user** button and follows that process  
+```mermaid
+%%{
+  init: {
+    'theme': 'forest',
+    'themeVariables': {
+      'fontSize':'14pt'
+    }
+  }
+}%%
+flowchart LR
+  classDef Sage fill:seagreen, color:honeydew;
+  classDef Noun fill:lightcyan, stroke:royalblue, color:royalblue;
+  classDef Note fill:white, stroke:white, text-align:left;
+
+  CUSTOMER_ORGANISATION_01[Customer Organisation]
+  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
+
+  %%-.who adds a.->
+  %%CUSTOMER_ORGANISATION_USER_01[Customer Organisation User]
+
+  %%CUSTOMER_ORGANISATION_01-.default<br/>association.-
+  %%CUSTOMER_ORGANISATION_USER_01
+
+  class CUSTOMER_ORGANISATION_01,CUSTOMER_ORGANISATION_USER_01 Noun
+```
+<MessageCard type='proactive' label='Note'>A **Customer Operations Agent** will add a user (by default) to the **Customer Organisation**</MessageCard>
