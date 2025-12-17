@@ -12,7 +12,7 @@ A user with **Customer Operations Agent** credentials:
     }
   }
 }%%
-flowchart LR
+flowchart TD
   classDef Sage fill:seagreen, color:honeydew;
   classDef Noun fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:white, stroke:white, text-align:left;
@@ -21,15 +21,16 @@ flowchart LR
   PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
 
   CUSTOMER_ORGANISATION_01-.has a.-
+  CUSTOMER_ORGANISATION_USER_01([&nbsp;Customer Organisation User&nbsp;])
+
+  CUSTOMER_ORGANISATION_01-.has a.-
   SITE_01["Clouds - Sage 50<br/>(Site)"]
 
+  PRIMARY_CONTACT_01-.assigns.-
+  CUSTOMER_ORGANISATION_USER_01
 
-  %%-.who adds a.->
-  %%CUSTOMER_ORGANISATION_USER_01[Customer Organisation User]
-
-  %%CUSTOMER_ORGANISATION_01-.default<br/>association.-
-  %%CUSTOMER_ORGANISATION_USER_01
+  CUSTOMER_ORGANISATION_USER_01-."to".-
+  SITE_01
 
   class CUSTOMER_ORGANISATION_01,SITE_01 Noun
 ```
-<MessageCard type='proactive' label='Note'>A **Customer Operations Agent** will add a user (by default) to the **Customer Organisation**</MessageCard>
