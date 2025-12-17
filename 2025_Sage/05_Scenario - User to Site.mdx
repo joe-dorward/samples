@@ -17,8 +17,10 @@ flowchart LR
   classDef Noun fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:white, stroke:white, text-align:left;
 
-  CUSTOMER_ORGANISATION_01[Customer Organisation]
+  CUSTOMER_ORGANISATION_01[Customer Organisation]-.has a<br/>(required).->
   PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
+
+  CUSTOMER_ORGANISATION_01-.has a.-
 
   %%-.who adds a.->
   %%CUSTOMER_ORGANISATION_USER_01[Customer Organisation User]
