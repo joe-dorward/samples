@@ -21,6 +21,8 @@ flowchart LR
   PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
 
   CUSTOMER_ORGANISATION_01-.has a.-
+  SITE_01["Clouds - Sage 50<br/>(Site)"]
+
 
   %%-.who adds a.->
   %%CUSTOMER_ORGANISATION_USER_01[Customer Organisation User]
@@ -28,6 +30,6 @@ flowchart LR
   %%CUSTOMER_ORGANISATION_01-.default<br/>association.-
   %%CUSTOMER_ORGANISATION_USER_01
 
-  class CUSTOMER_ORGANISATION_01,CUSTOMER_ORGANISATION_USER_01 Noun
+  class CUSTOMER_ORGANISATION_01,SITE_01 Noun
 ```
 <MessageCard type='proactive' label='Note'>A **Customer Operations Agent** will add a user (by default) to the **Customer Organisation**</MessageCard>
