@@ -10,14 +10,14 @@
 flowchart LR
   classDef Sage fill:seagreen, color:honeydew;
   classDef Noun fill:lightcyan, stroke:royalblue, color:royalblue;
-  classDef Note fill:pink, stroke:white, text-align:left;
+  classDef Note fill:pink, stroke:white, text-align:left, font-size: 90%;
 
   SAGE_OPERATING_COMPANY_01(Sage Operating Company)-.-o
   SAGE_OPERATING_COMPANY_01_Note[The Sage Provisioning Portal exists as several, geographically based, **Operating Company** specific instances. For example, *Sage North America* is an **Operating Company**]
 
   SAGE_OPERATING_COMPANY_01-.has a.-
-  SAGE_OPCO_OWNER_01([&nbsp;Sage OpCo Owner&nbsp;])
-
+  SAGE_OPCO_OWNER_01([&nbsp;Sage OpCo Owner&nbsp;])-.-o
+  SAGE_OPCO_OWNER_01_NOTE["For each **Operating Company**, there will be at least one user with the **Sage OpCo Owner** (Sage Operating Company Owner) role"]
 
 
 
@@ -31,5 +31,5 @@ flowchart LR
 
   class SAGE_OPERATING_COMPANY_01 Sage
   class PARTNER_ORGANISATION_01,PRODUCT_01,PRODUCT_02 Noun
-  class SAGE_OPERATING_COMPANY_01_Note Note
+  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE Note
 ```
