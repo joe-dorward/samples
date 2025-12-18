@@ -24,10 +24,13 @@ flowchart LR
   SAGE_OPERATIONS_AGENT_01_NOTE[It is likely that a **Sage OpCo Owner** will add one-or-more **Sage Operations Agent** users]
 
   SAGE_OPERATIONS_AGENT_01-.may add.-
-  PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])-.-o
-  PARTNER_OPERATIONS_AGENT_01_NOTE[It is likely that a **Sage Operations Agent** will add one-or-more **Partner Operations Agent** users]
+  PARTNER_ORGANISATION_01([&nbsp;Partner Organisation&nbsp;])-.-o
+  PARTNER_ORGANISATION_01_NOTE[A Partner organisation MAY be added as a *Sage Business Unit*, which is the type of **Partner** organisation for direct sales to **Customer** organisations. Otherwise, a **Partner** organisation will be added as a thrid-party re-seller of Sage **Products**]
+
+  %%PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])-.-o
+  %%PARTNER_OPERATIONS_AGENT_01_NOTE[It is likely that a **Sage Operations Agent** will add one-or-more **Partner Operations Agent** users]
 
   class SAGE_OPERATING_COMPANY_01 Sage
   class PARTNER_ORGANISATION_01,PRODUCT_01,PRODUCT_02 Noun
-  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE,SAGE_OPERATIONS_AGENT_01_NOTE,PARTNER_OPERATIONS_AGENT_01_NOTE Note
+  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE,SAGE_OPERATIONS_AGENT_01_NOTE,PARTNER_ORGANISATION_01_NOTE,PARTNER_OPERATIONS_AGENT_01_NOTE Note
 ```
