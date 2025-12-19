@@ -32,9 +32,13 @@ flowchart LR
   PRODUCT_01["Product"]-.-o
   PRODUCT_01_NOTE["A **Partner Organisation** will (likely) have one-or-more **Products** associated with it<br/><br/>A **Partner Organisation** can only be associated with a **Product** that is already associated with the **Operating Company** that the **Partner** organisation is also associated with"]
 
+  PARTNER_OPERATIONS_AGENT_01-.may add.-
+  CUSTOMER_ORGANISATION_01[Customer Organisation]-.-o
+  CUSTOMER_ORGANISATION_01_NOTE["A business organisation that pays Sage directly (or indirectly through a **Partner** organisation) to use our **Products**"]
+
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  class PARTNER_ORGANISATION_01,PRODUCT_01 Noun
+  class PARTNER_ORGANISATION_01,PRODUCT_01,CUSTOMER_ORGANISATION_01 Noun
 
   class PARTNER_ORGANISATION_01_NOTE,PRIMARY_CONTACT_01_NOTE Note
-  class PARTNER_OPERATIONS_AGENT_01_NOTE,PRODUCT_01_NOTE Note
+  class PARTNER_OPERATIONS_AGENT_01_NOTE,PRODUCT_01_NOTE,CUSTOMER_ORGANISATION_01_NOTE Note
 ```
