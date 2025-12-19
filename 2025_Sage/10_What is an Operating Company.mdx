@@ -10,7 +10,7 @@
 flowchart LR
   classDef Sage fill:seagreen, color:honeydew;
   classDef Noun fill:lightcyan, stroke:royalblue, color:royalblue;
-  classDef Note fill:pink, stroke:white, text-align:left, font-size: 95%;
+  classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95%;
 
   SAGE_OPERATING_COMPANY_01(Sage Operating Company)-.-o
   SAGE_OPERATING_COMPANY_01_Note[The Sage Provisioning Portal exists as several, geographically based, **Operating Company** specific instances. For example, *Sage North America* is an **Operating Company**]
@@ -18,6 +18,10 @@ flowchart LR
   SAGE_OPERATING_COMPANY_01-.has a.-
   SAGE_OPCO_OWNER_01([&nbsp;Sage OpCo Owner&nbsp;])-.-o
   SAGE_OPCO_OWNER_01_NOTE["For each **Operating Company**, there will be at-least-one user with the **Sage OpCo Owner** (Sage Operating Company Owner) role"]
+
+  SAGE_OPERATING_COMPANY_01-.has a.-
+  PRODUCT_01["Product"]-.-o
+  PRODUCT_01_NOTE["A **Sage Operating Company** will (likely) have one-or-more **Products** associated with it"]
 
   SAGE_OPCO_OWNER_01-.may add.-
   SAGE_OPERATIONS_AGENT_01([&nbsp;Sage Operations Agent&nbsp;])-.-o
@@ -29,8 +33,10 @@ flowchart LR
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   class SAGE_OPERATING_COMPANY_01 Sage
-  class PARTNER_ORGANISATION_01 Noun
-  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE,SAGE_OPERATIONS_AGENT_01_NOTE,PARTNER_ORGANISATION_01_NOTE Note
+  class PARTNER_ORGANISATION_01,PRODUCT_01 Noun
+  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE Note
+  class PRODUCT_01_NOTE Note
+  class SAGE_OPERATIONS_AGENT_01_NOTE,PARTNER_ORGANISATION_01_NOTE Note
 
 
 ```
