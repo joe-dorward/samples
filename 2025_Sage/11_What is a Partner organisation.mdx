@@ -6,13 +6,16 @@ This article is intended for those who need a high-level understanding of what t
     'theme': 'forest',
     'themeVariables': {
       'fontSize':'14pt'
-    }
+    },
+    "flowchart": { 
+      "markdownAutoWrap":"false",
+      "wrappingWidth": "300" }
   }
 }%%
 flowchart LR
   classDef Sage fill:seagreen, color:honeydew;
   classDef Noun fill:lightcyan, stroke:royalblue, color:royalblue;
-  classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95%;
+  classDef Note fill:pink, stroke:white, text-align:left, font-size: 95%  ;
 
   PARTNER_ORGANISATION_01[&nbsp;Partner Organisation&nbsp;]-.-o
   PARTNER_ORGANISATION_01_NOTE[A business organisation that has an agreement with Sage to resell our **Products**]
