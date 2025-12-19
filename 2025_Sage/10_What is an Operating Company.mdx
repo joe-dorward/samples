@@ -28,16 +28,23 @@ flowchart LR
   PARTNER_ORGANISATION_01_NOTE[A Partner organisation MAY be added as a *Sage Business Unit*, which is the type of **Partner** organisation for direct sales to **Customer** organisations. Otherwise, a **Partner** organisation will be added as a thrid-party re-seller of Sage **Products**]
 
   PARTNER_ORGANISATION_01[Partner Organisation]-.and a<br/>(required).-
-  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])
+  PRIMARY_CONTACT_01([&nbsp;Primary Contact&nbsp;])-.-o
+  PRIMARY_CONTACT_01_NOTE[By default, the **Primary Contact** of a **Partner** organisation is added with these roles:<br/>&bull;Partner Operations Agent<br/>&bull;Partner Administrator<br/>&bull;Partner Support Agent]
 
+  PRIMARY_CONTACT_01-.may add.-
+  PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])-.-o
+  PARTNER_OPERATIONS_AGENT_01_NOTE[It is likely that a **Primary Contact** will add one-or-more **Partner Operations Agent** users]
 
-
-
+  PARTNER_ORGANISATION_01-.-
+  PARTNER_OPERATIONS_AGENT_01
 
   %%PARTNER_OPERATIONS_AGENT_01([&nbsp;Partner Operations Agent&nbsp;])-.-o
   %%PARTNER_OPERATIONS_AGENT_01_NOTE[It is likely that a **Sage Operations Agent** will add one-or-more **Partner Operations Agent** users]
 
   class SAGE_OPERATING_COMPANY_01 Sage
   class PARTNER_ORGANISATION_01,PRODUCT_01,PRODUCT_02 Noun
-  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE,SAGE_OPERATIONS_AGENT_01_NOTE,PARTNER_ORGANISATION_01_NOTE,PARTNER_OPERATIONS_AGENT_01_NOTE Note
+  class SAGE_OPERATING_COMPANY_01_Note,SAGE_OPCO_OWNER_01_NOTE,SAGE_OPERATIONS_AGENT_01_NOTE,PARTNER_ORGANISATION_01_NOTE Note
+
+  class PRIMARY_CONTACT_01_NOTE Note
+  class PARTNER_OPERATIONS_AGENT_01_NOTE,PARTNER_OPERATIONS_AGENT_01_NOTE Note
 ```
