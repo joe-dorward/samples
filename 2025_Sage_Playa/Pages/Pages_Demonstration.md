@@ -9,6 +9,6 @@ This is a simple demonstration of the capability of the [Boost.ai](https://boost
 
 **Step 3** - I had the following conversation with the chatbot:
 
-| how do i add a page | how do i do that |
+| "how do i add a page" | "how do i do that" |
 | - | - |
 |![how do i add a page](how_do_i_add_a_page.png)|![how do i do that](how_do_i_do_that.png)|
