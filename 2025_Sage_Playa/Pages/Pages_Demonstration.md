@@ -9,4 +9,6 @@ The I created an **Intent** with an agentic action that 'knows' about these 'kno
 
 I then had the conversation with the chatbot shown below.
 
-| 
+| 1 | 2 |
+| - | - |
+|![](how_do_i_add_a_page.png)| |
