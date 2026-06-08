@@ -1,5 +1,7 @@
 This is a simple demonstration of the capability of the [Boost.ai](https://boost.ai/) chatbot technology.
 
+The key take away is, that without literal instructions, but with a functional specification level description of the user interface, the chatbot technology can generate those 'how to' instructions. 
+
 **Step 1** - I created these three 'knowledge articles' about an abstract application named 'Pages': 
 - [Page 1](page_1.md)
 - [Page 2](page_2.md)
