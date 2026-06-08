@@ -1,4 +1,4 @@
-This is a simple demonstration of the capability of the [Boost.ai](boos.ai) agentic action.
+This is a simple demonstration of the capability of the [Boost.ai](https://boost.ai/) chatbot technology.
 
 I have created these three 'knowledge articles' about an abstract application named 'Pages': 
 - [Page 1](page_1.md)
