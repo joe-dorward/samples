@@ -12,3 +12,9 @@ Only show the user the information that is relevant to their organisational type
 Only show the user one step at a time
 Ask the user to type 'Next' after each step to confirm that they have completed the step
 ```
+
+**Step 3** - I had the following conversation with the chatbot:
+
+| "where is the size name" | "" |
+| - | - |
+|![where is the size name](where_is_the_size_name.png)||
