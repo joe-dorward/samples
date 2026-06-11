@@ -23,3 +23,5 @@ Ask the user to type 'Next' after each step to confirm that they have completed 
 | "where is the size name" | "1" | "how do i do that" |
 | - | - | - |
 |![where is the size name](1_where_is_the_size_name.png)|![1](2_1.png)|![how do i do that](3_how_do_i_do_that.png) |
+| "how do i do that" | "next" | "how do i find the site" |
+|![how do i do that](4_how_do_i_do_that.png)|![next](5_next)|![how do i find the site](6_how_do_i_find_the_site.png)|
