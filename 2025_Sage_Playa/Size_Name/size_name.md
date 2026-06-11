@@ -3,8 +3,11 @@ This is a simple demonstration of the capability of the [Boost.ai](https://boost
 The key take away is, that without literal instructions, but with a functional specification level description of the user interface, the chatbot technology can generate 'how to' instructions.
 
 **Step 1** - I created these 'knowledge articles' about the application:
-- [types_of_organisational_users.md](types_of_organisational_users.md)
-- 
+- [Types of organisational users](types_of_organisational_users.md)
+- [Dashboard menu](dashboard_menu.md)
+- [Sites page](sites_page.md)
+- [SiteDetails page](sitedetails_page.md)
+- [Infrastructure tab](infrastructure_tab.md)
 
 **Step 2** - I created an **Intent** with an agentic action that 'knows' about these 'knowledge articles', and with these **Local instructions**:
 ```
