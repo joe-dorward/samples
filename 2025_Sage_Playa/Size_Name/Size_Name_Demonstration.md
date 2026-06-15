@@ -1,6 +1,6 @@
 This is a simple demonstration of the capability of the [Boost.ai](https://boost.ai/) chatbot technology.
 
-The key take aways are that the chatbot:
+The key takeaways are that the chatbot:
 1. Has no literal 'how to' instructions 
 2. Only has functional specification level knowledge 'about' the user interface  
 3. Generates the conversation (below) about the user interface and the 'how to' instructions  
