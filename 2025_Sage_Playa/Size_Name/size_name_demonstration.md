@@ -3,7 +3,7 @@ This is a demonstration of the capability of the [Boost.ai](https://boost.ai/) c
 The key take-aways are:
 1. The only knowledge the chatbot has are the pages (listed below) that describe the user interface at a functional specification level 
 2. The chatbot has no literal 'how to' instructions 
-3. The chatbot can only generate the conversation (below) by inference  
+3. The chatbot can only generate the conversation (below) by inference, guided by the **User Experience Rules** 
 
 ### Conversation 
 | "where is the size name" | "1" | "how do i do that" |
