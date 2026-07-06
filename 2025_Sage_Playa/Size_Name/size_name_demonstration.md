@@ -6,6 +6,8 @@ The key take-aways are:
 3. The chatbot can only generate the conversation (below) by inference, guided by the **User Experience Rules** 
 
 ### Conversation 
+Notice, that after my second "how do i do that", that the chatbot 'decides' to "start from the beginning". 
+
 | "where is the size name" | "1" | "how do i do that" |
 | - | - | - |
 |![where is the size name](1_where_is_the_size_name.png)|![1](2_1.png)|![how do i do that](3_how_do_i_do_that.png) |
