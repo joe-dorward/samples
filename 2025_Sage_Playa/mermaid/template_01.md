@@ -20,7 +20,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   1(("1")):::Number
   ADD_CUSTOMER_01([&nbsp;Add customer&nbsp;]):::Button
-  ADD_CUSTOMER_01_NOTE["A button in the User Interface"]:::Note
+  ADD_CUSTOMER_01_NOTE["A button in the <b>User Interface</b>"]:::Note
 
 
   OPERATIONS_AGENT_01-.-
