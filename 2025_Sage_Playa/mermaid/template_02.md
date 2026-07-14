@@ -31,7 +31,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   2(("2")):::Number
   CUSTOMER_01["Customer"]:::Entity
-  CUSTOMER_01_NOTE["The **Customer** entity is added to the the application"]:::Note
+  CUSTOMER_01_NOTE["The <b>Customer</b> entity is added to the the application"]:::Note
 
   APPLICATION_BACK_END_01-.-
   2-.adds.-
