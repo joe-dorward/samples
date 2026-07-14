@@ -40,7 +40,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   3(("3")):::Number
   CUSTOMER_ADDED_01@{ shape: doc, label: "'customer added'<br/>(email)"}
-  CUSTOMER_ADDED_01_NOTE[To the administrative **Customer** organisation user]:::Note
+  CUSTOMER_ADDED_01_NOTE[To the administrative <b>Customer</b> organisation user]:::Note
 
   APPLICATION_BACK_END_01-.-
   3-."sends<br/>(immediately)".-
