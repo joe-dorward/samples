@@ -20,13 +20,13 @@ flowchart LR
   ADD_CUSTOMER_01_NOTE["A button in the <b>User Interface</b>"]:::Note
 
   OPERATIONS_AGENT_01-.-
-  1-.clicks.-
+  1-.&nbsp;clicks&nbsp;.-
   ADD_CUSTOMER_01-.-o
   ADD_CUSTOMER_01_NOTE
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   APPLICATION_BACK_END_01("Application<br/>(back-end)"):::Backend
 
-  ADD_CUSTOMER_01-.add<br/>request.-
+  ADD_CUSTOMER_01-.add<br/>&nbsp;request&nbsp;.-
   APPLICATION_BACK_END_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   2(("2")):::Number
@@ -34,7 +34,7 @@ flowchart LR
   CUSTOMER_01_NOTE["The <b>Customer</b> entity is added to the the application"]:::Note
 
   APPLICATION_BACK_END_01-.-
-  2-.adds.-
+  2-.&nbsp;adds&nbsp;.-
   CUSTOMER_01-.-o
   CUSTOMER_01_NOTE
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
