@@ -43,7 +43,7 @@ flowchart LR
   CUSTOMER_ADDED_01_NOTE[To the administrative <b>Customer</b> organisation user]:::Note
 
   APPLICATION_BACK_END_01-.-
-  3-."sends<br/>(immediately)".-
+  3-."&nbsp;sends<br/>(immediately)&nbsp;".-
   CUSTOMER_ADDED_01-.-o
   CUSTOMER_ADDED_01_NOTE
 
