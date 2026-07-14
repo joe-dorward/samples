@@ -17,7 +17,7 @@ flowchart LR
   ADD_CUSTOMER_01_NOTE["A button in the <b>User Interface</b>"]:::Note
 
   OPERATIONS_AGENT_01-.-
-  1-.clicks.-
+  1-.&nbsp;clicks&nbsp;.-
   ADD_CUSTOMER_01-.-o
   ADD_CUSTOMER_01_NOTE
 ``` 
