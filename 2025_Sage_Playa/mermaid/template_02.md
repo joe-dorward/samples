@@ -8,9 +8,8 @@ flowchart LR
   classDef Number fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
   classDef Button fill:green, color:white;
   classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95%;
-  %%classDef Backend fill:seagreen, color:honeydew;
-classDef Backend fill:blue, color:pink;
-
+  classDef Backend fill:mediumseagreen, stroke:white, color:honeydew;
+  
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   OPERATIONS_AGENT_01([&nbsp;Operations Agent&nbsp;]):::User
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
@@ -22,11 +21,8 @@ classDef Backend fill:blue, color:pink;
   1-.clicks.-
   ADD_CUSTOMER_01-.-o
   ADD_CUSTOMER_01_NOTE
-
-
-
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  APPLICATION_BACK_END_01(Application Back-End):::Backend
+  APPLICATION_BACK_END_01("Application<br/>(back-end)"):::Backend
 
   ADD_CUSTOMER_01-.add<br/>request.-
   APPLICATION_BACK_END_01
