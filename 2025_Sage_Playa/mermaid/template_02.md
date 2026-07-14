@@ -8,7 +8,9 @@ flowchart LR
   classDef Number fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
   classDef Button fill:green, color:white;
   classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95%;
+
   classDef Backend fill:mediumseagreen, stroke:white, color:honeydew;
+  classDef Entity fill:lightcyan, stroke:royalblue, color:royalblue;
   
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   OPERATIONS_AGENT_01([&nbsp;Operations Agent&nbsp;]):::User
@@ -26,4 +28,14 @@ flowchart LR
 
   ADD_CUSTOMER_01-.add<br/>request.-
   APPLICATION_BACK_END_01
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  2(("2")):::Number
+  CUSTOMER_01["Customer"]:::Entity
+  CUSTOMER_01_NOTE["The **Customer** entity is added to the the application"]:::Note
+
+  APPLICATION_BACK_END_01-.-
+  2-.adds.-
+  CUSTOMER_01-.-o
+  CUSTOMER_01_NOTE
+
 ```
