@@ -38,5 +38,16 @@ flowchart LR
   CUSTOMER_01-.-o
   CUSTOMER_01_NOTE
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  3(("3")):::Number
+  CUSTOMER_ADDED_01@{ shape: doc, label: "'customer added'<br/>(email)"}
+  CUSTOMER_ADDED_01_NOTE[To the administrative **Customer** organisation user]:::Note
 
+  APPLICATION_BACK_END_01-.-
+  3-."sends<br/>(immediately)".-
+  CUSTOMER_ADDED_01-.-o
+  CUSTOMER_ADDED_01_NOTE
+
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  %% define classes
+  class CUSTOMER_ADDED_01 Entity
 ```
