@@ -21,12 +21,25 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   2(("2")):::Number
   CLIENT_01([&nbsp;Client&nbsp;]):::User
-  CLIENT_01_NOTE["The better the <i>Client</i> understands their requirements, the better the <i>Writer</i> will respond"]:::Note
+  CLIENT_01_NOTE["The better the <i>Client</i> understands their requirements, the better the <i>Writer</i> can respond"]:::Note
 
   CLIENT_01-.-
   2-.-o
   CLIENT_01_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  3(("3")):::Number
+  DIRECTION_01([&nbsp;Direction&nbsp;]):::User
+  DIRECTION_01_NOTE["The <i>Writer</i> needs direction from someone with the strategic view of what documentation is required"]:::Note
 
+  DIRECTION_01-.-
+  3-.-o
+  DIRECTION_01_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  4(("4")):::Number
+  GUIDANCE_01([&nbsp;Guidance&nbsp;]):::User
+  GUIDANCE_01_NOTE["The <i>Writer</i> needs guidance from someone with specific knowledge about each specific deliverable"]:::Note
 
-
+  GUIDANCE_01-.-
+  4-.-o
+  GUIDANCE_01_NOTE
 ```
