@@ -19,7 +19,6 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   1(("1")):::Number
   SERVER_01([&nbsp;Server&nbsp;]):::User
-  %%SERVER_01_NOTE["The <i>Server</i> does not do magic<br/>Documentation is a co=creative process<br/>Sub-optimal input results in sub-optimal output"]:::Note
   SERVER_01_NOTE["The <i>Server</i> does not do magic, technical documentation is a co=creative process"]:::Note
 
   SERVER_01-.-
@@ -33,7 +32,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   2(("2")):::Number
   CLIENT_01([&nbsp;Client&nbsp;]):::User
-  CLIENT_01_NOTE["The better the <i>Client</i> understands what it requires, the better the <i>Server</i> will understand how to respond"]:::Note
+  CLIENT_01_NOTE["The better the <i>Client</i> understands what it requires, the better the <i>Server</i> will respond"]:::Note
 
   CLIENT_01-.-
   2-.-o
