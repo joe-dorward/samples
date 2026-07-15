@@ -10,8 +10,9 @@ flowchart LR
   classDef User fill:#cde498, stroke:forestgreen, color:forestgreen;
   classDef Number fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
   classDef Entity fill:lightcyan, stroke:royalblue, color:royalblue;
+
   %%classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95% ;
-  classDef Note fill:pink, stroke:white, text-align:left;
+  classDef Note fill:transparent, stroke:white, text-align:left;
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   DOCUMENTATION_01@{ shape: docs, label: "Documentation"}
