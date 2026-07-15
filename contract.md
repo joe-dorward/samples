@@ -1,0 +1,1 @@
+In the context of delivering technical documentation for a technical audience, the software concept of 'contracts' is root idea of a useful metaphor for the efficient delivery of that technical documentation.
