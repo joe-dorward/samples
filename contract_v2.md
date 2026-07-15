@@ -50,6 +50,13 @@ flowchart LR
   VALUE_01-.-
   5-.-o
   VALUE_01_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  6(("6")):::Number
+  PERSPECTIVE_01([&nbsp;Perspective&nbsp;]):::User
+  PERSPECTIVE_01_NOTE["The <i>Writer</i> is helped by knowing more than one might imagine than they need to know, about what is going on around them"]:::Note
 
+  PERSPECTIVE_01-.-
+  6-.-o
+  PERSPECTIVE_01_NOTE
 
 ```
