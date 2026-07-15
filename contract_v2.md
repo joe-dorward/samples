@@ -58,5 +58,4 @@ flowchart LR
   PERSPECTIVE_01-.-
   6-.-o
   PERSPECTIVE_01_NOTE
-
 ```
