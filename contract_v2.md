@@ -1,7 +1,7 @@
 ```mermaid
 %%{
   init: {
-    "flowchart": { "curve": "linear", "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "360" }
+    "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "360" }
   }
 }%%
 flowchart LR
@@ -9,14 +9,7 @@ flowchart LR
   %% define styles
   classDef User fill:#cde498, stroke:forestgreen, color:forestgreen;
   classDef Number fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
-  %%classDef Button fill:green, color:white;
-
-  %%classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95%;
-  %%classDef Note fill:pink, stroke:white, text-align:left, font-size: 95%, width:400px, margin:-5px, padding:150px  ;
-  %%classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:350px, margin:-5px, padding:150px  ;
-  classDef Note fill:pink, stroke:white, text-align:left, font-size: 95% ;
-
-  %%classDef Backend fill:mediumseagreen, stroke:white, color:honeydew;
+  classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95% ;
   classDef Entity fill:lightcyan, stroke:royalblue, color:royalblue;
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
