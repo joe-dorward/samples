@@ -53,7 +53,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   6(("6")):::Number
   PERSPECTIVE_01([&nbsp;Perspective&nbsp;]):::User
-  PERSPECTIVE_01_NOTE["The <i>Writer</i> is helped by knowing more than (one might imagine they need to know) about what is going on around them"]:::Note
+  PERSPECTIVE_01_NOTE["The <i>Writer</i> is helped by knowing more about what is going on around them (than one might imagine they need to know)"]:::Note
 
   PERSPECTIVE_01-.-
   6-.-o
