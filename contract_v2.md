@@ -42,4 +42,14 @@ flowchart LR
   GUIDANCE_01-.-
   4-.-o
   GUIDANCE_01_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  5(("5")):::Number
+  VALUE_01([&nbsp;Value&nbsp;]):::User
+  VALUE_01_NOTE["The <i>Writer</i> can add value without direction or guidance, but the less-support the <i>Writer</i> gets the less-efficient the process will be"]:::Note
+
+  VALUE_01-.-
+  5-.-o
+  VALUE_01_NOTE
+
+
 ```
