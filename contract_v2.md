@@ -9,7 +9,11 @@ flowchart LR
 
   classDef Backend fill:mediumseagreen, stroke:white, color:honeydew;
   classDef Entity fill:lightcyan, stroke:royalblue, color:royalblue;
-  
+
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  DOCUMENTATION_01@{ shape: docs, label: "Documentation"}
+  class DOCUMENTATION_01 Entity
+
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   1(("1")):::Number
   WRITER_01([&nbsp;Writer&nbsp;]):::User
@@ -28,20 +32,26 @@ flowchart LR
   CLIENT_01_NOTE
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   3(("3")):::Number
-  DIRECTION_01([&nbsp;Direction&nbsp;]):::User
+  DIRECTION_01[&nbsp;Direction&nbsp;]:::Entity
   DIRECTION_01_NOTE["The <i>Writer</i> needs direction from someone with the strategic view of what documentation is required"]:::Note
 
   DIRECTION_01-.-
   3-.-o
   DIRECTION_01_NOTE
+
+  CLIENT_01-.&nbsp;provides&nbsp;.-
+  DIRECTION_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   4(("4")):::Number
-  GUIDANCE_01([&nbsp;Guidance&nbsp;]):::User
+  GUIDANCE_01[&nbsp;Guidance&nbsp;]:::Entity
   GUIDANCE_01_NOTE["The <i>Writer</i> needs guidance from someone with specific knowledge about each specific deliverable"]:::Note
 
   GUIDANCE_01-.-
   4-.-o
   GUIDANCE_01_NOTE
+
+  CLIENT_01-.&nbsp;provides&nbsp;.-
+  GUIDANCE_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   5(("5")):::Number
   VALUE_01([&nbsp;Value&nbsp;]):::User
