@@ -60,15 +60,18 @@ flowchart LR
   GUIDANCE_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   5(("5")):::Number
-  VALUE_01([&nbsp;Value&nbsp;]):::User
+  VALUE_01[&nbsp;Value&nbsp;]:::Entity
   VALUE_01_NOTE["The <i>Writer</i> can add value without direction or guidance, but the less-support the <i>Writer</i> gets the less-efficient the process will be"]:::Note
 
   VALUE_01-.-
   5-.-o
   VALUE_01_NOTE
+
+  DOCUMENTATION_01-.-
+  VALUE_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   6(("6")):::Number
-  PERSPECTIVE_01([&nbsp;Perspective&nbsp;]):::User
+  PERSPECTIVE_01[&nbsp;Perspective&nbsp;]:::Entity
   PERSPECTIVE_01_NOTE["The <i>Writer</i> is helped by knowing more about what is going on around them (than one might imagine they need to know)"]:::Note
 
   PERSPECTIVE_01-.-
