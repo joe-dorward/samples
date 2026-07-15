@@ -26,11 +26,16 @@ flowchart LR
   1-.-o
   SERVER_01_NOTE
 
-
   %%SUB_OPTIMAL_INPUT["Input<br/>(sub-optimal)"]:::Entity
   %%SUB_OPTIMAL_INPUT-->SERVER_01
   %%SERVER_01<--SUB_OPTIMAL_INPUT
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  2(("2")):::Number
+  CLIENT_01([&nbsp;Client&nbsp;]):::User
+  CLIENT_01_NOTE["The better the <i>Client</i> understands what it requires, the better the <i>Server</i> will understand how to respond"]:::Note
 
-CLIENT_01([&nbsp;Client&nbsp;]):::User
+  CLIENT_01-.-
+  2-.-o
+  CLIENT_01_NOTE
+```
