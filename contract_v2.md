@@ -13,7 +13,6 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   DOCUMENTATION_01@{ shape: docs, label: "Documentation"}
   class DOCUMENTATION_01 Entity
-
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   1(("1")):::Number
   WRITER_01([&nbsp;Writer&nbsp;]):::User
@@ -30,6 +29,13 @@ flowchart LR
   CLIENT_01-.-
   2-.-o
   CLIENT_01_NOTE
+
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  DOCUMENTATION_01-.&nbsp;co-created&nbsp;.-
+  WRITER_01
+
+  DOCUMENTATION_01-.&nbsp;co-created&nbsp;.-
+  CLIENT_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   3(("3")):::Number
   DIRECTION_01[&nbsp;Direction&nbsp;]:::Entity
