@@ -1,7 +1,7 @@
 ```mermaid
 %%{
   init: {
-    "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "360" }
+    "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
   }
 }%%
 flowchart LR
@@ -9,8 +9,9 @@ flowchart LR
   %% define styles
   classDef User fill:#cde498, stroke:forestgreen, color:forestgreen;
   classDef Number fill:crimson, color:cornsilk, stroke:firebrick, font-family:verdana, font-size:16pt, padding:10px;
-  classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95% ;
   classDef Entity fill:lightcyan, stroke:royalblue, color:royalblue;
+  %%classDef Note fill:transparent, stroke:white, text-align:left, font-size: 95% ;
+  classDef Note fill:pink, stroke:white, text-align:left;
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   DOCUMENTATION_01@{ shape: docs, label: "Documentation"}
@@ -63,7 +64,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   5(("5")):::Number
   PERSPECTIVE_01[&nbsp;Perspective&nbsp;]:::Entity
-  PERSPECTIVE_01_NOTE["The <i>Writer</i> is helped by knowing more about what is<br/>going on around them (than one might imagine they need to know)"]:::Note
+  PERSPECTIVE_01_NOTE["The <i>Writer</i> is helped by knowing more about what is going on<br/>around them (than one might imagine they need to know)"]:::Note
 
   PERSPECTIVE_01-.-
   5-.-o
@@ -74,7 +75,7 @@ flowchart LR
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   6(("6")):::Number
   VALUE_01[&nbsp;Value&nbsp;]:::Entity
-  VALUE_01_NOTE["The <i>Writer</i> can add value without <b>Direction</b>, <b>Guidance</b>,<br/> or <b>Perspective</b>, but the less-support the <i>Writer</i> gets the less-efficient the writing process will be"]:::Note
+  VALUE_01_NOTE["The <i>Writer</i> can add value without <b>Direction</b>, <b>Guidance</b>, or<br/><b>Perspective</b>, but the less-support the <i>Writer</i> gets, the<br/>less-efficient the writing process will be"]:::Note
 
   VALUE_01-.-
   6-.-o
