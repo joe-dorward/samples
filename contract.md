@@ -17,8 +17,20 @@ flowchart LR
   classDef Entity fill:lightcyan, stroke:royalblue, color:royalblue;
   
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  1(("1")):::Number
   SERVER_01([&nbsp;Server&nbsp;]):::User
-  SERVER_01_NOTE["The <i>Server</i> does not do magic - documentation is a co=creative process - sub-optimal input results in sub-optimal output"]:::Note
+  %%SERVER_01_NOTE["The <i>Server</i> does not do magic<br/>Documentation is a co=creative process<br/>Sub-optimal input results in sub-optimal output"]:::Note
+  SERVER_01_NOTE["The <i>Server</i> does not do magic, technical documentation is a co=creative process"]:::Note
 
+  SERVER_01-.-
+  1-.-o
+  SERVER_01_NOTE
+
+
+  %%SUB_OPTIMAL_INPUT["Input<br/>(sub-optimal)"]:::Entity
+  %%SUB_OPTIMAL_INPUT-->SERVER_01
+  %%SERVER_01<--SUB_OPTIMAL_INPUT
+
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
 CLIENT_01([&nbsp;Client&nbsp;]):::User
