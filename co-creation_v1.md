@@ -1,3 +1,5 @@
+As content creators (in the widest sense), we hold these truths to be self-evident, but you <i>may-not</i>.
+
 ```mermaid
 %%{
   init: {
@@ -103,6 +105,8 @@ flowchart LR
   DOCUMENTATION_01-.-
   VALUE_01
 
-
-
 ```
+
+**3.1** - In the past, I have suggested that **Clients** create a table of contents (like) outline to 'work through' what they want to be documented. This can be a 'working document', starting with the highest-level headings.
+
+
