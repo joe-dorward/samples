@@ -1,4 +1,4 @@
-As content creators (in the widest sense), we hold these truths to be self-evident, but you <i>may-not</i>.
+As content creators (in the widest sense), we hold these truths to be self-evident, but you <i>may-not</i> (yet!).
 
 ```mermaid
 %%{
