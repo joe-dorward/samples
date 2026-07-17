@@ -1,6 +1,6 @@
 As content creators (in the widest sense) we hold these truths to be self-evident, but you <i>may-not</i> (yet!).
 
-When you commision content (in the widest sense), you *MUST* understand that it is a co-creative process.
+When you commision content (in the widest sense), you *MUST* understand that content creation it is a co-creative process.
 
 ```mermaid
 %%{
