@@ -52,6 +52,24 @@ flowchart LR
   CLIENT_01-.&nbsp;provides&nbsp;.-
   DIRECTION_01
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  3_1(("3.1")):::Number
+  SCOPING_01[&nbsp;Scoping&nbsp;]:::Entity
+  SCOPING_01_NOTE["The <i>Writer</i> needs to know what to document,<br/>and what not to document"]:::Note
+
+  3_2(("3.2")):::Number
+  PRIORITISATION_01[&nbsp;Prioritisation&nbsp;]:::Entity
+  PRIORITISATION_01_NOTE["The <i>Writer</i> needs to know what the most-important<br/>documentation task is, and what the least-important<br/>documentation task is"]:::Note
+
+  DIRECTION_01-.&nbsp;including&nbsp;.-
+  SCOPING_01-.-
+  3_1-.-o
+  SCOPING_01_NOTE
+
+  DIRECTION_01-.&nbsp;including&nbsp;.-
+  PRIORITISATION_01-.-
+  3_2-.-o
+  PRIORITISATION_01_NOTE
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   4(("4")):::Number
   GUIDANCE_01[&nbsp;Guidance&nbsp;]:::Entity
   GUIDANCE_01_NOTE["The <i>Writer</i> needs guidance from someone with specific<br/>knowledge about each specific deliverable"]:::Note
