@@ -27,4 +27,4 @@ If you are copying and pasting content into an 'md' file, you should know that n
 To 'force' a space - either:
 - Delete the non-space and type it into the 'md' file
 - Add the HTML non-breaking-space code `&nbsp;` - that will keep both words/characters together
-- Add the ASCII code `&#32;` for a space - `to&#32;get&#32;her` renders as to&#32;get&#32;her
+- Add the ASCII code `&#32;` for a space - `to&#32;get&#32;her` renders as 'to&#32;get&#32;her'
