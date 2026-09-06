@@ -1,9 +1,9 @@
 Content creators (in the widest sense) hold these truths to be self-evident, but you *may-not* (yet!) 😃.
 
-When you commission content (in the widest sense), you *MUST* understand that content creators don't do magic, that technical documentation is a co=creative process and content creators need guidance/direction to effectively deliver that content.
+When you commission content (in the widest sense), you *MUST* understand that content creators don't do magic, that technical documentation is a co=creative process and that content creators need guidance/direction from you to effectively deliver that content.
 
 **VISION**  
-You *MUST* have the vision to 'elevator pitch' the scope of the content - for example - "*to document all the knowledge and how-to steps that Field Engineers will need to install our products in customer sites*" and to list what that *knowledge* is and what those *how-to steps* are.
+You *MUST* have the vision to 'elevator pitch' the scope of the content - for example - "*to document all the knowledge and how-to steps that Field Engineers will need to install our products in customer sites*" and follow up with a detailed list of what that *knowledge* is and what those *how-to steps* are.
 
 You *MUST* also understand that the better you understand what your content requirements are, the better the content creator can deliver against those requirements.
 <!-- The writer needs direction from someone with the strategic view of what documentation is required -->
