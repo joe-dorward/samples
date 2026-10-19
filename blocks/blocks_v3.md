@@ -17,7 +17,7 @@
     space:2
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
     BLOCK_04["Business Capabilities Platform (BCP) Services<br/>[Customer, Vehicle / VDS, Pricing, Finance]"]:1
-    BLOCK_04_NOTE["(Domail logic, master data, external gateways)"]
+    BLOCK_04_NOTE["(Domain logic, master data, external gateways)"]
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   %% define connections
   BLOCK_01-->
