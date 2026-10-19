@@ -1,4 +1,32 @@
 ```mermaid
+%%{
+  init: {
+    'theme': 'forest',
+    'themeVariables': {
+      'fontSize':'15pt'
+    }
+  }
+}%%
+flowchart LR
+
+classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
+%%classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
+classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:350px, margin:-5px, padding:150px  ;
+%% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  YEAR_DOT(("Year<br>Dot"))
+
+  2334([from ~ 2,334 BCE])
+    AKKADIAN_EMPIRE[Akkadian Empire]
+    click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
+
+    AKKAD[Akkad]
+    AKKAD_NOTE["#151; the capital city of the Akkadian Empire (location unknown)"]
+
+  YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
+                    AKKADIAN_EMPIRE-.-AKKAD--oAKKAD_NOTE
+```
+
+```mermaid
   %%{
     init: {
       "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
