@@ -3,7 +3,7 @@ Some text...
 ```mermaid
   flowchart LR
 
-  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:300px;
+  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke:transparent, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph BUTTONS
