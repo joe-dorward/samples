@@ -23,7 +23,7 @@
   end
 
   subgraph GROUP_02
-    direction LR
+    direction TD
 
     BUTTON_02["UI Layer"]:::Button
     click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
