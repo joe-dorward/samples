@@ -48,7 +48,7 @@ Some text...
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   style BUTTONS fill:transparent,color:white,stroke-width:0px
   style NOTES fill:transparent,color:white,stroke-width:0px
-
+  style BUTTON_04_NOTE height:40px;
 ```
 
 
