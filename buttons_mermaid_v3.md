@@ -13,7 +13,7 @@ Some text...
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, text-align:left;
   classDef Note fill:transparent, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  subgraph BUTTONS:::SubGraph
+  subgraph BUTTONS
     direction TD
 
     BUTTON_01["UI Layer"]:::Button
@@ -28,6 +28,7 @@ Some text...
     BUTTON_04["Business Capabilities Platform (BCP) Services [Customer, Vehicle / VDS, Pricing, Finance]"]:::Button
     click BUTTON_04 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
+  class BUTTONS SubGraph
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph NOTES
     direction TD
