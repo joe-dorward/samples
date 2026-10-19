@@ -3,7 +3,7 @@ Some text...
 ```mermaid
   %%{
     init: {
-      "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
+      "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "400px" }
     }
   }%%
   flowchart LR
