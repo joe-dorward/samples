@@ -12,6 +12,8 @@
   classDef Note fill:transparent, stroke-width:0px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 subgraph WRAPPER
+  direction TD
+
   subgraph GROUP_01
     %%direction LR
 
