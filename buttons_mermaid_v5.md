@@ -11,6 +11,7 @@
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke-width:0px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+subgraph WRAPPER
   subgraph GROUP_01
     direction LR
 
@@ -32,6 +33,7 @@
     BUTTON_02~~~
     BUTTON_02_NOTE
   end
+end
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
 GROUP_01-.-GROUP_02
