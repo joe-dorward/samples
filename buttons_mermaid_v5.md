@@ -29,7 +29,7 @@
 
     BUTTON_02["UI Layer"]:::Button
     click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
-    %%BUTTON_02_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+    BUTTON_02_NOTE["(Decoupled apps using Verso Design System)"]:::Note
 
     %%BUTTON_02~~~
     %%BUTTON_02_NOTE
