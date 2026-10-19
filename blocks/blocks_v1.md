@@ -104,6 +104,6 @@
   BLOCK_03
 
   %% style
-  style GROUP_01 fill:cornsilk,stroke:firebrick,stroke-width:2px
-  style GROUP_02 fill:cornsilk,stroke:firebrick,stroke-width:2px
+  %%style GROUP_01 fill:cornsilk,stroke:firebrick,stroke-width:2px
+  %%style GROUP_02 fill:cornsilk,stroke:firebrick,stroke-width:2px
 ```
