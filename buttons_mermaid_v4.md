@@ -27,6 +27,10 @@
   START-.-
   BUTTON_02-.-
   BUTTON_02_NOTE
+
+BUTTON_01-->
+BUTTON_02
+
 ```
 
 
