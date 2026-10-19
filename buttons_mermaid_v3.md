@@ -1,10 +1,6 @@
 Some text...
 
 ```mermaid
-  %%{
-    init: {"flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
-    }
-  }%%
   flowchart LR
 
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:300px;
