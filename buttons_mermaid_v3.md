@@ -17,8 +17,8 @@ Some text...
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
   
     %% connect button to note
-    BUTTON_01-.-o
-    BUTTON_01_NOTE
+    %%BUTTON_01-.-o
+    %%BUTTON_01_NOTE
 
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
@@ -27,8 +27,8 @@ Some text...
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
   
     %% connect button to note
-    BUTTON_02-.-o
-    BUTTON_02_NOTE
+    %%BUTTON_02-.-o
+    %%BUTTON_02_NOTE
  
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 BUTTON_01-->BUTTON_02
