@@ -45,7 +45,9 @@ Some text...
   BUTTON_03-->
   BUTTON_04
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  style BUTTONS,NOTES fill:pink,stroke:#333,stroke-width:2px
+  style BUTTONS fill:pink,stroke:#333,stroke-width:2px
+  style NOTES fill:pink,stroke:#333,stroke-width:2px
+
 ```
 
 
