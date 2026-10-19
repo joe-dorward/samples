@@ -12,6 +12,7 @@
   classDef Note fill:transparent, stroke-width:0px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph GROUP_01
+    direction LR
 
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
 
