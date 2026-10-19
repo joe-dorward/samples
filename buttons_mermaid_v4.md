@@ -9,8 +9,7 @@
 }%%
 flowchart LR
 
-classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
-%%classDef Note fill:white, stroke:white, text-align:left, font-size:13pt;
+%%classDef Node fill:cornsilk, stroke:saddlebrown, color:saddlebrown, line-height:150%, margin:0px, padding:0px;
 classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:350px, margin:-5px, padding:150px  ;
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
