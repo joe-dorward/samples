@@ -42,7 +42,7 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:3
 
 
 EARLY_DYNASTIC_PERIOD-->AKKADIAN_EMPIRE
-
+EARLY_DYNASTIC_PERIOD-->2334
 ```
 
 ```mermaid
