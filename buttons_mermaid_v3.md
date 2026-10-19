@@ -32,7 +32,7 @@ Some text...
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
     BUTTON_03_NOTE["(State machine, workflow sequence, asynchrony)"]:::Note
-    BUTTON_04_NOTE["(Domain logic, master data, external gateways)"]:::Note
+    BUTTON_04_NOTE["(Domain logic, master data, external gateways)<br/>nbsp;"]:::Note
   end
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   %% invisibly connect BUTTONS (sub-graph) to NOTES (sub-graph)
@@ -45,8 +45,8 @@ Some text...
   BUTTON_03-->
   BUTTON_04
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  style BUTTONS fill:transparent,color:white,stroke:#333,stroke-width:2px
-  style NOTES fill:pink,stroke:#333,stroke-width:2px
+  style BUTTONS fill:transparent,color:white,stroke-width:0px
+  style NOTES fill:transparent,color:white,stroke-width:0px
 
 ```
 
