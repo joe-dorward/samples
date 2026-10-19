@@ -42,7 +42,7 @@ GROUP_01-.-GROUP_02
 
 %%BUTTON_01-->BUTTON_02
 
-  style GROUP_01 fill:cornsilk, color:white, stroke-width:0px, width:650px
+  style GROUP_01 fill:cornsilk, color:white, stroke-width:0px, width:650px, left:0px
   style GROUP_02 fill:cornsilk, color:white, stroke-width:0px, width:650px
 
   style WRAPPER width:700px
