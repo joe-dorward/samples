@@ -18,7 +18,7 @@
 
     BUTTON_01["UI Layer"]:::Button
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
-    BUTTON_01a_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+    BUTTON_01a_NOTE["(aDecoupled apps using Verso Design System)"]:::Note
 
     %%BUTTON_01~~~
     %%BUTTON_01_NOTE
@@ -27,9 +27,11 @@
   subgraph GROUP_02
     %%direction TD
 
+    BUTTON_02_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+
     BUTTON_02["UI Layer"]:::Button
     click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
-    BUTTON_02_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+    BUTTON_02a_NOTE["(aDecoupled apps using Verso Design System)"]:::Note
 
     %%BUTTON_02~~~
     %%BUTTON_02_NOTE
