@@ -6,7 +6,7 @@
       "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
     }
   }%%
-  flowchart LR
+  flowchart TD
 
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke-width:0px
@@ -39,6 +39,6 @@
 
 GROUP_01-.-GROUP_02
 
-BUTTON_01-->BUTTON_02
+%%BUTTON_01-->BUTTON_02
 
 ```
