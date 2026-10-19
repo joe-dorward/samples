@@ -15,7 +15,6 @@ Some text...
     direction TD
 
     BUTTON_01["UI Layer"]:::Button
-    space
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
 
     BUTTON_02["BFF Layer"]:::Button
@@ -35,17 +34,17 @@ Some text...
     BUTTON_03_NOTE["(State machine, workflow sequence, asynchrony)"]:::Note
     BUTTON_04_NOTE["(Domain logic, master data, external gateways)"]:::Note
   end
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   %% invisibly connect BUTTONS (sub-graph) to NOTES (sub-graph)
   BUTTONS~~~
   NOTES
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  %% connect buttons
   BUTTON_01-->
   BUTTON_02-->
   BUTTON_03-->
   BUTTON_04
-
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 ```
 
 
