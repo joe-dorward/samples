@@ -32,16 +32,17 @@ Some text...
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
     BUTTON_03_NOTE["(State machine, workflow sequence, asynchrony)"]:::Note
-    BUTTON_03_NOTE["(Domain logic, master data, external gateways)"]:::Note
+    BUTTON_04_NOTE["(Domain logic, master data, external gateways)"]:::Note
   end
 
+  %% invisibly connect BUTTONS (sub-graph) to NOTES (sub-graph)
   BUTTONS~~~
   NOTES
 
-    BUTTON_01-->
-    BUTTON_02-->
-    BUTTON_03-->
-    BUTTON_04
+  BUTTON_01-->
+  BUTTON_02-->
+  BUTTON_03-->
+  BUTTON_04
 
 
 ```
