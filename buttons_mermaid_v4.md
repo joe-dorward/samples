@@ -39,6 +39,10 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:3
 
   YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
                     AKKADIAN_EMPIRE-.-AKKAD--oAKKAD_NOTE
+
+
+EARLY_DYNASTIC_PERIOD-->AKKADIAN_EMPIRE
+
 ```
 
 ```mermaid
