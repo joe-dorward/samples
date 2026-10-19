@@ -22,13 +22,17 @@ Some text...
 
     BUTTON_03["Process & Domain Orchestration (Offer, Vehicle)"]:::Button
     click BUTTON_03 "https://en.wikipedia.org/wiki/Main_Page" _blank
+
+    BUTTON_04["Business Capabilities Platform (BCP) Services [Customer, Vehicle / VDS, Pricing, Finance]"]:::Button
+    click BUTTON_04 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
 
   subgraph NOTES
     direction TD
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
-    BUTTON_02_NOTE["(State machine, workflow sequence, asynchrony)"]:::Note
+    BUTTON_03_NOTE["(State machine, workflow sequence, asynchrony)"]:::Note
+    BUTTON_03_NOTE["(Domain logic, master data, external gateways)"]:::Note
   end
 
   BUTTONS~~~
@@ -36,53 +40,14 @@ Some text...
 
     BUTTON_01-->
     BUTTON_02-->
-    BUTTON_03
+    BUTTON_03-->
+    BUTTON_04
 
 
 ```
 
 
 
-
-```mermaid
-  %%{
-    init: {"flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
-    }
-  }%%
-  flowchart TD
-
-  %% define styles
-  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
-  classDef Note fill:transparent, stroke:white, text-align:left;
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-
-    BUTTON_01[UI Layer]:::Button
-    click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
-    BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
-  
-    %% connect button to note
-    %%BUTTON_01-.-o
-    %%BUTTON_01_NOTE
-
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-
-    BUTTON_02[BFF Layer]:::Button
-    click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
-    BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
-  
-    %% connect button to note
-    %%BUTTON_02-.-o
-    %%BUTTON_02_NOTE
- 
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_01-->BUTTON_02
-
-  BUTTON_01~~~
-  BUTTON_01_NOTE
-
-  BUTTON_02~~~
-  BUTTON_02_NOTE
-```
 
 More text...
 
