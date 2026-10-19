@@ -8,7 +8,7 @@
   }%%
   flowchart TD
 
-  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:400px
+  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:100px
   classDef Note fill:pink, stroke-width:0px, width:400px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 subgraph WRAPPER
