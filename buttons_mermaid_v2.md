@@ -5,13 +5,13 @@ Some text...
     init: {"flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
     }
   }%%
-  flowchart LR
+  flowchart TD
 
   %% define styles
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  subgraph 
+  subgraph ONE
     BUTTON_01[UI Layer]:::Button
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
@@ -21,14 +21,17 @@ Some text...
     BUTTON_01_NOTE
   end
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_02[BFF Layer]:::Button
-  click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
-  BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
-
-  %% connect button to note
-  BUTTON_02-.-o
-  BUTTON_02_NOTE
+  subgraph TWO
+    BUTTON_02[BFF Layer]:::Button
+    click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
+    BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
+  
+    %% connect button to note
+    BUTTON_02-.-o
+    BUTTON_02_NOTE
+  end
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+BUTTON_01-->BUTTON_02
 ```
 
 More text...
