@@ -15,20 +15,28 @@ Some text...
     direction TD
 
     BUTTON_01[UI Layer]:::Button
+    click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
+
     BUTTON_02[BFF Layer]:::Button
+    click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
+
+    BUTTON_03[Process & Domain Orchestration (Offer, Vehicle)]:::Button
+    click BUTTON_03 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
 
   subgraph NOTES
     direction TD
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
+    BUTTON_02_NOTE["(State machine, workflow sequence, asynchrony)"]:::Note
   end
 
   BUTTONS~~~
   NOTES
 
     BUTTON_01-->
-    BUTTON_02
+    BUTTON_02-->
+    BUTTON_03
 
 
 ```
