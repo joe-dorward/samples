@@ -14,13 +14,13 @@ Some text...
   subgraph BUTTONS
     direction TD
 
-    BUTTON_01[UI Layer]:::Button
+    BUTTON_01["UI Layer"]:::Button
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
 
-    BUTTON_02[BFF Layer]:::Button
+    BUTTON_02["BFF Layer"]:::Button
     click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
 
-    BUTTON_03[Process & Domain Orchestration (Offer, Vehicle)]:::Button
+    BUTTON_03["Process & Domain Orchestration (Offer, Vehicle)"]:::Button
     click BUTTON_03 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
 
