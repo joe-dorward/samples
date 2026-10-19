@@ -29,7 +29,7 @@ subgraph WRAPPER
     %%direction LR
 
     %%BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
-    BUTTON_02_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+    BUTTON_02_NOTE["(Decoupled apps using Verso Design Sy"]:::Note
     BUTTON_02["BFF Layer"]:::Button
     click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
 
