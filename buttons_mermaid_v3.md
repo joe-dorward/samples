@@ -7,7 +7,7 @@ Some text...
   }%%
   flowchart LR
 
-  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:400px;
+  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph BUTTONS
