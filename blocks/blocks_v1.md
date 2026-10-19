@@ -108,5 +108,5 @@
   %%style GROUP_02 fill:cornsilk,stroke:firebrick,stroke-width:2px
 
   classDef group fill:cornsilk,stroke:firebrick,stroke-width:2px
-  class GROUP_01, GROUP_01 group
+  class GROUP_01, GROUP_02 group
 ```
