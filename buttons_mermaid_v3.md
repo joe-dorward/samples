@@ -11,10 +11,12 @@ Some text...
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke:white, text-align:left;
 
-  subgraph
+  subgraph BUTTONS
     direction TD
 
     BUTTON_01[UI Layer]:::Button
+    BUTTON_02[BFF Layer]:::Button
+
   end
 ```
 
