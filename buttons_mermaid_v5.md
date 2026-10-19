@@ -40,7 +40,7 @@ end
 
 %%BUTTON_01-->BUTTON_02
 
-  style GROUP_01 fill:cornsilk, color:white, stroke-width:0px, width: 700px
-  style GROUP_02 fill:cornsilk, color:white, stroke-width:0px, width: 700px
+  style GROUP_01 fill:cornsilk, color:white, stroke-width:0px
+  style GROUP_02 fill:cornsilk, color:white, stroke-width:0px
 
 ```
