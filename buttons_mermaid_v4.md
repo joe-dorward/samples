@@ -15,10 +15,18 @@
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
 
+    BUTTON_02["BFF Layer"]:::Button
+    click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
+    BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
+
+
   START-.-
   BUTTON_01-.-
-  BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+  BUTTON_01_NOTE
 
+  START-.-
+  BUTTON_02-.-
+  BUTTON_02_NOTE
 ```
 
 
