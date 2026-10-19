@@ -36,6 +36,8 @@ Some text...
   BUTTON_01~~~
   BUTTON_01_NOTE
 
+  BUTTON_02~~~
+  BUTTON_02_NOTE
 ```
 
 More text...
