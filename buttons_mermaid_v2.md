@@ -1,6 +1,10 @@
 Some text...
 
 ```mermaid
+  %%{
+    init: {"flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
+    }
+  }%%
   flowchart LR
 
   %% define styles
