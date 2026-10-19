@@ -1,7 +1,11 @@
 
 
 ```mermaid
-
+  %%{
+    init: {
+      "flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
+    }
+  }%%
   flowchart TD
 
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
