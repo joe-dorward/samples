@@ -25,7 +25,7 @@ Some text...
     BUTTON_03["Process & Domain Orchestration (Offer, Vehicle)"]:::Button
     click BUTTON_03 "https://en.wikipedia.org/wiki/Main_Page" _blank
 
-    BUTTON_04["Business Capabilities Platform (BCP) Services [Customer, Vehicle / VDS, Pricing, Finance]"]:::Button
+    BUTTON_04["Business Capabilities Platform (BCP) Services<br/>[Customer, Vehicle / VDS, Pricing, Finance]"]:::Button
     click BUTTON_04 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
   style BUTTONS fill:pink,stroke:#333,stroke-width:2px, text-align:left
