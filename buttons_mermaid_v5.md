@@ -13,7 +13,7 @@
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 subgraph WRAPPER
   subgraph GROUP_01
-    direction LR
+    %%direction LR
 
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
     BUTTON_01["UI Layer"]:::Button
@@ -24,7 +24,7 @@ subgraph WRAPPER
   end
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph GROUP_02
-    direction LR
+    %%direction LR
 
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
     BUTTON_02["BFF Layer"]:::Button
