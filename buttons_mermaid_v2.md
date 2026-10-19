@@ -5,24 +5,15 @@ Some text...
 
   %% define styles
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
+  classDef Note fill:transparent, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_ONE[Button One]:::Button
-  click BUTTON_ONE "https://en.wikipedia.org/wiki/Main_Page" _blank
+  BUTTON_01[Button One]:::Button
+  click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
+
+  BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_TWO[Button Two]:::Button
-  click BUTTON_TWO "[https://en.wikipedia.org/wiki/Main_Page](https://www.hastings.gov.uk/coastlinebeaches/tidetables/)" _blank
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_THREE[Button Three]:::Button
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_FOUR[Button Four]:::Button
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_FIVE[Button Five]:::Button
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_ONE~~~
-  BUTTON_TWO
-  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_FOUR~~~
-  BUTTON_FIVE
+
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
 
