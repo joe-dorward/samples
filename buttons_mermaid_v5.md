@@ -12,7 +12,7 @@
   classDef Note fill:transparent, stroke-width:0px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph GROUP_01
-    direction RL
+    direction LR
 
     BUTTON_01["UI Layer"]:::Button
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
@@ -23,7 +23,7 @@
   end
 
   subgraph GROUP_02
-    direction RL
+    direction LR
 
     BUTTON_02["UI Layer"]:::Button
     click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
