@@ -8,9 +8,11 @@ Some text...
   flowchart LR
 
   %% define styles
+  classDef SubGraph fill:pink, text-align:left;
+
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, text-align:left;
   classDef Note fill:transparent, stroke:white, text-align:left;
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph BUTTONS
     direction TD
 
@@ -26,7 +28,7 @@ Some text...
     BUTTON_04["Business Capabilities Platform (BCP) Services [Customer, Vehicle / VDS, Pricing, Finance]"]:::Button
     click BUTTON_04 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
-
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph NOTES
     direction TD
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
