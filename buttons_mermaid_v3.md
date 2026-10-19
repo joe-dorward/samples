@@ -5,6 +5,27 @@ Some text...
     init: {"flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
     }
   }%%
+  flowchart LR
+
+  %% define styles
+  classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
+  classDef Note fill:transparent, stroke:white, text-align:left;
+
+  subgraph
+    direction TD
+
+    BUTTON_01[UI Layer]:::Button
+  end
+```
+
+
+
+
+```mermaid
+  %%{
+    init: {"flowchart": { "markdownAutoWrap":"false", "textWrap":"false", "wrappingWidth": "100%" }
+    }
+  }%%
   flowchart TD
 
   %% define styles
