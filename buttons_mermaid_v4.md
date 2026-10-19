@@ -15,12 +15,28 @@ classDef Note fill:white, stroke:white, text-align:left, font-size:13pt, width:3
 %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   YEAR_DOT(("Year<br>Dot"))
 
+  2900([from ~ 2,900 BCE])
+    EARLY_DYNASTIC_PERIOD(Early Dynastic Period)
+    click EARLY_DYNASTIC_PERIOD "https://en.wikipedia.org/wiki/Early_Dynastic_Period_(Mesopotamia)" _blank
+    EARLY_DYNASTIC_PERIOD_NOTE[#151; characterized by the existence of many city-states]
+
+    ASSUR_01[Aššur]
+    ASSUR_01_NOTE[#151; 'assyrian' city founded ~ 2025 BCE]
+    click ASSUR_01 "https://en.wikipedia.org/wiki/Assur" _blank
+
+
+
+
   2334([from ~ 2,334 BCE])
     AKKADIAN_EMPIRE[Akkadian Empire]
     click AKKADIAN_EMPIRE "https://en.wikipedia.org/wiki/Akkadian_Empire" _blank
 
     AKKAD[Akkad]
     AKKAD_NOTE["#151; the capital city of the Akkadian Empire (location unknown)"]
+
+
+  YEAR_DOT-.-2900-.-EARLY_DYNASTIC_PERIOD--oEARLY_DYNASTIC_PERIOD_NOTE
+                    EARLY_DYNASTIC_PERIOD-.-ASSUR_01~~~ASSUR_01_NOTE
 
   YEAR_DOT-.-2334-.-AKKADIAN_EMPIRE
                     AKKADIAN_EMPIRE-.-AKKAD--oAKKAD_NOTE
