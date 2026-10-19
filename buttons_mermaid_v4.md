@@ -35,6 +35,8 @@
   START-.-
   BUTTON_04
 
+BUTTON_01-->BUTTON_02
+
 ```
 
 
