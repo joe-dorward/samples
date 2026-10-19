@@ -24,12 +24,13 @@ Some text...
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
   end
 
+  BUTTONS~~~
+  NOTES
 
     BUTTON_01-->
     BUTTON_02
 
-BUTTON_01-->
-BUTTON_01_NOTE
+
 ```
 
 
