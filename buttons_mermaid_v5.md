@@ -14,9 +14,11 @@
   subgraph GROUP_01
     %%direction LR
 
+    BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+
     BUTTON_01["UI Layer"]:::Button
     click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
-    %%BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
+    BUTTON_01a_NOTE["(Decoupled apps using Verso Design System)"]:::Note
 
     %%BUTTON_01~~~
     %%BUTTON_01_NOTE
