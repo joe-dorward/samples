@@ -13,7 +13,7 @@ Some text...
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, text-align:left;
   classDef Note fill:transparent, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  subgraph BUTTONS
+  subgraph BUTTONS:::SubGraph
     direction TD
 
     BUTTON_01["UI Layer"]:::Button
