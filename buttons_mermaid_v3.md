@@ -8,7 +8,7 @@ Some text...
   flowchart LR
 
   %% define styles
-  classDef Group fill:pink, text-align:left;
+  %%classDef Group fill:pink, text-align:left;
 
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, text-align:left;
   classDef Note fill:transparent, stroke:white, text-align:left;
@@ -28,7 +28,8 @@ Some text...
     BUTTON_04["Business Capabilities Platform (BCP) Services [Customer, Vehicle / VDS, Pricing, Finance]"]:::Button
     click BUTTON_04 "https://en.wikipedia.org/wiki/Main_Page" _blank
   end
-  class BUTTONS Group
+  %%class BUTTONS Group
+  style BUTTONS fill:pink,stroke:#333,stroke-width:2px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
   subgraph NOTES
     direction TD
