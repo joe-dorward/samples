@@ -11,19 +11,29 @@ Some text...
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue;
   classDef Note fill:transparent, stroke:white, text-align:left;
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
-  BUTTON_01[User Interface Layer]:::Button
+  BUTTON_01[UI Layer]:::Button
   click BUTTON_01 "https://en.wikipedia.org/wiki/Main_Page" _blank
-
   BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
 
+  %% connect button to note
   BUTTON_01-.-o
   BUTTON_01_NOTE
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  BUTTON_02[BFF Layer]:::Button
+  click BUTTON_02 "https://en.wikipedia.org/wiki/Main_Page" _blank
+  BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
 
+  %% connect button to note
+  BUTTON_02-.-o
+  BUTTON_02_NOTE
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
 
+  %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 
+  %% connect buttons to buttons
+  BUTTON_01-.->
+  BUTTON_02
 ```
 
 More text...
