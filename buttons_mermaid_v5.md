@@ -9,7 +9,7 @@
   flowchart TD
 
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:150px
-  classDef Note fill:pink, stroke-width:0px, width:350px
+  classDef Note fill:pink, stroke-width:0px, width:400px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 subgraph WRAPPER
   direction TD
