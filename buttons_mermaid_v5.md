@@ -9,7 +9,7 @@
   flowchart TD
 
   classDef Button fill:lightcyan, stroke:royalblue, color:royalblue, width:150px
-  classDef Note fill:pink, stroke-width:0px, width:350px, margin:0px
+  classDef Note fill:pink, stroke-width:0px, width:350px
   %% ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 subgraph WRAPPER
   direction TD
@@ -42,7 +42,7 @@ end
 
 %%BUTTON_01-->BUTTON_02
 
-  style GROUP_01 fill:cornsilk, color:white, stroke-width:0px, width:600px
+  style GROUP_01 fill:cornsilk, color:white, stroke-width:0px, width:650px
   style GROUP_02 fill:cornsilk, color:white, stroke-width:0px, width:650px
 
   style WRAPPER width:750px
