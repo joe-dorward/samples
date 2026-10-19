@@ -12,20 +12,24 @@ Some text...
   classDef Note fill:transparent, stroke:white, text-align:left;
 
   subgraph BUTTONS
-    %%direction TD
+    direction TD
 
     BUTTON_01[UI Layer]:::Button
     BUTTON_02[BFF Layer]:::Button
-
-    BUTTON_01-->
-    BUTTON_02
   end
 
   subgraph NOTES
-    %%direction TD
+    direction TD
     BUTTON_01_NOTE["(Decoupled apps using Verso Design System)"]:::Note
     BUTTON_02_NOTE["(Tailored aggregation and presentation)"]:::Note
   end
+
+
+    BUTTON_01-->
+    BUTTON_02
+
+BUTTON_01-->
+BUTTON_01_NOTE
 ```
 
 
